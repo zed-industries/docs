@@ -4,5 +4,5 @@
 
 * [Getting Started](README.md)
 * [System Requirements](general/system-requirements.md)
-* [How to Collaborate](<README (1).md>)
+* [How to Collaborate](general/collaboration.md)
 * [Telemetry in Zed](general/telemetry-in-zed.md)
