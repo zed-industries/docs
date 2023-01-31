@@ -1,37 +1,19 @@
-# How to Collaborate
+# Getting Started
 
-#### Adding contacts
+Welcome to Zed! We are excited to have you. Here is a jumping-off point to getting started.
 
-You can add an existing Zed user as a contact from the collaboration menu, deployed from the plus icon in the upper right corner of the window or by pressing `cmd-shift-c` and then clicking the add icon button to the right of the search box.
+### Getting access
 
-#### Adding a contact
+For now you need to either get access from a round of waitlist invites or get invited by someone already using Zed. Once you have been invited you will be able to log in and download Zed.
 
-You can invite new Zed users if you have invites by copying an invite link at the bottom of the menu.
+### Download Zed
 
-We're limiting invites in order to grow our userbase at a sustainable pace, but contact us at `hi@zed.dev` with your GitHub login if you're an existing user and need invites. When someone joins via your invite link, they're automatically added as a contact.
+If you have been invited to try Zed, head to Releases and download Zed. Once you do this the first time, the app will auto-update to keep you on the most recent version.
 
-### Sharing a project
+### Configure Zed
 
-You'll see all your online contacts in the collaboration menu. Searching or clicking on them will send a request to start a call and share your current project with them. They will receive a notification to join your call.
+Use `CMD + ,` to open your custom settings to set things like fonts, formatting settings, per-language settings and more. You can access the default configuration using the Zed > Preferences > Open Default Settings menu item. See Configuring Zed for all available settings.
 
-This will open a new window containing their project. Once you have joined the call, your zed windows will show the participants of the call next to your icon in the top right. Grayscale participants are in the call but currently viewing a different project. Non-grayscale participants are in the same project as you.
+### Set up your key bindings
 
-Projects not yet shared with the call will have a share button in which will enable others to join your project.
-
-Our goal is to eliminate the distinction between local and remote projects as much as possible. Guests can open, edit, and save files, perform searches, interact with the language server, etc.
-
-### Following a collaborator
-
-When you join a project, you'll immediately start following the host as they move within and between files.
-
-You automatically stop following whenever you move the cursor or edit. To start following again, you can click on a collaborator's avatar or cycle through following different participants by pressing `ctrl-alt-cmd-f`.
-
-Following is confined to a particular pane. When a pane is following a collaborator, it is outlined in their cursor color. This pane-specific behavior allows you to follow someone in one pane while navigating independently in another, and can be an effective layout for some styles of collaboration.
-
-### Sharing your screen
-
-Sometimes it's important to share your screen with other call participants, for example to read documentation together or showcase something outside of Zed. You can toggle screen-sharing by clicking on the screen icon next to the plus button.
-
-If someone is following you, a new tab will automatically be activated whenever you are viewing an external window.
-
-Call participants can always view the shared screen by hitting the plus icon and clicking on the `Screen` entry.
+You can access the default keybinding set using the Zed > Preferences > Open Default Key Bindings menu item. Use `CMD + K`,`CMD + S` to open your custom keymap to add your own key bindings. See Key Bindings for more info.,
