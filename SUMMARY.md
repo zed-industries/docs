@@ -20,3 +20,8 @@
 * [JavaScript](languages/javascript.md)
 * [Python](languages/python.md)
 * [Ruby](languages/ruby.md)
+
+## 🔵 Community
+
+* [Giving feedback](community/feedback.md)
+* [Code of Conduct](community/code-of-conduct.md)
