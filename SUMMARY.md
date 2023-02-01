@@ -12,3 +12,4 @@
 * [Configuring Zed](configuration/configuring-zed.md)
 * [Experimental Features](configuration/experimental-features.md)
 * [Key Bindings](configuration/key-bindings.md)
+* [Themes](configuration/themes.md)
