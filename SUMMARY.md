@@ -10,3 +10,4 @@
 ## Configuration
 
 * [Configuring Zed](configuration/configuring-zed.md)
+* [Experimental Features](configuration/experimental-features.md)
