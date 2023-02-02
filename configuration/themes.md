@@ -18,7 +18,7 @@ The Theme currently refers to both the UI theme and the syntax theme. These are 
 
 ### Themes in Zed
 
-Come discuss themes in more depth with the team on our \[TODO].
+Come discuss themes in more depth with the team [on our forum](https://forum.zed.dev).
 
 ### Experimental themes
 
