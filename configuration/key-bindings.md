@@ -1,4 +1,4 @@
-# Key Bindings
+# Key bindings
 
 Zed can be configured via a simple JSON file located at `~/.config/zed/keymap.json`.
 
@@ -37,7 +37,7 @@ You can see more examples in Zed's [`default.json`](https://zed.dev/ref/default.
 There are some key bindings that can't be overridden; we are working on an issue surrounding this.
 {% endhint %}
 
-### All Key bindings
+### All key bindings
 
 #### Editor
 

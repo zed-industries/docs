@@ -4,7 +4,7 @@
 
 When editing Python, Zed provides code intelligence using the [Pyright](https://github.com/microsoft/pyright) language server.
 
-#### Virtual Environments
+#### Virtual environments
 
 A python [virtual environment](https://docs.python.org/3/tutorial/venv.html) allows you store all of a project's dependencies, including the Python interpreter and package manager, in a single directory that's isolated from any other Python projects on your computer.
 
@@ -35,7 +35,7 @@ Having done that, you would create a `pyrightconfig.json` with the following con
 
 For more information, see the Pyright [configuration documentation](https://github.com/microsoft/pyright/blob/main/docs/configuration.md).
 
-#### Code Formatting
+#### Code formatting
 
 The Pyright language server does not provide code formatting. If you want to automatically reformat your Python code when saving, you'll need to specify an _external_code formatter in your settings. See the [configuration](../configuration/configuring-zed.md) documentation for more information.
 
