@@ -40,6 +40,8 @@ Our goal is to eliminate the distinction between local and remote projects as mu
 
 When you join a project, you'll immediately start following the host as they move within and between files.
 
+<figure><img src="../.gitbook/assets/follow.jpg" alt=""><figcaption><p>Follow a collaborator</p></figcaption></figure>
+
 You automatically stop following whenever you move the cursor or edit. To start following again, you can click on a collaborator's avatar or cycle through following different participants by pressing `ctrl-alt-cmd-f`.
 
 Following is confined to a particular pane. When a pane is following a collaborator, it is outlined in their cursor color. This pane-specific behavior allows you to follow someone in one pane while navigating independently in another, and can be an effective layout for some styles of collaboration.
@@ -48,6 +50,12 @@ Following is confined to a particular pane. When a pane is following a collabora
 
 Sometimes it's important to share your screen with other call participants, for example to read documentation together or showcase something outside of Zed. You can toggle screen-sharing by clicking on the screen icon next to the plus button.
 
+<figure><img src="../.gitbook/assets/share-screen.png" alt=""><figcaption><p>Share your screen</p></figcaption></figure>
+
 If someone is following you, a new tab will automatically be activated whenever you are viewing an external window.
 
+<figure><img src="../.gitbook/assets/follow-shared-screen.png" alt=""><figcaption><p>People that follow you can look at what you are sharing outside of the editor</p></figcaption></figure>
+
 Call participants can always view the shared screen by hitting the plus icon and clicking on the `Screen` entry.
+
+<figure><img src="../.gitbook/assets/deploy-shared-screen.png" alt=""><figcaption><p>Viewing the shared screen</p></figcaption></figure>
