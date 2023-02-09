@@ -2,7 +2,7 @@
 
 ### Community repository
 
-We track our issues at [`zed-industries/`](https://github.com/zed-industries/feedback/issues)`community`.
+We track our issues at [`zed-industries/`](https://github.com/zed-industries/community/issues)`community`.
 
 #### Feature requests
 

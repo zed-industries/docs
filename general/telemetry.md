@@ -16,4 +16,4 @@ All events also include your OS version, Zed app version, and a timestamp.
 
 You can see the telemetry data that Zed has reported by running the command `zed: open telemetry log` from the command palette, or clicking `Help > View Telemetry Log` in the application menu.
 
-If you have concerns about telemetry, please feel free to open issues on our [feedback repository](https://github.com/zed-industries/feedback/issues/new/choose).
+If you have concerns about telemetry, please feel free to open issues in our [community repository](https://github.com/zed-industries/community/issues/new/choose).

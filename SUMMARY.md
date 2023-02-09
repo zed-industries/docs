@@ -23,5 +23,5 @@
 
 ## 🔵 Community
 
-* [Giving feedback](community/feedback.md)
+* [Giving feedback](community/community.md)
 * [Code of Conduct](community/code-of-conduct.md)

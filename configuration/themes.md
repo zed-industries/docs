@@ -18,7 +18,7 @@ The Theme currently refers to both the UI theme and the syntax theme. These are 
 
 ### Themes in Zed
 
-Come discuss themes in more depth with the team [on our forum](https://forum.zed.dev).
+Come discuss themes in more depth with the team in [our community forum](https://github.com/zed-industries/community/discussions).
 
 ### Experimental themes
 
@@ -64,7 +64,7 @@ This is planned, though we don't have a timeline.
 
 <summary>Can you add file type icons to themes?</summary>
 
-Not yet, but it is [highly requested](https://github.com/zed-industries/feedback/issues/206) on our feedback board. If you would like to see this feature specifically, feel free to share any projects for sourcing these in the [GitHub issue](https://github.com/zed-industries/feedback/issues/206).
+Not yet, but it is [highly requested](https://github.com/zed-industries/community/issues/206) in our community board. If you would like to see this feature specifically, feel free to share any projects for sourcing these in the [GitHub issue](https://github.com/zed-industries/community/issues/206).
 
 </details>
 
