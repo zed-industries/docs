@@ -2,7 +2,7 @@
 
 ## Code of Conduct for Zed Communities
 
-Zed’s communities (Discord, GitHub, Discourse, and beyond) are places for discussions about code, text editors, the software industry, and fields directly related to it. We reserve the right to exclude anyone from these spaces if they're engaging in harmful behavior. These are professional settings for discussing Zed, software engineering & related topics. You don’t need to be in formal wear – just try to keep things at least semi-professional and on-topic.
+Zed’s communities are places for discussions about code, text editors, the software industry, and fields directly related to it. We reserve the right to exclude anyone from these spaces if they're engaging in harmful behavior. These are professional settings for discussing Zed, software engineering & related topics. You don’t need to be in formal wear – just try to keep things at least semi-professional and on-topic.
 
 ### What’s permissible:
 
