@@ -1,28 +1,28 @@
 # Giving feedback
 
-### Feedback repository
+### Community repository
 
-We track our issues at [`zed-industries/feedback`](https://github.com/zed-industries/feedback/issues).
+We track our issues at [`zed-industries/`](https://github.com/zed-industries/feedback/issues)`community`.
 
 #### Feature requests
 
 Try to focus on the things that are most critical to you rather than exhaustively listing all features another editor you have used has.
 
-Command palette action: `request feature`
+Command palette: `request feature`
 
 #### Bug reports
 
 Try to add as much detail as possible, if it is not obvious to reproduce. Let us know how severe the problem is for you; is the issue more of a minor inconvenience or something that would prevent you from using Zed?
 
-Command palette action: `file bug report`
+Command palette: `file bug report`
+
+### In-app feedback
+
+Anonymous feedback can be submitted from within Zed via the feedback editor (command palette: `give feedback`).
 
 ### Zed forum
 
-Use the [community forum](https://forum.zed.dev/) to ask questions and learn from one another. We will be present in the forum and answering questions as well.
-
-### Discord server
-
-You can join our [Zed Insiders Discord server](https://discord.gg/SSD9eJrn6s) to chat with us and other insiders.
+Use the [community forum](https://github.com/zed-industries/community/discussions) to ask questions and learn from one another. We will be present in the forum and answering questions as well.
 
 ### Email
 
