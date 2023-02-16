@@ -14,7 +14,7 @@ We welcome contributions from the community. If you'd like to contribute, please
 - Make your changes in a new branch that has a meaningful name
 - Submit a pull request that targets the `main` branch of this repository
 
-## Previwing your proposed changes
+## Previewing your proposed changes
 
 Unfortunately, there's no way currently to build the documentation locally and preview your changes. GitBook may enable previewing in the future. In the meantime, if you stick to simple markdown most things should render correctly. And we are going to review your changes before merging them to make sure they look good.
 
