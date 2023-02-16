@@ -12,9 +12,9 @@ The Theme currently refers to both the UI theme and the syntax theme. These are 
 
 ### Known issues
 
-* Theme contrast is insufficient in places and inconsistent across the app
-* Spacing between groups and elements in places is insufficient or inconsistent
-* Semantic colors are not currently separated from syntax/accent colors (leads to some themes having awkward error colors, etc)
+-   Theme contrast is insufficient in places and inconsistent across the app
+-   Spacing between groups and elements in places is insufficient or inconsistent
+-   Semantic colors are not currently separated from syntax/accent colors (leads to some themes having awkward error colors, etc)
 
 ### Themes in Zed
 
@@ -46,9 +46,9 @@ Themes likely will start with only a small amount of customization (provide colo
 
 **Custom themes**
 
-* There should be a list of curated themes available to download
-* Themes should be able to be loaded from a directory on the local machine
-* A format and builder should be available to help theme creators build themes for Zed.
+-   There should be a list of curated themes available to download
+-   Themes should be able to be loaded from a directory on the local machine
+-   A format and builder should be available to help theme creators build themes for Zed.
 
 ### Theme FAQ
 
@@ -67,4 +67,3 @@ This is planned, though we don't have a timeline.
 Not yet, but it is [highly requested](https://github.com/zed-industries/community/issues/206) in our community board. If you would like to see this feature specifically, feel free to share any projects for sourcing these in the [GitHub issue](https://github.com/zed-industries/community/issues/206).
 
 </details>
-

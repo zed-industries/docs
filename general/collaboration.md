@@ -1,7 +1,7 @@
 ---
 description: >-
-  Zed is not just an editor. Its collaboration features is what sets it apart
-  from other editors.
+    Zed is not just an editor. Its collaboration features is what sets it apart
+    from other editors.
 ---
 
 # How to collaborate

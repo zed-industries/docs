@@ -6,9 +6,9 @@ The telemetry data is not shared with Zed's servers, but is sent directly to an 
 
 Currently, the events that are reported are:
 
-* Opening the app
-* Signing in
-* Opening and saving files. File extensions (e.g. `.rs`, `.html`, `.txt`) are included in these events.
+-   Opening the app
+-   Signing in
+-   Opening and saving files. File extensions (e.g. `.rs`, `.html`, `.txt`) are included in these events.
 
 All events also include your OS version, Zed app version, and a timestamp.
 
