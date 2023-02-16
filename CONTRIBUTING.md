@@ -4,19 +4,19 @@ Thank you for your interest in contributing to the Zed documentation! We use Mar
 
 ## GitBook
 
-The Markdown files you see in this repository are the source files for the Zed documentation. Each file corresponds to a page. We use [GitBook](https://www.gitbook.com/) to host the documentation. Every merge to the `main` branch here triggers a synchronization with GitBook, which publishes the documentation at [https://docs.zed.dev](https://docs.zed.dev). The structure of the documentation is defined in the `SUMMARY.md` file in this repository.
+The Markdown files you see in this repository are the source files for the Zed documentation. Each file corresponds to a page. We use [GitBook](https://www.gitbook.com/) to host the documentation. Every merge to the `main` branch triggers a synchronization action with GitBook, which publishes the documentation at [https://docs.zed.dev](https://docs.zed.dev). The structure of the documentation is defined in the `SUMMARY.md` file in this repository.
 
 ## Contributing
 
 We welcome contributions from the community. If you'd like to contribute, please follow these steps:
 
 - Fork this repository
-- Make your changes in a new branch that has a meaningful name
+- Make your changes on a new branch that has a descriptive and meaningful name
 - Submit a pull request that targets the `main` branch of this repository
 
 ## Previewing your proposed changes
 
-Unfortunately, there's no way currently to build the documentation locally and preview your changes. GitBook may enable previewing in the future. In the meantime, if you stick to simple markdown most things should render correctly. And we are going to review your changes before merging them to make sure they look good.
+Unfortunately, there's no way currently to build the documentation locally and preview your changes. GitBook may enable previewing in the future. In the meantime, if you stick to simple Markdown, most things should render correctly. We will review your changes before merging them to make sure they look good.
 
 ## Proprietary GitBook content blocks
 
@@ -56,4 +56,4 @@ Best practices:
 
 The `SUMMARY.md` file in this repository is the table of contents for the documentation. It holds the whole structure of the documentation. If you want to propose changes to the structure of the documentation, please edit the `SUMMARY.md` file.
 
-If you need to add a new file, please also add it to the `SUMMARY.md` file so that it will be included in the documentation. Otherwise, the next synchronization with GitBook will not pick it up.
+If you need to add a new file, please also add it to the `SUMMARY.md` file so that it will be included in the documentation. Otherwise, the next synchronization action with GitBook will not pick it up.
