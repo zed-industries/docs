@@ -54,6 +54,6 @@ Best practices:
 
 ## Table of contents in SUMMARY.md
 
-The `SUMMARY.md` file in this repository is the table of contents for the documentation. It hols the whole structure of the documentation. If you want to propose changes to the structure of the documentation, please edit the `SUMMARY.md` file.
+The `SUMMARY.md` file in this repository is the table of contents for the documentation. It holds the whole structure of the documentation. If you want to propose changes to the structure of the documentation, please edit the `SUMMARY.md` file.
 
 If you need to add a new file, please also add it to the `SUMMARY.md` file so that it will be included in the documentation. Otherwise, the next synchronization with GitBook will not pick it up.
