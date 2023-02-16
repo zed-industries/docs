@@ -10,9 +10,9 @@ The Markdown files you see in this repository are the source files for the Zed d
 
 We welcome contributions from the community. If you'd like to contribute, please follow these steps:
 
-- Fork this repository
-- Make your changes on a new branch that has a descriptive and meaningful name
-- Submit a pull request that targets the `main` branch of this repository
+-   Fork this repository
+-   Make your changes on a new branch that has a descriptive and meaningful name
+-   Submit a pull request that targets the `main` branch of this repository
 
 ## Previewing your proposed changes
 
@@ -31,13 +31,16 @@ This is a hint block
 Or in some cases, GitBook will fall back to HTML. For example, images:
 
 ```html
-<figure><img src="../.gitbook/assets/add-contacts.png" alt=""><figcaption><p>Adding a contact</p></figcaption></figure>
+<figure>
+    <img src="../.gitbook/assets/add-contacts.png" alt="" />
+    <figcaption><p>Adding a contact</p></figcaption>
+</figure>
 ```
 
 In these cases, there are two ways to figure out how to write the proper markup:
 
-- Look at the source of the documentation in this repository to see how it's done
-- Create a GitBook account (it's free) and experiment with your own git repository to test the content there first and see how GitBook exports it in Markdown.
+-   Look at the source of the documentation in this repository to see how it's done
+-   Create a GitBook account (it's free) and experiment with your own git repository to test the content there first and see how GitBook exports it in Markdown.
 
 ## Assets
 
@@ -45,12 +48,12 @@ If you need to add an image or other asset to the documentation, please add it t
 
 Best practices:
 
-- If you can avoid adding a new image, please do so
-- Reuse existing images if possible
-- Use PNG format for images
-- Keep the images as small as possible
-- Use descriptive names for the images (they need to be unique across)
-- Please use lowercase letters and dashes for the image names
+-   If you can avoid adding a new image, please do so
+-   Reuse existing images if possible
+-   Use PNG format for images
+-   Keep the images as small as possible
+-   Use descriptive names for the images (they need to be unique across)
+-   Please use lowercase letters and dashes for the image names
 
 ## Table of contents in SUMMARY.md
 

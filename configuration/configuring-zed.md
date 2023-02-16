@@ -14,9 +14,9 @@ You should see something that looks like this:
 
 ```json
 {
-  "theme": "One Dark",
-  "buffer_font_family": "PragmataPro Liga",
-  "buffer_font_size": 16
+    "theme": "One Dark",
+    "buffer_font_family": "PragmataPro Liga",
+    "buffer_font_size": 16
 }
 ```
 
@@ -53,39 +53,39 @@ The `autosave` setting has four different modes:
 
 1. To disable autosave, set it to `"off"`
 
-   ```json
-   {
-     "autosave": "off"
-   }
-   ```
+    ```json
+    {
+        "autosave": "off"
+    }
+    ```
 
 2. To autosave when focus changes, use `"on_focus_change"`:
 
-   ```json
-   {
-     "autosave": "on_focus_change"
-   }
-   ```
+    ```json
+    {
+        "autosave": "on_focus_change"
+    }
+    ```
 
 3. To autosave when the active window changes, use `"on_window_change"`:
 
-   ```json
-   {
-     "autosave": "on_window_change"
-   }
-   ```
+    ```json
+    {
+        "autosave": "on_window_change"
+    }
+    ```
 
 4. To autosave after an inactivity period, use `"after_delay"`:
 
-   ```json
-   {
-     "autosave": {
-       "after_delay": {
-         "milliseconds": 1000
-       }
-     }
-   }
-   ```
+    ```json
+    {
+        "autosave": {
+            "after_delay": {
+                "milliseconds": 1000
+            }
+        }
+    }
+    ```
 
 ## Format On Save
 
@@ -93,18 +93,18 @@ The `format_on_save` setting controls if files are formatted before saving. Ther
 
 1. `on`, enables format on save obeying `formatter` setting:
 
-   ```json
-   {
-     "format_on_save": "on"
-   }
-   ```
+    ```json
+    {
+        "format_on_save": "on"
+    }
+    ```
 
 2. `off`, disables format on save:
-   ```json
-   {
-     "format_on_save": "off"
-   }
-   ```
+    ```json
+    {
+        "format_on_save": "off"
+    }
+    ```
 
 ## Formatter
 
@@ -112,30 +112,30 @@ The `formatter` setting dictates how a format is performed and has two different
 
 1. To use the current language server, use `"language_server"`:
 
-   ```json
-   {
-     "formatter": "language_server"
-   }
-   ```
+    ```json
+    {
+        "formatter": "language_server"
+    }
+    ```
 
 2. Or to use an external command, use `"external"`. Specify the name of the formatting program to run, and an array of arguments to pass to the program. The buffer's text will be passed to the program on stdin, and the formatted output should be written to stdout. For example, the following command would strip trailing spaces using [`sed(1)`](https://linux.die.net/man/1/sed):
 
-   ```json
-   {
-     "formatter": {
-       "external": {
-         "command": "sed",
-         "arguments": ["-e", "s/ *$//"]
-       }
-     }
-   }
-   ```
+    ```json
+    {
+        "formatter": {
+            "external": {
+                "command": "sed",
+                "arguments": ["-e", "s/ *$//"]
+            }
+        }
+    }
+    ```
 
 ## Lsp
 
 The following settings can be overridden for specific language servers:
 
-- `initialization_options`
+-   `initialization_options`
 
 To override settings for a language, add an entry for that language server's name to the `lsp` value. Example:
 
@@ -155,13 +155,13 @@ To override settings for a language, add an entry for that language server's nam
 
 The following settings can be overridden for specific languages:
 
-- `tab_size`
-- `hard_tabs`
-- `soft_wrap`
-- `preferred_line_length`
-- `format_on_save`
-- `formatter`
-- `enable_language_server`
+-   `tab_size`
+-   `hard_tabs`
+-   `soft_wrap`
+-   `preferred_line_length`
+-   `format_on_save`
+-   `formatter`
+-   `enable_language_server`
 
 To override settings for a language, add an entry for that languages name to the `language_overrides` value. Example:
 
@@ -199,49 +199,49 @@ For a complete list of languages you can override settings for see [Supported La
 What shell to use when opening a terminal. May take 3 values:
 
 1. Use the system's default terminal configuration (usually the pw file).
-   ```json
-   "shell": "system"
-   ```
+    ```json
+    "shell": "system"
+    ```
 2. A program to launch:
-   ```json
-   "shell": {
-     "program": "sh"
-   }
-   ```
+    ```json
+    "shell": {
+      "program": "sh"
+    }
+    ```
 3. A program with arguments:
-   ```json
-   "shell": {
-       "with_arguments": {
-         "program": "/bin/bash",
-         "arguments": ["--login"]
-       }
-   }
-   ```
+    ```json
+    "shell": {
+        "with_arguments": {
+          "program": "/bin/bash",
+          "arguments": ["--login"]
+        }
+    }
+    ```
 
 ### Terminal: Working Directory Strategy
 
 There are four possible values:
 
 1. Use the current file's project directory. Will Fallback to the first project directory strategy if unsuccessful
-   ```json
-   "working_directory": "current_project_directory"
-   ```
+    ```json
+    "working_directory": "current_project_directory"
+    ```
 2. Use the first project in this workspace's directory. Will fallback to using this platform's home directory.
-   ```json
-   "working_directory": "first_project_directory"
-   ```
+    ```json
+    "working_directory": "first_project_directory"
+    ```
 3. Always use this platform's home directory (if we can find it)
-   ```json
-   "working_directory": "always_home"
-   ```
+    ```json
+    "working_directory": "always_home"
+    ```
 4. Always use a specific directory. This value will be shell expanded. If this path is not a valid directory the terminal will default to this platform's home directory.
-   ```json
-     "working_directory": {
-       "always": {
-         "directory": "~/zed/projects/"
-       }
-     }
-   ```
+    ```json
+      "working_directory": {
+        "always": {
+          "directory": "~/zed/projects/"
+        }
+      }
+    ```
 
 ### Terminal: Cursor Blink
 
@@ -249,17 +249,17 @@ Set the cursor blinking behavior in the terminal.
 May take 3 values:
 
 1. Never blink the cursor, ignore the terminal mode
-   ```json
-   "blinking": "off",
-   ```
+    ```json
+    "blinking": "off",
+    ```
 2. Default the cursor blink to off, but allow the terminal to turn blinking on
-   ```json
-   "blinking": "terminal_controlled",
-   ```
+    ```json
+    "blinking": "terminal_controlled",
+    ```
 3. Always blink the cursor, ignore the terminal mode
-   ```json
-   "blinking": "on",
-   ```
+    ```json
+    "blinking": "on",
+    ```
 
 ### Terminal: Alternate Scroll Mode
 
@@ -267,13 +267,13 @@ Set whether Alternate Scroll mode (DECSET code: `?1007`) is active by default. A
 May take 2 values:
 
 1. Default alternate scroll mode to on
-   ```json
-   "alternate_scroll": "on",
-   ```
+    ```json
+    "alternate_scroll": "on",
+    ```
 2. Default alternate scroll mode to off
-   ```json
-   "alternate_scroll": "off",
-   ```
+    ```json
+    "alternate_scroll": "off",
+    ```
 
 ### Terminal: Enviroment Variables
 
@@ -292,28 +292,28 @@ enviroment. Keys must be unique, use `:` to seperate multiple values in a single
 ```json
 // ~/.config/zed/settings.json
 {
-  "theme": "cave-light",
-  "tab_size": 2,
-  "preferred_line_length": 80,
-  "soft_wrap": "none",
+    "theme": "cave-light",
+    "tab_size": 2,
+    "preferred_line_length": 80,
+    "soft_wrap": "none",
 
-  "buffer_font_size": 18,
-  "buffer_font_family": "Zed Mono",
+    "buffer_font_size": 18,
+    "buffer_font_family": "Zed Mono",
 
-  "autosave": "on_focus_change",
-  "format_on_save": "off",
-  "vim_mode": false,
-  "projects_online_by_default": true,
-  "terminal": {
-    "font_family": "FiraCode Nerd Font Mono",
-    "blinking": "off"
-  },
-  "language_overrides": {
-    "C": {
-      "format_on_save": "language_server",
-      "preferred_line_length": 64,
-      "soft_wrap": "preferred_line_length"
+    "autosave": "on_focus_change",
+    "format_on_save": "off",
+    "vim_mode": false,
+    "projects_online_by_default": true,
+    "terminal": {
+        "font_family": "FiraCode Nerd Font Mono",
+        "blinking": "off"
+    },
+    "language_overrides": {
+        "C": {
+            "format_on_save": "language_server",
+            "preferred_line_length": 64,
+            "soft_wrap": "preferred_line_length"
+        }
     }
-  }
 }
 ```

@@ -12,15 +12,15 @@ For example, if you have Prettier installed and on your `PATH`, you can use it f
 
 ```json
 {
-  "language_overrides": {
-    "JavaScript": {
-      "format_on_save": {
-        "external": {
-          "command": "prettier",
-          "arguments": ["--stdin-filepath", "{buffer_path}"]
+    "language_overrides": {
+        "JavaScript": {
+            "format_on_save": {
+                "external": {
+                    "command": "prettier",
+                    "arguments": ["--stdin-filepath", "{buffer_path}"]
+                }
+            }
         }
-      }
     }
-  }
 }
 ```
