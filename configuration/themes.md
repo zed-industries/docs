@@ -30,7 +30,7 @@ In practice, this means:
 
 - **Accessibility**: We want to ensure that the default themes are accessible to all users. We will also provide guardrails for you to ensure that your custom themes are accessible. We won't, however, require you to make your theme accessible. We may tag themes that don't meet our accessibility standards as such, but we won't prevent you from using or sharing them.
 
-In short, we want you to have the flexibility to express yourself while ensuring the editor remains a functional tool. We're working hard to create a theme system that strikes the right balance between customization and usability.
+We want you to have the flexibility to express yourself while ensuring the editor remains a functional tool. We're working hard to create a theme system that strikes the right balance between customization and usability.
 
 ### Accessibility in Themes
 
@@ -42,9 +42,17 @@ _!!Under Construction!!_
 
 ### Roadmap
 
-_Subject to change_
+_Subject to extreme change. This is to provide some insight into our plans around themes, and the amount of work that needs to go into the system before user themes can be launched._
 
 _!!Under Construction!!_
+
+- [x] **Default Palette**: The set of colors that Zed pulls from to build it's default themes and uses for semantic colors. This is almost entirely internal facing, but eventually we will expose it for use in custon themes.
+- [ ] **Syntax Overrides**: The ability to override syntax colors from a theme. This will ship before public beta to allow us to correctly color the One theme family, which will continue to be the default for now.
+- [ ] **Theme 1.0 Specification**: The spec for a theme. This will include the ability to override syntax colors, as well as UI colors. We likely will define more features than we will build at the start, but this will allow us to add more features in the future without breaking existing themes.
+- [ ] **Port Existing Themes**: We will need to bring our existing themes up spec. Some themes will likely be removed or replaced at this point.
+- [ ] **Token Driven UI**: This is internal facing. Use standard design tokens to style every element in the UI. This is a pretty big step that won't have a lot of immediatly visible impact, but will allow us to build UI Overrides, and significantly improve the way we style every part of the app.
+- [ ] **Loading Themes**: The ability to load a theme from disk.
+- [ ] **UI Overrides**: Similar to syntax overrides, but for UI elements. This would, for example, allow you to change the color of the sidebar background or the label color of an active tab.
 
 ---
 
