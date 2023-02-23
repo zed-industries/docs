@@ -28,7 +28,7 @@ You have full control over what data is sent out by Zed.  To enable or disable s
 
 ```json
 "telemetry": {
-    "diagnostics": true,
+    "diagnostics": false,
     "metrics": false
 },
 ```
