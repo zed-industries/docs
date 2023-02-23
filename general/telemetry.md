@@ -20,9 +20,7 @@ The following actions are captured:
 
 All `metrics` events also include your OS version, Zed app version, and a timestamp.
 
-#### Auditing your Metric Events
-
-You can see the metrics data that Zed has reported by running the command `zed: open telemetry log` from the command palette, or clicking `Help > View Telemetry Log` in the application menu.
+You can audit the metrics data that Zed has reported by running the command `zed: open telemetry log` from the command palette, or clicking `Help > View Telemetry Log` in the application menu.
 
 ## Configuring Telemetry Settings
 
