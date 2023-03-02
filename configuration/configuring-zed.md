@@ -45,7 +45,6 @@ Here are all the currently available settings.
 | `active_pane_magnification`  | `1.0`             | Scale by which to zoom the active pane. When set to `1.0`, the active pane has the same size as others, but when set to a larger value, the active pane takes up more space. |
 | `vim_mode`                   | `false`           | `boolean` Enables Vim mode (WIP)                                                                                                                                             |
 | `terminal`                   | See below         | See 'Terminal' section below                                                                                                                                                 |
-| `experiments`                | `{}`              | See the [Experimental Features](/docs/configuration/experimental-features) page                                                                                              |
 
 ## Autosave
 

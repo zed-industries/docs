@@ -24,14 +24,6 @@ The Theme currently refers to both the UI theme and the syntax theme. These are 
 
 Come discuss themes in more depth with the team in [our community forum](https://github.com/zed-industries/community/discussions).
 
-### Experimental themes
-
-Experimental themes are a way for us to share new themes before they are fully dialed in, or keep some themes that don't work quite right in Zed yet but people are enjoying.
-
-These themes won't get support for any issues until we have had time to update them and move them out of our experiments.
-
-There is no guarantee that experimental themes will be kept in the app or added to themes once added as an experiment.
-
 ### Planned features
 
 We'll talk more soon about our plans for exactly what will be themable, but likely _most_(but not all) of the Zed UI should be able to be accessed by the theme.
