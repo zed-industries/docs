@@ -2,6 +2,10 @@
 description: Zed UI and syntax themes explained
 ---
 
+{% hint style="warning" %}
+This doc is out of date. An update will be coming shortly.
+{% endhint %}
+
 # Themes
 
 {% hint style="warning" %}
@@ -27,16 +31,6 @@ Experimental themes are a way for us to share new themes before they are fully d
 These themes won't get support for any issues until we have had time to update them and move them out of our experiments.
 
 There is no guarantee that experimental themes will be kept in the app or added to themes once added as an experiment.
-
-#### Using experimental themes
-
-You can enable experimental themes in your `settings.json`:
-
-```json
-"experiments": {
-  "experimental_themes": true
-}
-```
 
 ### Planned features
 
