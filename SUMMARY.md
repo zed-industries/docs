@@ -10,7 +10,6 @@
 ## 🟡 Configuration
 
 * [Configuring Zed](configuration/configuring-zed.md)
-* [Experimental features](configuration/experimental-features.md)
 * [Key bindings](configuration/key-bindings.md)
 * [Themes](configuration/themes.md)
 
