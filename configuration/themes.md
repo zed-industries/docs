@@ -26,7 +26,7 @@ In practice, this means:
 
 - **Powerful Customization**: We want to provide a way to customize your theme to your heart's content. This could mean taking a default theme and just changing a few colors, or it could mean creating your own theme from scratch.
 
-- **Community**: We want to enable the community to create and share their themes. We will provide a way to load themes in the app, and a toolkit for building themes.
+- **Community**: We want to enable the community to create and share their themes. We will provide a way to load themes into Zed, and a toolkit for building themes.
 
 - **Accessibility**: We want to ensure that the default themes are accessible to all users. We will also provide guardrails for you to ensure that your custom themes are accessible. We won't, however, require you to make your theme accessible. We may tag themes that don't meet our accessibility standards as such, but we won't prevent you from using or sharing them.
 
