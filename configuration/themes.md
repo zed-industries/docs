@@ -10,7 +10,7 @@ Zed themes and their underlying systems are undergoing significant development. 
 
 A Zed Theme refers to and affects both the UI and the syntax highlighting of Zed.
 
-We will not have formal UI and syntax themes the like Atom, but will provide a way to override syntax styles (and more) from a single theme.
+We will not have separate UI and syntax themes the like Atom, but will provide a way to override syntax styles (and more) from a single theme.
 
 ---
 
