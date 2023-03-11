@@ -4,7 +4,7 @@ Zed can be configured via a simple JSON file located at `~/.config/zed/keymap.js
 
 ### Predefined keymaps
 
-We have a growing collection of pre-defined keymaps in our [keymaps respository](https://github.com/zed-industries/keymaps).
+We have a growing collection of pre-defined keymaps in our [keymaps repository](https://github.com/zed-industries/keymaps).
 
 ### Custom key bindings
 

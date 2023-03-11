@@ -274,10 +274,10 @@ May take 2 values:
    "alternate_scroll": "off",
    ```
 
-### Terminal: Enviroment Variables
+### Terminal: Environment Variables
 
 Any key-value pairs added to this object will be added to the terminal's
-enviroment. Keys must be unique, use `:` to seperate multiple values in a single variable:
+environment. Keys must be unique, use `:` to separate multiple values in a single variable:
 
 ```json
 "env": {
