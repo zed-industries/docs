@@ -21,7 +21,7 @@ For example, a common approach is to create a virtual environment directory call
 # create a virtual environment in the .venv directory
 python3 -m venv .venv
 # set up the current shell to use that virtual environment
-. .venv/bin/activate
+source .venv/bin/activate
 ```
 
 Having done that, you would create a `pyrightconfig.json` with the following content:
