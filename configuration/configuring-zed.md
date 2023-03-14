@@ -177,7 +177,7 @@ To override settings for a language, add an entry for that languages name to the
 }
 ```
 
-For a complete list of languages you can override settings for see [Supported Languages](languages/support-languages.md).
+For a complete list of languages you can override settings for see [Supported Languages](../languages/support-languages.md).
 
 ## Terminal
 
