@@ -33,6 +33,8 @@ You have full control over what data is sent out by Zed.  To enable or disable s
 },
 ```
 
+The telemetry settings can also be configured via the `welcome` screen, which can be invoked via the `workspace: welcome` action in the command palette.
+
 ## Concerns and Questions
 
 If you have concerns about telemetry, please feel free to open issues in our [community repository](https://github.com/zed-industries/community/issues/new/choose).
