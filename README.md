@@ -1,7 +1,7 @@
 # Zed Docs
 Welcome to the Zed Docs repository! 
 
-Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.. Our goal is to build the world's best text editor for developers and their teams.
+Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter. Our goal is to build the world's best text editor for developers and their teams.
 
 We highly encourage contributions from the community to improve and expand the documentation.
 
