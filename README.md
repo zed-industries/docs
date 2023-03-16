@@ -6,7 +6,10 @@ Zed is a high-performance, multiplayer code editor from the creators of Atom and
 We highly encourage contributions from the community to improve and expand the documentation.
 
 ## Contributing
+
 Your contributions are invaluable to us, and we appreciate your interest in helping us improve the Zed documentation. Whether you want to fix typos, improve explanations, or add new content, every contribution is welcome.
+
+For more on contributing see [CONTRIBUTING.md](https://github.com/zed-industries/docs/blob/main/CONTRIBUTING.md)
 
 ### Steps to contribute a change:
 
@@ -35,7 +38,9 @@ If you need to add images or other assets to the documentation, please add them 
 When adding a new file or proposing changes to the structure of the documentation, please edit the SUMMARY.md file, which serves as the table of contents for the documentation.
 
 ## Join the Zed Community
-We're on a mission to create a better way to write software, and this is just the beginning. By contributing to the Zed Docs you're joining a community of passionate developers and helping to shape the future of software development.
+We're on a mission to create a better way to write software, and this is just the beginning.
+
+By contributing to the Zed Docs you're joining a community of passionate developers and helping to shape the future of software development.
 
 You can join our [discord](https://discord.gg/SSD9eJrn6s) to discuss docs, zed, any anything else text editing.
 
