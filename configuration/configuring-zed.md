@@ -198,7 +198,7 @@ For a complete list of languages you can override settings for see [Supported La
 
 What shell to use when opening a terminal. May take 3 values:
 
-1. Use the system's default terminal configuration (usually the pw ).
+1. Use the system's default terminal configuration (usually the pw file).
    ```json
    "shell": "system"
    ```
