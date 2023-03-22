@@ -15,7 +15,7 @@
 
 ## 🟢 Languages
 
-* [Support languages](languages/support-languages.md)
+* [Supported languages](languages/supported-languages.md)
 * [JavaScript](languages/javascript.md)
 * [Python](languages/python.md)
 * [Ruby](languages/ruby.md)
