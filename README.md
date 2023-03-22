@@ -4,7 +4,7 @@ Welcome to Zed! We are excited to have you. Here is a jumping-off point to getti
 
 ### Download Zed
 
-If you have been invited to try Zed, head to Releases and download Zed. Once you do this the first time, the app will auto-update to keep you on the most recent version.
+You can obtain the release build via the [download page](https://zed.dev/download). After the first manual installation, Zed will periodically check for and install updates automatically for you.
 
 ### Configure Zed
 
