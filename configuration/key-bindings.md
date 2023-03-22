@@ -203,7 +203,7 @@ There are some key bindings that can't be overridden; we are working on an issue
 | --------------------------- | ---------------------------- |
 | Deploy project search       | `Command + Shift + F`        |
 | Toggle theme selctor        | `Command + K , Command + T`  |
-| Open key map                | `Command + K , Command + S`  |
+| Open keymap                 | `Command + K , Command + S`  |
 | Toggle project symbols      | `Command + T`                |
 | Toggle file finder          | `Command + P`                |
 | Toggle command palette      | `Command + Shift + P`        |
