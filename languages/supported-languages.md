@@ -1,4 +1,4 @@
-# Support languages
+# Supported languages
 
 Zed currently supports the following languages:
 
