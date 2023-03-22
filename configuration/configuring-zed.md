@@ -29,6 +29,7 @@ Here are all the currently available settings.
 | `autosave`                           | `off`             | See 'autosave' section below                                                                                                                                                 |
 | `buffer_font_family`                 | `zed-mono`        | `string` Either `zed-mono` or the name of an installed Font family                                                                                                           |
 | `buffer_font_size`                   | `16`              | `number` The editor font size                                                                                                                                                |
+| `buffer_font_features`               | `null`            | See 'font features' section below                                                                                                                                            |
 | `enable_language_server`             | `true`            | `boolean` Whether language servers should be used                                                                                                                            |
 | `ensure_final_newline_on_save`       | `true`            | `boolean` If missing, whether an empty newline will be added at the end of the file                                                                                          |
 | `lsp`                                | `null`            | See 'lsp' section below                                                                                                                                                      |
@@ -181,19 +182,97 @@ To override settings for a language, add an entry for that languages name to the
 
 For a complete list of languages you can override settings for see [Supported Languages](../languages/support-languages.md).
 
+## Font Features
+
+Zed supports a subset of OpenType features that can be enabled or disabled for a given buffer or terminal font:
+
+```json
+{
+  /** Contextual Alternates: Applies a second substitution feature based on a match of a character pattern within a context of surrounding patterns */
+  calt?: boolean;
+  /** Case-Sensitive Forms: Shifts various punctuation marks up to a position that works better with all-capital sequences */
+  case?: boolean;
+  /** Capital Spacing: Adjusts inter-glyph spacing for all-capital text */
+  cpsp?: boolean;
+  /** Fractions: Replaces figures separated by a slash with diagonal fractions */
+  frac?: boolean;
+  /** Standard Ligatures: Replaces a sequence of glyphs with a single glyph which is preferred for typographic purposes */
+  liga?: boolean;
+  /** Oldstyle Figures: Changes selected figures from the default or lining style to oldstyle form. */
+  onum?: boolean;
+  /** Ordinals: Replaces default alphabetic glyphs with the corresponding ordinal forms for use after figures */
+  ordn?: boolean;
+  /** Proportional Figures: Replaces figure glyphs set on uniform (tabular) widths with corresponding glyphs set on proportional widths */
+  pnum?: boolean;
+  /** Stylistic set 01 */
+  ss01?: boolean;
+  /** Stylistic set 02 */
+  ss02?: boolean;
+  /** Stylistic set 03 */
+  ss03?: boolean;
+  /** Stylistic set 04 */
+  ss04?: boolean;
+  /** Stylistic set 05 */
+  ss05?: boolean;
+  /** Stylistic set 06 */
+  ss06?: boolean;
+  /** Stylistic set 07 */
+  ss07?: boolean;
+  /** Stylistic set 08 */
+  ss08?: boolean;
+  /** Stylistic set 09 */
+  ss09?: boolean;
+  /** Stylistic set 10 */
+  ss10?: boolean;
+  /** Stylistic set 11 */
+  ss11?: boolean;
+  /** Stylistic set 12 */
+  ss12?: boolean;
+  /** Stylistic set 13 */
+  ss13?: boolean;
+  /** Stylistic set 14 */
+  ss14?: boolean;
+  /** Stylistic set 15 */
+  ss15?: boolean;
+  /** Stylistic set 16 */
+  ss16?: boolean;
+  /** Stylistic set 17 */
+  ss17?: boolean;
+  /** Stylistic set 18 */
+  ss18?: boolean;
+  /** Stylistic set 19 */
+  ss19?: boolean;
+  /** Stylistic set 20 */
+  ss20?: boolean;
+  /** Subscript: Replaces default glyphs with subscript glyphs */
+  subs?: boolean;
+  /** Superscript: Replaces default glyphs with superscript glyphs */
+  sups?: boolean;
+  /** Swash: Replaces default glyphs with swash glyphs for stylistic purposes */
+  swsh?: boolean;
+  /** Titling: Replaces default glyphs with titling glyphs for use in large-size settings */
+  titl?: boolean;
+  /** Tabular Figures: Replaces figure glyphs set on proportional widths with corresponding glyphs set on uniform (tabular) widths */
+  tnum?: boolean;
+  /** Slashed Zero: Replaces default zero with a slashed zero for better distinction between "0" and "O" */
+  zero?: boolean;
+}
+```
+
 ## Terminal
 
-| **Option**          | **Default**                   | **Description**                                                                                   |
-| ------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------- |
-| `shell`             | `"system"`                    | What shell to use on launch, see below.                                                           |
-| `working_directory` | `"current_project_directory"` | What working directory strategy to use, see below.                                                |
-| `blinking`          | `"terminal_controlled"`       | Set the terminal cursor blink, see below.                                                         |
-| `alternate_scroll`  | `"on"`                        | Default for the terminal alternate scroll mode, see below.                                        |
-| `option_as_meta`    | `true`                        | Re-interprets the option keys to act like a 'meta' key, like in Emacs.                            |
-| `copy_on_select`    | `false`                       | Whether or not selecting text in the terminal will automatically copy to the system clipboard.    |
-| `env`               | `{}`                          | See below.                                                                                        |
-| `font_size`         | not set                       | What font size to use for the terminal. When not set defaults to matching the editor's font size. |
-| `font_family`       | not set                       | What font to use for the terminal. When not set, defaults to matching the editor's font.          |
+| **Option**          | **Default**                   | **Description**                                                                                            |
+| ------------------- | ----------------------------- | -------------------------------------------------------------------------------------------------          |
+| `shell`             | `"system"`                    | What shell to use on launch, see below.                                                                    |
+| `working_directory` | `"current_project_directory"` | What working directory strategy to use, see below.                                                         |
+| `blinking`          | `"terminal_controlled"`       | Set the terminal cursor blink, see below.                                                                  |
+| `alternate_scroll`  | `"on"`                        | Default for the terminal alternate scroll mode, see below.                                                 |
+| `option_as_meta`    | `true`                        | Re-interprets the option keys to act like a 'meta' key, like in Emacs.                                     |
+| `copy_on_select`    | `false`                       | Whether or not selecting text in the terminal will automatically copy to the system clipboard.             |
+| `env`               | `{}`                          | See below.                                                                                                 |
+| `font_size`         | not set                       | What font size to use for the terminal. When not set defaults to matching the editor's font size.          |
+| `font_family`       | not set                       | What font to use for the terminal. When not set, defaults to matching the editor's font.                   |
+| `font_features`     | not set                       | What font features to use for the terminal. When not set, defaults to matching the editor's font features. |
 
 ### Terminal: Launch Shell
 
