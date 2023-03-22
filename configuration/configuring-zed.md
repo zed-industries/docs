@@ -186,7 +186,7 @@ For a complete list of languages you can override settings for see [Supported La
 
 Zed supports a subset of OpenType features that can be enabled or disabled for a given buffer or terminal font:
 
-```json
+```ts
 {
   /** Contextual Alternates: Applies a second substitution feature based on a match of a character pattern within a context of surrounding patterns */
   calt?: boolean;
