@@ -8,7 +8,7 @@ Zed can be configured via a simple JSON file located at `~/.config/zed/settings.
 
 ## Opening your settings file
 
-You can open `~/.config/zed/settings.json` via `cmd-,`, the command palette, or the `Zed > Preferences > Open Settings` application menu item.
+You can open `~/.config/zed/settings.json` via `cmd-,`, the command palette, or the `Zed > Settings > Open Settings` application menu item.
 
 You should see something that looks like this:
 

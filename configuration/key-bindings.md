@@ -10,7 +10,7 @@ We have a growing collection of pre-defined keymaps in our [keymaps repository](
 
 #### Accessing custom key bindings
 
-You can open `keymap.json` via `CMD + K, CMD + S`, the command palette, or the `Zed > Preferences > Open Key Bindings` application menu item.
+You can open `keymap.json` via `CMD + K, CMD + S`, the command palette, or the `Zed > Settings > Open Key Bindings` application menu item.
 
 #### Adding a custom key binding
 
