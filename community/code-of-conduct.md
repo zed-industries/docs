@@ -23,6 +23,5 @@ If you are experiencing any of the above in this community, notice that it is ha
 
 * [joseph@zed.dev](mailto:joseph@zed.dev)
 * [mikayla@zed.dev](mailto:mikayla@zed.dev)
-* [kay@zed.dev](mailto:kay@zed.dev)
 
 We will respond to you as quickly as possible, respect confidentiality requests, and take all good-faith reports of harassment seriously.
