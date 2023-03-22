@@ -2,10 +2,6 @@
 
 Welcome to Zed! We are excited to have you. Here is a jumping-off point to getting started.
 
-### Getting access
-
-For now you need to either get access from a round of waitlist invites or get invited by someone already using Zed. Once you have been invited you will be able to log in and download Zed.
-
 ### Download Zed
 
 If you have been invited to try Zed, head to Releases and download Zed. Once you do this the first time, the app will auto-update to keep you on the most recent version.
