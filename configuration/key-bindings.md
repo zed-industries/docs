@@ -221,7 +221,7 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Debug elements           | `Command Alt + I`             |
 | Follow next collaborator | `Control + Alt + Command + F` |
 
-#### Project panel
+#### Project Panel
 
 | **Command**             | **Default Shortcut** |
 | ----------------------- | -------------------- |
