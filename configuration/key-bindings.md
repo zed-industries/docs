@@ -199,20 +199,29 @@ There are some key bindings that can't be overridden; we are working on an issue
 
 #### Workspace
 
-| **Command**                 | **Default Shortcut**        |
-| --------------------------- | --------------------------- |
-| Deploy diagnostics          | `Command + Shift + M`       |
-| Deploy project search       | `Command + Shift + F`       |
-| Open keymap                 | `Command + K , Command + S` |
-| Save all workspace          | `Command + Alt + S`         |
-| Toggle command palette      | `Command + Shift + P`       |
-| Toggle contacts panel focus | `Command + Shift + C`       |
-| Toggle file finder          | `Command + P`               |
-| Toggle left sidebar         | `Command + B`               |
-| Toggle project panel focus  | `Command + Shift + E`       |
-| Toggle project symbols      | `Command + T`               |
-| Toggle right sidebar        | `Command + Shift + B`       |
-| Toggle theme selector       | `Command + K , Command + T` |
+| **Command**         | **Default Shortcut**       |
+| :------------------ | :------------------------- |
+| Activate pane       | `Command + 1`              |
+| Activate pane       | `Command + 2`              |
+| Activate pane       | `Command + 3`              |
+| Activate pane       | `Command + 4`              |
+| Activate pane       | `Command + 5`              |
+| Activate pane       | `Command + 6`              |
+| Activate pane       | `Command + 7`              |
+| Activate pane       | `Command + 8`              |
+| Activate pane       | `Command + 9`              |
+| Deploy              | `Command + Shift + M`      |
+| Focus dock          | `Shift + Escape`           |
+| New search          | `Command + Shift + F`      |
+| Open keymap         | `Command + K, Command + S` |
+| Save all            | `Command + Alt + S`        |
+| Toggle              | `Command + K, Command + T` |
+| Toggle              | `Command + T`              |
+| Toggle              | `Command + P`              |
+| Toggle              | `Command + Shift + P`      |
+| Toggle              | `Command + K, M`           |
+| Toggle focus        | `Command + Shift + E`      |
+| Toggle left sidebar | `Command + B`              |
 
 #### Following
 
