@@ -42,7 +42,7 @@ There are some key bindings that can't be overridden; we are working on an issue
 #### Editor
 
 | **Command**                      | **Default Shortcut**            |
-| -------------------------------- | ------------------------------- |
+| :------------------------------- | :------------------------------ |
 | Add selection above              | `Command + Alt + Up`            |
 | Add selection above              | `Command + Control + P`         |
 | Add selection below              | `Command + Alt + Down`          |
@@ -50,11 +50,13 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Backspace                        | `Backspace`                     |
 | Backspace                        | `Control + H`                   |
 | Backspace                        | `Shift + Backspace`             |
-| Backtab                          | `Shift + Tab`                   |
-| Close focused modal or toolbar   | `Esc`                           |
+| Cancel                           | `Escape`                        |
 | Confirm code action              | `Enter`                         |
 | Confirm completion               | `Enter`                         |
 | Confirm completion               | `Tab`                           |
+| Confirm rename                   | `Enter`                         |
+| Copy                             | `Command + C`                   |
+| Cut                              | `Command + X`                   |
 | Cut to end of line               | `Control + K`                   |
 | Delete                           | `Control + D`                   |
 | Delete                           | `Delete`                        |
@@ -63,34 +65,47 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Delete to end of line            | `Command + Delete`              |
 | Delete to next subword end       | `Control + Alt + D`             |
 | Delete to next subword end       | `Control + Alt + Delete`        |
+| Delete to next word end          | `Alt + D`                       |
+| Delete to next word end          | `Alt + Delete`                  |
 | Delete to previous subword start | `Control + Alt + Backspace`     |
 | Delete to previous subword start | `Control + Alt + H`             |
-| Delete to previous word end      | `Alt + Delete`                  |
 | Delete to previous word start    | `Alt + Backspace`               |
 | Delete to previous word start    | `Alt + H`                       |
-| Deploy buffer search             | `Command + E`                   |
-| Deploy buffer search             | `Command + F`                   |
+| Deploy                           | `Command + E`                   |
+| Deploy                           | `Command + F`                   |
 | Duplicate line                   | `Command + Shift + D`           |
 | Find all references              | `Alt + Shift + F12`             |
 | Fold                             | `Alt + Command + [`             |
+| Format                           | `Command + Shift + I`           |
 | Go to definition                 | `F12`                           |
-| Go to next diagnostic            | `F8`                            |
-| Go to previous diagnostic        | `Shift + F8`                    |
+| Go to diagnostic                 | `F8`                            |
+| Go to hunk                       | `Command + F8`                  |
+| Go to prev diagnostic            | `Shift + F8`                    |
+| Go to prev hunk                  | `Command + Shift + F8`          |
 | Go to type definition            | `Command + F12`                 |
+| Hover                            | `Command + K, Command + I`      |
 | Indent                           | `Command + ]`                   |
-| Input                            | `Alt + Enter`                   |
 | Move down                        | `Control + N`                   |
+| Move down                        | `Down`                          |
 | Move left                        | `Control + B`                   |
+| Move left                        | `Left`                          |
 | Move line down                   | `Control + Command + Down`      |
 | Move line up                     | `Control + Command + Up`        |
+| Move page down                   | `Control + V`                   |
+| Move page down                   | `Shift + Page Down`             |
+| Move page up                     | `Alt + V`                       |
+| Move page up                     | `Shift + Page Up`               |
 | Move right                       | `Control + F`                   |
+| Move right                       | `Right`                         |
 | Move to beginning                | `Command + Up`                  |
 | Move to beginning of line        | `Command + Left`                |
 | Move to beginning of line        | `Control + A`                   |
+| Move to beginning of line        | `Home`                          |
 | Move to enclosing bracket        | `Control + M`                   |
 | Move to end                      | `Command + Down`                |
 | Move to end of line              | `Command + Right`               |
 | Move to end of line              | `Control + E`                   |
+| Move to end of line              | `End`                           |
 | Move to next subword end         | `Control + Alt + F`             |
 | Move to next subword end         | `Control + Alt + Right`         |
 | Move to next word end            | `Alt + F`                       |
@@ -100,14 +115,21 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Move to previous word start      | `Alt + B`                       |
 | Move to previous word start      | `Alt + Left`                    |
 | Move up                          | `Control + P`                   |
-| New line                         | `Enter`                         |
-| New line below                   | `Command + Enter`               |
+| Move up                          | `Up`                            |
+| Newline                          | `Alt + Enter`                   |
+| Newline                          | `Enter`                         |
+| Newline below                    | `Command + Alt + Enter`         |
+| Newline below                    | `Command + Enter`               |
+| Next screen                      | `Control + L`                   |
 | Open excerpts                    | `Alt + Enter`                   |
 | Outdent                          | `Command + [`                   |
 | Page down                        | `Page Down`                     |
 | Page up                          | `Page Up`                       |
+| Paste                            | `Command + V`                   |
+| Redo                             | `Command + Shift + Z`           |
 | Redo selection                   | `Command + Shift + U`           |
 | Rename                           | `F2`                            |
+| Reveal in finder                 | `Alt + Command + R`             |
 | Select all                       | `Command + A`                   |
 | Select down                      | `Control + Shift + N`           |
 | Select down                      | `Shift + Down`                  |
@@ -118,14 +140,16 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Select next                      | `Command + D`                   |
 | Select next                      | `Command + K, Command + D`      |
 | Select right                     | `Control + Shift + F`           |
-| Select right                     | `Shift +Right`                  |
+| Select right                     | `Shift + Right`                 |
 | Select smaller syntax node       | `Alt + Down`                    |
-| Select to beginning              | `Shift + Up`                    |
+| Select to beginning              | `Command + Shift + Up`          |
 | Select to beginning of line      | `Command + Shift + Left`        |
 | Select to beginning of line      | `Control + Shift + A`           |
+| Select to beginning of line      | `Shift + Home`                  |
 | Select to end                    | `Command + Shift + Down`        |
 | Select to end of line            | `Command + Shift + Right`       |
 | Select to end of line            | `Control + Shift + E`           |
+| Select to end of line            | `Shift + End`                   |
 | Select to next subword end       | `Control + Alt + Shift + F`     |
 | Select to next subword end       | `Control + Alt + Shift + Right` |
 | Select to next word end          | `Alt + Shift + F`               |
@@ -136,16 +160,20 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Select to previous word start    | `Alt + Shift + Left`            |
 | Select up                        | `Control + Shift + P`           |
 | Select up                        | `Shift + Up`                    |
+| Show character palette           | `Control + Command + Space`     |
 | Show completions                 | `Control + Space`               |
 | Split selection into lines       | `Command + Shift + L`           |
 | Tab                              | `Tab`                           |
-| Toggle code actions              | `Command + -`                   |
+| Tab prev                         | `Shift + Tab`                   |
+| Toggle                           | `Command + Shift + O`           |
+| Toggle                           | `Control + G`                   |
+| Toggle code actions              | `Command + .`                   |
 | Toggle comments                  | `Command + /`                   |
-| Toggle go to line                | `Control + G`                   |
-| Toggle outline                   | `Command + Shift + O`           |
+| Toggle soft wrap                 | `Alt + Z`                       |
 | Transpose                        | `Control + T`                   |
+| Undo                             | `Command + Z`                   |
 | Undo selection                   | `Command + U`                   |
-| Unfold lines                     | `Alt + Command + J`             |
+| Unfold lines                     | `Alt + Command + ]`             |
 
 #### Pane
 
