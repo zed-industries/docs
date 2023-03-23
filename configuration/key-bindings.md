@@ -43,109 +43,109 @@ There are some key bindings that can't be overridden; we are working on an issue
 
 | **Command**                      | **Default Shortcut**            |
 | -------------------------------- | ------------------------------- |
-| Close focused modal or toolbar   | `Esc`                           |
-| Backspace                        | `Backspace`                     |
-| Backspace                        | `Shift + Backspace`             |
-| Backspace                        | `Control + H`                   |
-| Delete                           | `Delete`                        |
-| Delete                           | `Control + D`                   |
-| Tab                              | `Tab`                           |
-| Backtab                          | `Shift + Tab`                   |
-| Cut to end of line               | `Control + K`                   |
-| Transpose                        | `Control + T`                   |
-| Delete to beginning of line      | `Command + Backspace`           |
-| Delete to end of line            | `Command + Delete`              |
-| Delete to previous word start    | `Alt + Backspace`               |
-| Delete to previous word end      | `Alt + Delete`                  |
-| Delete to previous word start    | `Alt + H`                       |
-| Move up                          | `Control + P`                   |
-| Move down                        | `Control + N`                   |
-| Move left                        | `Control + B`                   |
-| Move right                       | `Control + F`                   |
-| Move to previous word start      | `Alt + Left`                    |
-| Move to previous word start      | `Alt + B`                       |
-| Move to next word end            | `Alt + Right`                   |
-| Move to next word end            | `Alt + F`                       |
-| Move to beginning of line        | `Command + Left`                |
-| Move to beginning of line        | `Control + A`                   |
-| Move to end of line              | `Command + Right`               |
-| Move to end of line              | `Control + E`                   |
-| Move to beginning                | `Command + Up`                  |
-| Move to end                      | `Command + Down`                |
-| Select up                        | `Shift + Up`                    |
-| Select up                        | `Control + Shift + P`           |
-| Select down                      | `Shift + Down`                  |
-| Select down                      | `Control + Shift + N`           |
-| Select left                      | `Shift + Left`                  |
-| Select left                      | `Control + Shift + B`           |
-| Select right                     | `Shift +Right`                  |
-| Select right                     | `Control + Shift + F`           |
-| Select to previous word start    | `Alt + Shift + Left`            |
-| Select to previous word start    | `Alt + Shift + B`               |
-| Select to next word end          | `Alt + Shift + Right`           |
-| Select to next word end          | `Alt + Shift + F`               |
-| Select to beginning              | `Shift + Up`                    |
-| Select to end                    | `Command + Shift + Down`        |
-| Select all                       | `Command + A`                   |
-| Select line                      | `Command + L`                   |
-| Select to beginning of line      | `Command + Shift + Left`        |
-| Select to beginning of line      | `Control + Shift + A`           |
-| Select to end of line            | `Command + Shift + Right`       |
-| Select to end of line            | `Control + Shift + E`           |
-| Page up                          | `Page Up`                       |
-| Page down                        | `Page Down`                     |
-| New line                         | `Enter`                         |
-| New line below                   | `Command + Enter`               |
-| Deploy buffer search             | `Command + F`                   |
-| Deploy buffer search             | `Command + E`                   |
-| Input                            | `Alt + Enter`                   |
-| Outdent                          | `Command + [`                   |
-| Indent                           | `Command + ]`                   |
 | Add selection above              | `Command + Alt + Up`            |
 | Add selection above              | `Command + Control + P`         |
 | Add selection below              | `Command + Alt + Down`          |
 | Add selection below              | `Command + Control + N`         |
-| Select next                      | `Command + D`                   |
-| Select next                      | `Command + K, Command + D`      |
-| Toggle comments                  | `Command + /`                   |
-| Select larger syntax node        | `Alt + Up`                      |
-| Select smaller syntax node       | `Alt + Down`                    |
-| Undo selection                   | `Command + U`                   |
-| Redo selection                   | `Command + Shift + U`           |
-| Go to next diagnostic            | `F8`                            |
-| Go to previous diagnostic        | `Shift + F8`                    |
-| Rename                           | `F2`                            |
-| Go to definition                 | `F12`                           |
-| Go to type definition            | `Command + F12`                 |
-| Find all references              | `Alt + Shift + F12`             |
-| Move to enclosing bracket        | `Control + M`                   |
-| Fold                             | `Alt + Command + [`             |
-| Unfold lines                     | `Alt + Command + J`             |
-| Show completions                 | `Control + Space`               |
-| Toggle code actions              | `Command + -`                   |
-| Toggle outline                   | `Command + Shift + O`           |
-| Toggle go to line                | `Control + G`                   |
-| Delete line                      | `Control + Shift + K`           |
-| Duplicate line                   | `Command + Shift + D`           |
-| Split selection into lines       | `Command + Shift + L`           |
-| Move line up                     | `Control + Command + Up`        |
-| Move line down                   | `Control + Command + Down`      |
-| Delete to previous subword start | `Control + Alt + Backspace`     |
-| Delete to previous subword start | `Control + Alt + H`             |
-| Delete to next subword end       | `Control + Alt + Delete`        |
-| Delete to next subword end       | `Control + Alt + D`             |
-| Move to previous subword start   | `Control + Alt + Left`          |
-| Move to previous subword start   | `Control + Alt + B`             |
-| Move to next subword end         | `Control + Alt + Right`         |
-| Move to next subword end         | `Control + Alt + F`             |
-| Select to previous subword start | `Control + Alt + Shift + Left`  |
-| Select to previous subword start | `Control + Alt + Shift + B`     |
-| Select to next subword end       | `Control + Alt + Shift + Right` |
-| Select to next subword end       | `Control + Alt + Shift + F`     |
+| Backspace                        | `Backspace`                     |
+| Backspace                        | `Control + H`                   |
+| Backspace                        | `Shift + Backspace`             |
+| Backtab                          | `Shift + Tab`                   |
+| Close focused modal or toolbar   | `Esc`                           |
+| Confirm code action              | `Enter`                         |
 | Confirm completion               | `Enter`                         |
 | Confirm completion               | `Tab`                           |
-| Confirm code action              | `Enter`                         |
+| Cut to end of line               | `Control + K`                   |
+| Delete                           | `Control + D`                   |
+| Delete                           | `Delete`                        |
+| Delete line                      | `Control + Shift + K`           |
+| Delete to beginning of line      | `Command + Backspace`           |
+| Delete to end of line            | `Command + Delete`              |
+| Delete to next subword end       | `Control + Alt + D`             |
+| Delete to next subword end       | `Control + Alt + Delete`        |
+| Delete to previous subword start | `Control + Alt + Backspace`     |
+| Delete to previous subword start | `Control + Alt + H`             |
+| Delete to previous word end      | `Alt + Delete`                  |
+| Delete to previous word start    | `Alt + Backspace`               |
+| Delete to previous word start    | `Alt + H`                       |
+| Deploy buffer search             | `Command + E`                   |
+| Deploy buffer search             | `Command + F`                   |
+| Duplicate line                   | `Command + Shift + D`           |
+| Find all references              | `Alt + Shift + F12`             |
+| Fold                             | `Alt + Command + [`             |
+| Go to definition                 | `F12`                           |
+| Go to next diagnostic            | `F8`                            |
+| Go to previous diagnostic        | `Shift + F8`                    |
+| Go to type definition            | `Command + F12`                 |
+| Indent                           | `Command + ]`                   |
+| Input                            | `Alt + Enter`                   |
+| Move down                        | `Control + N`                   |
+| Move left                        | `Control + B`                   |
+| Move line down                   | `Control + Command + Down`      |
+| Move line up                     | `Control + Command + Up`        |
+| Move right                       | `Control + F`                   |
+| Move to beginning                | `Command + Up`                  |
+| Move to beginning of line        | `Command + Left`                |
+| Move to beginning of line        | `Control + A`                   |
+| Move to enclosing bracket        | `Control + M`                   |
+| Move to end                      | `Command + Down`                |
+| Move to end of line              | `Command + Right`               |
+| Move to end of line              | `Control + E`                   |
+| Move to next subword end         | `Control + Alt + F`             |
+| Move to next subword end         | `Control + Alt + Right`         |
+| Move to next word end            | `Alt + F`                       |
+| Move to next word end            | `Alt + Right`                   |
+| Move to previous subword start   | `Control + Alt + B`             |
+| Move to previous subword start   | `Control + Alt + Left`          |
+| Move to previous word start      | `Alt + B`                       |
+| Move to previous word start      | `Alt + Left`                    |
+| Move up                          | `Control + P`                   |
+| New line                         | `Enter`                         |
+| New line below                   | `Command + Enter`               |
 | Open exerpts                     | `Alt + Enter`                   |
+| Outdent                          | `Command + [`                   |
+| Page down                        | `Page Down`                     |
+| Page up                          | `Page Up`                       |
+| Redo selection                   | `Command + Shift + U`           |
+| Rename                           | `F2`                            |
+| Select all                       | `Command + A`                   |
+| Select down                      | `Control + Shift + N`           |
+| Select down                      | `Shift + Down`                  |
+| Select larger syntax node        | `Alt + Up`                      |
+| Select left                      | `Control + Shift + B`           |
+| Select left                      | `Shift + Left`                  |
+| Select line                      | `Command + L`                   |
+| Select next                      | `Command + D`                   |
+| Select next                      | `Command + K, Command + D`      |
+| Select right                     | `Control + Shift + F`           |
+| Select right                     | `Shift +Right`                  |
+| Select smaller syntax node       | `Alt + Down`                    |
+| Select to beginning              | `Shift + Up`                    |
+| Select to beginning of line      | `Command + Shift + Left`        |
+| Select to beginning of line      | `Control + Shift + A`           |
+| Select to end                    | `Command + Shift + Down`        |
+| Select to end of line            | `Command + Shift + Right`       |
+| Select to end of line            | `Control + Shift + E`           |
+| Select to next subword end       | `Control + Alt + Shift + F`     |
+| Select to next subword end       | `Control + Alt + Shift + Right` |
+| Select to next word end          | `Alt + Shift + F`               |
+| Select to next word end          | `Alt + Shift + Right`           |
+| Select to previous subword start | `Control + Alt + Shift + B`     |
+| Select to previous subword start | `Control + Alt + Shift + Left`  |
+| Select to previous word start    | `Alt + Shift + B`               |
+| Select to previous word start    | `Alt + Shift + Left`            |
+| Select up                        | `Control + Shift + P`           |
+| Select up                        | `Shift + Up`                    |
+| Show completions                 | `Control + Space`               |
+| Split selection into lines       | `Command + Shift + L`           |
+| Tab                              | `Tab`                           |
+| Toggle code actions              | `Command + -`                   |
+| Toggle comments                  | `Command + /`                   |
+| Toggle go to line                | `Control + G`                   |
+| Toggle outline                   | `Command + Shift + O`           |
+| Transpose                        | `Control + T`                   |
+| Undo selection                   | `Command + U`                   |
+| Unfold lines                     | `Alt + Command + J`             |
 
 #### Pane
 
