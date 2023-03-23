@@ -218,8 +218,8 @@ There are some key bindings that can't be overridden; we are working on an issue
 
 | **Command**              | **Default Shortcut**          |
 | ------------------------ | ----------------------------- |
-| Follow next collaborator | `Control + Alt + Command + F` |
 | Debug elements           | `Command Alt + I`             |
+| Follow next collaborator | `Control + Alt + Command + F` |
 
 #### Project panel
 
