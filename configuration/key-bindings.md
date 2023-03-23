@@ -226,6 +226,6 @@ There are some key bindings that can't be overridden; we are working on an issue
 | **Command**             | **Default Shortcut** |
 | ----------------------- | -------------------- |
 | Collapse selected entry | `Left`               |
+| Delete                  | `Backspace`          |
 | Expand selected entry   | `Right`              |
 | Rename                  | `F2`                 |
-| Delete                  | `Backspace`          |
