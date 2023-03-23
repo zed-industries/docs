@@ -224,11 +224,16 @@ There are some key bindings that can't be overridden; we are working on an issue
 #### Project Panel
 
 | **Command**             | **Default Shortcut** |
-| ----------------------- | -------------------- |
+| :---------------------- | :------------------- |
 | Collapse selected entry | `Left`               |
+| Copy                    | `Command + C`        |
+| Copy path               | `Command + Alt + C`  |
+| Cut                     | `Command + X`        |
 | Delete                  | `Backspace`          |
 | Expand selected entry   | `Right`              |
+| Paste                   | `Command + V`        |
 | Rename                  | `F2`                 |
+| Reveal in finder        | `Alt + Command + R`  |
 
 #### Terminal
 
