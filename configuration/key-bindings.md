@@ -102,7 +102,7 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Move up                          | `Control + P`                   |
 | New line                         | `Enter`                         |
 | New line below                   | `Command + Enter`               |
-| Open exerpts                     | `Alt + Enter`                   |
+| Open excerpts                    | `Alt + Enter`                   |
 | Outdent                          | `Command + [`                   |
 | Page down                        | `Page Down`                     |
 | Page up                          | `Page Up`                       |
@@ -212,7 +212,7 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Toggle project panel focus  | `Command + Shift + E`       |
 | Toggle project symbols      | `Command + T`               |
 | Toggle right sidebar        | `Command + Shift + B`       |
-| Toggle theme selctor        | `Command + K , Command + T` |
+| Toggle theme selector       | `Command + K , Command + T` |
 
 #### Following
 
