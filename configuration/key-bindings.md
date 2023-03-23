@@ -235,6 +235,12 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Rename                  | `F2`                 |
 | Reveal in finder        | `Alt + Command + R`  |
 
+#### Project Search Bar
+
+| **Command**   | **Default Shortcut** |
+| :------------ | :------------------- |
+| Search in new | `Command + Enter`    |
+
 #### Terminal
 
 | **Command**                 | **Default Shortcut**        |
