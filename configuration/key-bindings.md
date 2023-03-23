@@ -201,18 +201,18 @@ There are some key bindings that can't be overridden; we are working on an issue
 
 | **Command**                 | **Default Shortcut**        |
 | --------------------------- | --------------------------- |
-| Deploy project search       | `Command + Shift + F`       |
-| Toggle theme selctor        | `Command + K , Command + T` |
-| Open keymap                 | `Command + K , Command + S` |
-| Toggle project symbols      | `Command + T`               |
-| Toggle file finder          | `Command + P`               |
-| Toggle command palette      | `Command + Shift + P`       |
 | Deploy diagnostics          | `Command + Shift + M`       |
+| Deploy project search       | `Command + Shift + F`       |
+| Open keymap                 | `Command + K , Command + S` |
 | Save all workspace          | `Command + Alt + S`         |
-| Toggle left sidebar         | `Command + B`               |
-| Toggle right sidebar        | `Command + Shift + B`       |
-| Toggle project panel focus  | `Command + Shift + E`       |
+| Toggle command palette      | `Command + Shift + P`       |
 | Toggle contacts panel focus | `Command + Shift + C`       |
+| Toggle file finder          | `Command + P`               |
+| Toggle left sidebar         | `Command + B`               |
+| Toggle project panel focus  | `Command + Shift + E`       |
+| Toggle project symbols      | `Command + T`               |
+| Toggle right sidebar        | `Command + Shift + B`       |
+| Toggle theme selctor        | `Command + K , Command + T` |
 
 #### Following
 
