@@ -151,41 +151,41 @@ There are some key bindings that can't be overridden; we are working on an issue
 
 | **Command**                 | **Default Shortcut**          |
 | --------------------------- | ----------------------------- |
-| Toggle focus                | `Command + F`                 |
-| Select next match           | `Command + G`                 |
-| Select previous match       | `Command + Shift + G`         |
+| Activate last tab           | `Control + 0`                 |
+| Activate next pane          | `Command + K , Command Right` |
+| Activate next tab           | `Alt + Command + Right`       |
+| Activate next tab           | `Command + Shift + }`         |
+| Activate previous pane      | `Command + K , Command Left`  |
+| Activate previous tab       | `Alt + Command + Left`        |
+| Activate previous tab       | `Command + Shift + {`         |
+| Activate the 1st pane       | `Command + 1`                 |
+| Activate the 1st tab        | `Control + 1`                 |
+| Activate the 2nd pane       | `Command + 2`                 |
+| Activate the 2nd tab        | `Control + 2`                 |
+| Activate the 3rd pane       | `Command + 3`                 |
+| Activate the 3rd tab        | `Control + 3`                 |
+| Activate the 4th pane       | `Command + 4`                 |
+| Activate the 4th tab        | `Control + 4`                 |
+| Activate the 5th pane       | `Command + 5`                 |
+| Activate the 5th tab        | `Control + 5`                 |
+| Activate the 6th pane       | `Command + 6`                 |
+| Activate the 6th tab        | `Control + 6`                 |
+| Activate the 7th pane       | `Command + 7`                 |
+| Activate the 7th tab        | `Control + 7`                 |
+| Activate the 8th pane       | `Command + 8`                 |
+| Activate the 8th tab        | `Control + 8`                 |
+| Activate the 9th pane       | `Command + 9`                 |
+| Activate the 9th tab        | `Control + 9`                 |
 | Go back                     | `Control + -`                 |
 | Go forward                  | `Shift + Control + _`         |
-| Toggle project search focus | `Command + Shift + F`         |
-| Activate previous pane      | `Command + K , Command Left`  |
-| Activate next pane          | `Command + K , Command Right` |
-| Activate the 1st pane       | `Command + 1`                 |
-| Activate the 2nd pane       | `Command + 2`                 |
-| Activate the 3rd pane       | `Command + 3`                 |
-| Activate the 4th pane       | `Command + 4`                 |
-| Activate the 5th pane       | `Command + 5`                 |
-| Activate the 6th pane       | `Command + 6`                 |
-| Activate the 7th pane       | `Command + 7`                 |
-| Activate the 8th pane       | `Command + 8`                 |
-| Activate the 9th pane       | `Command + 9`                 |
-| Activate previous tab       | `Command + Shift + {`         |
-| Activate previous tab       | `Alt + Command + Left`        |
-| Activate next tab           | `Command + Shift + }`         |
-| Activate next tab           | `Alt + Command + Right`       |
-| Activate last tab           | `Control + 0`                 |
-| Activate the 1st tab        | `Control + 1`                 |
-| Activate the 2nd tab        | `Control + 2`                 |
-| Activate the 3rd tab        | `Control + 3`                 |
-| Activate the 4th tab        | `Control + 4`                 |
-| Activate the 5th tab        | `Control + 5`                 |
-| Activate the 6th tab        | `Control + 6`                 |
-| Activate the 7th tab        | `Control + 7`                 |
-| Activate the 8th tab        | `Control + 8`                 |
-| Activate the 9th tab        | `Control + 9`                 |
-| Split pane up               | `Command + K , Up`            |
+| Select next match           | `Command + G`                 |
+| Select previous match       | `Command + Shift + G`         |
 | Split pane down             | `Command + K , Down`          |
 | Split pane left             | `Command + K , Left`          |
 | Split pane right            | `Command + K , Right`         |
+| Split pane up               | `Command + K , Up`            |
+| Toggle focus                | `Command + F`                 |
+| Toggle project search focus | `Command + Shift + F`         |
 
 #### Buffer Search Bar
 
