@@ -149,43 +149,35 @@ There are some key bindings that can't be overridden; we are working on an issue
 
 #### Pane
 
-| **Command**                 | **Default Shortcut**          |
-| --------------------------- | ----------------------------- |
-| Activate last tab           | `Control + 0`                 |
-| Activate next pane          | `Command + K , Command Right` |
-| Activate next tab           | `Alt + Command + Right`       |
-| Activate next tab           | `Command + Shift + }`         |
-| Activate previous pane      | `Command + K , Command Left`  |
-| Activate previous tab       | `Alt + Command + Left`        |
-| Activate previous tab       | `Command + Shift + {`         |
-| Activate the 1st pane       | `Command + 1`                 |
-| Activate the 1st tab        | `Control + 1`                 |
-| Activate the 2nd pane       | `Command + 2`                 |
-| Activate the 2nd tab        | `Control + 2`                 |
-| Activate the 3rd pane       | `Command + 3`                 |
-| Activate the 3rd tab        | `Control + 3`                 |
-| Activate the 4th pane       | `Command + 4`                 |
-| Activate the 4th tab        | `Control + 4`                 |
-| Activate the 5th pane       | `Command + 5`                 |
-| Activate the 5th tab        | `Control + 5`                 |
-| Activate the 6th pane       | `Command + 6`                 |
-| Activate the 6th tab        | `Control + 6`                 |
-| Activate the 7th pane       | `Command + 7`                 |
-| Activate the 7th tab        | `Control + 7`                 |
-| Activate the 8th pane       | `Command + 8`                 |
-| Activate the 8th tab        | `Control + 8`                 |
-| Activate the 9th pane       | `Command + 9`                 |
-| Activate the 9th tab        | `Control + 9`                 |
-| Go back                     | `Control + -`                 |
-| Go forward                  | `Shift + Control + _`         |
-| Select next match           | `Command + G`                 |
-| Select previous match       | `Command + Shift + G`         |
-| Split pane down             | `Command + K , Down`          |
-| Split pane left             | `Command + K , Left`          |
-| Split pane right            | `Command + K , Right`         |
-| Split pane up               | `Command + K , Up`            |
-| Toggle focus                | `Command + F`                 |
-| Toggle project search focus | `Command + Shift + F`         |
+| **Command**           | **Default Shortcut**  |
+| :-------------------- | :-------------------- |
+| Activate item         | `Control + 1`         |
+| Activate item         | `Control + 2`         |
+| Activate item         | `Control + 3`         |
+| Activate item         | `Control + 4`         |
+| Activate item         | `Control + 5`         |
+| Activate item         | `Control + 6`         |
+| Activate item         | `Control + 7`         |
+| Activate item         | `Control + 8`         |
+| Activate item         | `Control + 9`         |
+| Activate last item    | `Control + 0`         |
+| Add tab to dock       | `Command + Escape`    |
+| Go back               | `Control + `          |
+| Go forward            | `Control + _`         |
+| Hide dock             | `Shift + Escape`      |
+| Remove tab from dock  | `Command + Escape`    |
+| Reopen closed item    | `Command + Shift + T` |
+| Select next match     | `Command + G`         |
+| Select prev match     | `Command + Shift + G` |
+| Split down            | `Command + K, Down`   |
+| Split left            | `Command + K, Left`   |
+| Split right           | `Command + K, Right`  |
+| Split up              | `Command + K, Up`     |
+| Toggle case sensitive | `Alt + Command + C`   |
+| Toggle focus          | `Command + F`         |
+| Toggle focus          | `Command + Shift + F` |
+| Toggle regex          | `Alt + Command + R`   |
+| Toggle whole word     | `Alt + Command + W`   |
 
 #### Buffer Search Bar
 
