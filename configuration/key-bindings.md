@@ -181,13 +181,12 @@ There are some key bindings that can't be overridden; we are working on an issue
 
 #### Buffer Search Bar
 
-| **Command**           | **Default Shortcut** |
-| --------------------- | -------------------- |
-| Dismiss               | `Escape`             |
-| Focus editor          | `Command + F`        |
-| Search in new         | `Command + Enter`    |
-| Select next match     | `Enter`              |
-| Select previous match | `Shift + Enter`      |
+| **Command**       | **Default Shortcut** |
+| :---------------- | :------------------- |
+| Dismiss           | `Escape`             |
+| Focus editor      | `Tab`                |
+| Select next match | `Enter`              |
+| Select prev match | `Shift + Enter`      |
 
 #### Workspace
 
