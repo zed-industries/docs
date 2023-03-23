@@ -229,3 +229,17 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Delete                  | `Backspace`          |
 | Expand selected entry   | `Right`              |
 | Rename                  | `F2`                 |
+
+#### Terminal
+
+| **Command**                 | **Default Shortcut**        |
+| :-------------------------- | :-------------------------- |
+| Clear                       | `Command + K`               |
+| Copy                        | `Command + C`               |
+| Delete line                 | `Command + Backspace`       |
+| Move to beginning of line   | `Command + Left`            |
+| Move to end of line         | `Command + Right`           |
+| Move to next word end       | `Alt + Right`               |
+| Move to previous word start | `Alt + Left`                |
+| Paste                       | `Command + V`               |
+| Show character palette      | `Control + Command + Space` |
