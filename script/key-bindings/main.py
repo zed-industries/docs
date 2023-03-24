@@ -48,9 +48,17 @@ def main():
     with open(KEY_BINDINGS_TEMPLATE, "r") as key_bindings_document:
         markdown_content = key_bindings_document.read()
 
+    command_column_name = "**Command**"
+    target_column_name = "**Target**"
+    shortcut_column_name = "**Default Shortcut**"
+
     for context, column_data in markdown_data.items():
-        data = {"**Command**": column_data["commands"], "**Target**": column_data["targets"], "**Default Shortcut**": column_data["shortcuts"]}
-        dataframe = pandas.DataFrame(data).sort_values(by=["**Command**", "**Default Shortcut**"])
+        data = {
+            command_column_name: column_data["commands"],
+            target_column_name: column_data["targets"],
+            shortcut_column_name: column_data["shortcuts"]
+        }
+        dataframe = pandas.DataFrame(data).sort_values(by=[command_column_name, target_column_name])
         markdown_table = dataframe.to_markdown(tablefmt="github", index=False)
 
         marker = "_".join(context.lower().split())
