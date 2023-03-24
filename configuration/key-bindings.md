@@ -293,13 +293,6 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Toggle focus        | Project Panel     | `Command + Shift + E`      |
 | Toggle left sidebar | Workspace         | `Command + B`              |
 
-#### Following
-
-| **Command**              | **Default Shortcut**          |
-| ------------------------ | ----------------------------- |
-| Debug elements           | `Command Alt + I`             |
-| Follow next collaborator | `Control + Alt + Command + F` |
-
 #### Project Panel
 
 | **Command**             | **Target**    | **Default Shortcut**   |
