@@ -39,17 +39,6 @@ TERMINAL_CONTROL_CODE_MAP = {
     "\u001bf": "terminal::MoveToNextWordEnd",
 }
 
-# TODO: Add Following to the default.json file?
-# Add activate tab
-
-
-# Missing
-# | Toggle contacts panel focus | `Command + Shift + C`       |
-# Lose descriptions on open pane 1, 2, 3
-# Some items moved around, as they were in the wrong spot, so if something looks like it went away, check for it elsewhere in the file
-# Somethings changed for the worse "Backtab" -> Tab prev... this just means we need to adjust the naming of these in Zed to match what we want to see in docs
-# Open up issue for terminal commands
-
 def main():
     with open(DEFAULT_KEY_BINDINGS, "r") as keymap_file:
         keymap_data = commentjson.load(keymap_file)
