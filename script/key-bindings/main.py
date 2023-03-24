@@ -8,17 +8,14 @@ import commentjson
 import pandas
 
 SCRIPT = pathlib.Path(__file__)
-
 KEY_BINDINGS_SCRIPT_DIRECTORY = SCRIPT.parent
 SCRIPT_DIRECTORY = KEY_BINDINGS_SCRIPT_DIRECTORY.parent
-DOCS_ROOT = SCRIPT_DIRECTORY.parent
+DOCS_ROOT_DIRECTORY = SCRIPT_DIRECTORY.parent
 
+KEY_BINDINGS_DOCUMENT = DOCS_ROOT_DIRECTORY / "configuration" / "key-bindings.md"
 SOUCE_DIRECTORY = KEY_BINDINGS_SCRIPT_DIRECTORY / "source"
-
 KEY_BINDINGS_TEMPLATE = SOUCE_DIRECTORY / "key-bindings-template.md"
 DEFAULT_KEY_BINDINGS = SOUCE_DIRECTORY / "default.json"
-
-KEY_BINDINGS_DOCUMENT = DOCS_ROOT / "configuration" / "key-bindings.md"
 
 KEY_NAME_MAP = {
     "cmd": "command",
