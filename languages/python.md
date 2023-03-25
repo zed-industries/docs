@@ -55,3 +55,15 @@ A common tool for formatting python code is [Black](https://black.readthedocs.io
   }
 }
 ```
+
+#### Troubleshooting
+
+The Pyright language server is built in TypeScript and requires Node.js and npm to run. Therefore, ensure you have Node.js and npm globally accessible in case IntelliSense is missing your Python files or Zed logs report as the following.
+```
+Language server error: Python
+
+failed to run npm info
+
+Caused by:
+    No such file or directory (os error 2)
+```
