@@ -55,7 +55,7 @@ def main():
             target_column_name: column_data["targets"],
             shortcut_column_name: column_data["shortcuts"]
         }
-        dataframe = pandas.DataFrame(data).sort_values(by=[command_column_name, target_column_name])
+        dataframe = pandas.DataFrame(data).sort_values(by=[command_column_name, shortcut_column_name])
         markdown_table = dataframe.to_markdown(tablefmt="github", index=False)
 
         marker = "_".join(context.lower().split())
