@@ -47,6 +47,6 @@ We're on a mission to create a better way to write software, and this is just th
 
 By contributing to the Zed Docs you're joining a community of passionate developers and helping to shape the future of software development.
 
-You can join our [discord](https://discord.gg/SSD9eJrn6s) to discuss docs, zed, any anything else text editing.
+You can join our [Discord](https://discord.gg/SSD9eJrn6s) to discuss docs, Zed, and all things text editing.
 
 Thank you for your support, and happy coding!
