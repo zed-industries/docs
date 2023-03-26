@@ -16,7 +16,7 @@ We will not have separate UI and syntax themes the like Atom, but will provide a
 
 ## Philosophy
 
-The theme you use in your editor is deeply personal. Whether it is focused utterly on function, or just an aesthetic that you enjoy, ultimately, a theme should be a reflection of what is important to you.
+The theme you use in your editor is deeply personal. Whether it is focused on utterly on function, or just an asthetic that you enjoy, ultimately, a theme should be a reflection of what is imporant to you.
 
 We want to provide the right balance of good defaults and a powerful toolkit to make your editor your own.
 
@@ -35,51 +35,56 @@ We want you to have the flexibility to express yourself while ensuring the edito
 ### Accessibility in Themes
 
 {% hint style="warning" %}
-Many of Zed's themes currently are largely inaccessible. We are working on a new theme system that will address this, but in the meantime, we recommend using `One Dark` if you need a theme that is more accessible.
+Many of Zed's themes currently are largely inaccessible. We are working on a new theme system that will address this that will launch with Zed 1.0
 {% endhint %}
 
-_!!Under Construction!!_
+A11y (accessibility) in Zed will be a long project. Likely lasting far beyond 1.0. Due to GPUI being written from the ground up we don't have access to the same a11y features that Swift, Web-based apps or [insert other language] does.
+
+Making Zed accessible will be a join effort between things on the Zed side, and building out features in GPUI.
+
+For now, you can join this discussion to talk futher about a11y in Zed: [Accessibility (a11y) in Zed]
+(https://github.com/zed-industries/community/discussions/1297)
 
 ### Roadmap
 
-_Subject to extreme change. This is to provide some insight into our plans around themes, and the amount of work that needs to go into the system before user themes can be launched._
+_**Subject to change**. This is to provide some insight into our plans around themes, and the amount of work that needs to go into the system before user themes can be launched._
 
-_!!Under Construction!!_
-
-- [x] **Default Palette**: The set of colors that Zed pulls from to build its default themes and uses for semantic colors. This is almost entirely internal facing, but eventually we will expose it for use in custom themes.
-- [ ] **Syntax Overrides**: The ability to override syntax colors from a theme. This will ship before public beta to allow us to correctly color the One theme family, which will continue to be the default for now.
+- [x] **Default Palette**: The set of colors that Zed pulls from to build it's default themes and uses for semantic colors. This is almost entirely internal facing, but eventually we will expose it for use in custon themes.
+- [x] **Syntax Overrides**: The ability to override syntax colors from a theme. This will ship before public beta to allow us to correctly color the One theme family, which will continue to be the default for now.
 - [ ] **Theme 1.0 Specification**: The spec for a theme. This will include the ability to override syntax colors, as well as UI colors. We likely will define more features than we will build at the start, but this will allow us to add more features in the future without breaking existing themes.
 - [ ] **Port Existing Themes**: We will need to bring our existing themes up to spec. Some themes will likely be removed or replaced at this point.
-- [ ] **Token Driven UI**: This is internal facing. Use standard design tokens to style every element in the UI. This is a pretty big step that won't have a lot of immediately visible impact, but will allow us to build UI Overrides, and significantly improve the way we style every part of the app.
+- [ ] **Token Driven UI**: This is internal facing. Use standard design tokens to style every element in the UI. This is a pretty big step that won't have a lot of immediatly visible impact, but will allow us to build UI Overrides, and significantly improve the way we style every part of the app.
 - [ ] **Loading Themes**: The ability to load a theme from disk.
+
+*Future things*:
 - [ ] **UI Overrides**: Similar to syntax overrides, but for UI elements. This would, for example, allow you to change the color of the sidebar background or the label color of an active tab.
+- [] **UI surface for downlading themes**:
 
 ---
 
 ## Known issues
 
-- **Low contrast**: The current contrast beween elements from theme to theme ranges from ok to very low. This will be addressed when we ship the tokens portion of our new system (see roadmap below)
-- **The colors of errors/warnings/something else look wrong**: This comes from our internal lack of color overrides. Our semantic colors are not separated from syntax/accent colors currently, which leads to some themes having awkward error colors, etc. This will be tackled in the very near future.
-
-_!!Under Construction!!_
-
-## Non-theme related issues
-
+- **Low contrast**: The current contrast beween elements from theme to theme ranges from ok to very low. This will be addressed when we ship the tokens portion of our new system (see roadmap)
 - Spacing between groups and elements in places is insufficient or inconsistent
-
-_!!Under Construction!!_
+- Some elements have insufficent states, or do not have states at all.
 
 ---
 
 ### Theme FAQ
-
-_!!Under Construction!!_
 
 <details>
 
 <summary>Can I create my own theme?</summary>
 
 This is planned, though we don't have a timeline.
+
+</details>
+
+<details>
+
+<summary>Can you add [Feature] or [UI Element]?</summary>
+
+This isn't a theme issue. If you would like to discuss something you would like to see added you could start a [discussion](https://github.com/zed-industries/community/discussions).
 
 </details>
 
