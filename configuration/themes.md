@@ -46,7 +46,7 @@ _Subject to extreme change. This is to provide some insight into our plans aroun
 
 _!!Under Construction!!_
 
-- [x] **Default Palette**: The set of colors that Zed pulls from to build it's default themes and uses for semantic colors. This is almost entirely internal facing, but eventually we will expose it for use in custon themes.
+- [x] **Default Palette**: The set of colors that Zed pulls from to build its default themes and uses for semantic colors. This is almost entirely internal facing, but eventually we will expose it for use in custom themes.
 - [ ] **Syntax Overrides**: The ability to override syntax colors from a theme. This will ship before public beta to allow us to correctly color the One theme family, which will continue to be the default for now.
 - [ ] **Theme 1.0 Specification**: The spec for a theme. This will include the ability to override syntax colors, as well as UI colors. We likely will define more features than we will build at the start, but this will allow us to add more features in the future without breaking existing themes.
 - [ ] **Port Existing Themes**: We will need to bring our existing themes up to spec. Some themes will likely be removed or replaced at this point.
