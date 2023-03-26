@@ -1,3 +1,4 @@
 commentjson==0.9.0
 pandas==1.5.3
 tabulate==0.9.0
+ward==0.67.2b0

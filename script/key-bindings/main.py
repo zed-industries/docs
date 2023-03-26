@@ -45,26 +45,32 @@ def main():
     with open(KEY_BINDINGS_TEMPLATE, "r") as key_bindings_document:
         markdown_content = key_bindings_document.read()
 
-    command_column_name = "**Command**"
-    target_column_name = "**Target**"
-    shortcut_column_name = "**Default Shortcut**"
-
     for context, column_data in markdown_data.items():
-        data = {
-            command_column_name: column_data["commands"],
-            target_column_name: column_data["targets"],
-            shortcut_column_name: column_data["shortcuts"]
-        }
-        dataframe = pandas.DataFrame(data).sort_values(by=[command_column_name, shortcut_column_name])
-        markdown_table = dataframe.to_markdown(tablefmt="github", index=False)
+        markdown_table = create_markdown_table(column_data)
 
-        marker = "_".join(context.lower().split())
+        marker = "_".join(context.split())
         marker = f"insert_{marker}_bindings"
 
         markdown_content = markdown_content.replace(marker, markdown_table)
 
     with open(KEY_BINDINGS_DOCUMENT, "w") as key_bindings_document:
         key_bindings_document.write(markdown_content)
+
+
+def create_markdown_table(column_data):
+    command_column_name = "**Command**"
+    target_column_name = "**Target**"
+    shortcut_column_name = "**Default Shortcut**"
+
+    data = {
+        command_column_name: column_data["commands"],
+        target_column_name: column_data["targets"],
+        shortcut_column_name: column_data["shortcuts"]
+    }
+
+    dataframe = pandas.DataFrame(data).sort_values(by=[command_column_name, shortcut_column_name])
+
+    return dataframe.to_markdown(tablefmt="github", index=False)
 
 
 def get_markdown_data(keymap_data):
@@ -110,7 +116,7 @@ def get_readable_command_and_target(command, context):
         command, misc_text = command
 
         # Special cases for terminal
-        if context == "Terminal":
+        if context == "terminal":
             if command == "terminal::SendText":
                 command = TERMINAL_CONTROL_CODE_MAP[misc_text]
             elif command == "terminal::SendKeystroke":
@@ -134,7 +140,7 @@ def get_readable_shortcut(shortcut):
 
 
 def camel_case_to_readable(text):
-    return "".join([" " + character if character.isupper() else character for character in text]).strip()
+    return "".join([" " + character if character.isupper() else character for character in text]).lower().strip()
 
 
 def snake_case_to_readable(text):
