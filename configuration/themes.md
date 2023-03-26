@@ -3,7 +3,7 @@ description: Zed UI and syntax themes explained
 ---
 
 {% hint style="warning" %}
-This doc is out of date. An update will be coming shortly.
+This doc is out of date. We are currently working on an update as time permits. You can join the discussion on this pull request: https://github.com/zed-industries/docs/pull/16
 {% endhint %}
 
 # Themes
