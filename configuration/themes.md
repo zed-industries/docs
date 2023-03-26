@@ -59,7 +59,7 @@ _!!Under Construction!!_
 ## Known issues
 
 - **Low contrast**: The current contrast beween elements from theme to theme ranges from ok to very low. This will be addressed when we ship the tokens portion of our new system (see roadmap below)
-- **The colors of errors/warnings/something else look wrong**: This comes from our internal lack of (internal) color overrides. Our semantic colors are not separated from syntax/accent colors currently, which leads to leads to some themes having awkward error colors, etc. This will be tackled in the very near future.
+- **The colors of errors/warnings/something else look wrong**: This comes from our internal lack of color overrides. Our semantic colors are not separated from syntax/accent colors currently, which leads to some themes having awkward error colors, etc. This will be tackled in the very near future.
 
 _!!Under Construction!!_
 
