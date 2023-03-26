@@ -16,7 +16,7 @@ We will not have separate UI and syntax themes the like Atom, but will provide a
 
 ## Philosophy
 
-The theme you use in your editor is deeply personal. Whether it is focused on utterly on function, or just an asthetic that you enjoy, ultimately, a theme should be a reflection of what is imporant to you.
+The theme you use in your editor is deeply personal. Whether it is focused utterly on function, or just an aesthetic that you enjoy, ultimately, a theme should be a reflection of what is important to you.
 
 We want to provide the right balance of good defaults and a powerful toolkit to make your editor your own.
 
