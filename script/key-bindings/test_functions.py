@@ -4,10 +4,11 @@ import textwrap
 from ward import test
 
 from main import (
-    create_markdown_table,
-    get_readable_command_and_target,
-    get_markdown_data,
     camel_case_to_readable,
+    create_markdown_table,
+    create_markdown_tables,
+    get_markdown_data,
+    get_readable_command_and_target,
     get_readable_shortcut,
     snake_case_to_readable
 )
@@ -75,32 +76,62 @@ def _():
     assert get_markdown_data(keymap_data) == markdown_data
 
 
-@test("test create_markdown_table")
+@test("test get_markdown_tables")
 def _():
-    column_data = {
-        "commands": [
-            "Cut to end of line",
-            "Transpose",
-            "Delete to beginning of line"
-        ],
-        "targets": [
-            "Editor",
-            "Editor",
-            "Editor"
-        ],
-        "shortcuts": [
-            "`Control + K`",
-            "`Control + T`",
-            "`Command + Backspace`"
-        ],
-    }
+    keymap_data = [
+        {
+            "bindings": {
+                "pagedown": "menu::SelectLast",
+                "shift-pagedown": "menu::SelectFirst",
+                "down": "menu::SelectNext",
+            }
+        },
+        {
+            "context": "Editor",
+            "bindings": {
+                "ctrl-l": "editor::NextScreen",
+                "ctrl-f": "editor::MoveRight",
+                "alt-left": "editor::MoveToPreviousWordStart",
+            }
+        },
+        {
+            "context": "Pane",
+            "bindings": {
+                "ctrl--": "pane::GoBack",
+                "ctrl-_": "pane::GoForward",
+                "ctrl-0": "pane::ActivateLastItem",
+            }
+        },
+    ]
 
-    markdown_table = """
-        | **Command**                 | **Target**   | **Default Shortcut**   |
-        |-----------------------------|--------------|------------------------|
-        | Cut to end of line          | Editor       | `Control + K`          |
-        | Delete to beginning of line | Editor       | `Command + Backspace`  |
-        | Transpose                   | Editor       | `Control + T`          |
+    global_markdown_table = """
+        | **Command**   | **Target**   | **Default Shortcut**   |
+        |---------------|--------------|------------------------|
+        | Select first  | Menu         | `Shift + Page Down`    |
+        | Select last   | Menu         | `Page Down`            |
+        | Select next   | Menu         | `Down`                 |
     """
 
-    assert create_markdown_table(column_data) == textwrap.dedent(markdown_table).strip()
+    editor_markdown_table = """
+        | **Command**                 | **Target**   | **Default Shortcut**   |
+        |-----------------------------|--------------|------------------------|
+        | Move right                  | Editor       | `Control + F`          |
+        | Move to previous word start | Editor       | `Alt + Left`           |
+        | Next screen                 | Editor       | `Control + L`          |
+    """
+
+    pane_markdown_table = """
+        | **Command**        | **Target**   | **Default Shortcut**   |
+        |--------------------|--------------|------------------------|
+        | Activate last item | Pane         | `Control + 0`          |
+        | Go back            | Pane         | `Control + `           |
+        | Go forward         | Pane         | `Control + _`          |
+    """
+
+    markdown_tables = {
+        "insert_global_bindings": textwrap.dedent(global_markdown_table).strip(),
+        "insert_editor_bindings": textwrap.dedent(editor_markdown_table).strip(),
+        "insert_pane_bindings": textwrap.dedent(pane_markdown_table).strip(),
+    }
+
+    assert create_markdown_tables(keymap_data) == markdown_tables

@@ -40,10 +40,21 @@ def main():
     with open(DEFAULT_KEY_BINDINGS, "r") as keymap_file:
         keymap_data = commentjson.load(keymap_file)
 
-    markdown_data = get_markdown_data(keymap_data)
+    markdown_tables = create_markdown_tables(keymap_data)
 
     with open(KEY_BINDINGS_TEMPLATE, "r") as key_bindings_document:
         markdown_content = key_bindings_document.read()
+
+    for marker, markdown_table in markdown_tables.items():
+        markdown_content = markdown_content.replace(marker, markdown_table)
+
+    with open(KEY_BINDINGS_DOCUMENT, "w") as key_bindings_document:
+        key_bindings_document.write(markdown_content)
+
+
+def create_markdown_tables(keymap_data):
+    markdown_data = get_markdown_data(keymap_data)
+    markdown_tables = {}
 
     for context, column_data in markdown_data.items():
         markdown_table = create_markdown_table(column_data)
@@ -51,11 +62,9 @@ def main():
         marker = "_".join(context.split())
         marker = f"insert_{marker}_bindings"
 
-        markdown_content = markdown_content.replace(marker, markdown_table)
+        markdown_tables[marker] = markdown_table
 
-    with open(KEY_BINDINGS_DOCUMENT, "w") as key_bindings_document:
-        key_bindings_document.write(markdown_content)
-
+    return markdown_tables
 
 def create_markdown_table(column_data):
     command_column_name = "**Command**"
