@@ -77,9 +77,9 @@ def get_markdown_table(column_data):
         shortcut_column_name: column_data["shortcuts"]
     }
 
-    dataframe = pandas.DataFrame(data).sort_values(by=[command_column_name, shortcut_column_name])
+    data_frame = pandas.DataFrame(data).sort_values(by=[command_column_name, shortcut_column_name])
 
-    return dataframe.to_markdown(tablefmt="github", index=False)
+    return data_frame.to_markdown(tablefmt="github", index=False)
 
 
 def get_markdown_data(keymap_data):
