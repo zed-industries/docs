@@ -58,7 +58,7 @@ _**Subject to change**. This is to provide some insight into our plans around th
 
 *Future things*:
 - [ ] **UI Overrides**: Similar to syntax overrides, but for UI elements. This would, for example, allow you to change the color of the sidebar background or the label color of an active tab.
-- [] **UI surface for downlading themes**:
+- [ ] **UI surface for downlading themes**:
 
 ---
 
