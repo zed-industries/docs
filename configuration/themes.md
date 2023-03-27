@@ -42,7 +42,7 @@ A11y (accessibility) in Zed will be a long project. Likely lasting far beyond 1.
 
 Making Zed accessible will be a joint effort between things on the Zed side, and building out features in GPUI.
 
-For now, you can join this discussion to talk futher about a11y in Zed: [Accessibility (a11y) in Zed]
+For now, you can join this discussion to talk further about a11y in Zed: [Accessibility (a11y) in Zed]
 (https://github.com/zed-industries/community/discussions/1297)
 
 ### Roadmap
