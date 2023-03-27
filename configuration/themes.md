@@ -35,7 +35,7 @@ We want you to have the flexibility to express yourself while ensuring the edito
 ### Accessibility in Themes
 
 {% hint style="warning" %}
-Many of Zed's themes currently are largely inaccessible. We are working on a new theme system that will address this that will launch with Zed 1.0
+Currently, many of Zed's themes are largely inaccessible. We are working on a new accessible theme system, which will launch with Zed 1.0
 {% endhint %}
 
 A11y (accessibility) in Zed will be a long project. Likely lasting far beyond 1.0. Due to GPUI being written from the ground up we don't have access to the same a11y features that Swift, Web-based apps or [insert other language] does.
