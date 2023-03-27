@@ -5,9 +5,9 @@ from ward import test
 
 from main import (
     camel_case_to_readable,
-    create_markdown_table,
-    create_markdown_tables,
     get_markdown_data,
+    get_markdown_table,
+    get_markdown_tables,
     get_readable_command_and_target,
     get_readable_shortcut,
     snake_case_to_readable
@@ -134,4 +134,4 @@ def _():
         "insert_pane_bindings": textwrap.dedent(pane_markdown_table).strip(),
     }
 
-    assert create_markdown_tables(keymap_data) == markdown_tables
+    assert get_markdown_tables(keymap_data) == markdown_tables

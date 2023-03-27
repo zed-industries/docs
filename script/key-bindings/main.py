@@ -40,7 +40,7 @@ def main():
     with open(DEFAULT_KEY_BINDINGS, "r") as keymap_file:
         keymap_data = commentjson.load(keymap_file)
 
-    markdown_tables = create_markdown_tables(keymap_data)
+    markdown_tables = get_markdown_tables(keymap_data)
 
     with open(KEY_BINDINGS_TEMPLATE, "r") as key_bindings_document:
         markdown_content = key_bindings_document.read()
@@ -52,21 +52,21 @@ def main():
         key_bindings_document.write(markdown_content)
 
 
-def create_markdown_tables(keymap_data):
+def get_markdown_tables(keymap_data):
     markdown_data = get_markdown_data(keymap_data)
     markdown_tables = {}
 
     for context, column_data in markdown_data.items():
-        markdown_table = create_markdown_table(column_data)
+        markdown_table = get_markdown_table(column_data)
 
         marker = "_".join(context.split())
-        marker = f"insert_{marker}_bindings"
+        marker = f"{{{{ {marker}_bindings }}}}"
 
         markdown_tables[marker] = markdown_table
 
     return markdown_tables
 
-def create_markdown_table(column_data):
+def get_markdown_table(column_data):
     command_column_name = "**Command**"
     target_column_name = "**Target**"
     shortcut_column_name = "**Default Shortcut**"
