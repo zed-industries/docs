@@ -8,7 +8,7 @@ Zed can be configured via a simple JSON file located at `~/.config/zed/settings.
 
 ## Opening your settings file
 
-You can open `~/.config/zed/settings.json` via `cmd-,`, the command palette, or the `Zed > Preferences > Open Settings` application menu item.
+You can open `~/.config/zed/settings.json` via `cmd-,`, the command palette, or the `Zed > Settings > Open Settings` application menu item.
 
 You should see something that looks like this:
 
@@ -24,28 +24,29 @@ Here are all the currently available settings.
 
 ## Available settings
 
-| **Option**                   | **Default**       | **Description**                                                                                                                                                              |
-| ---------------------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `autosave`                   | `off`             | See 'autosave' section below                                                                                                                                                 |
-| `buffer_font_family`         | `zed-mono`        | `string` Either `zed-mono` or the name of an installed Font family                                                                                                           |
-| `buffer_font_size`           | `16`              | `number` The editor font size                                                                                                                                                |
-| `enable_language_server`     | `true`            | `boolean` Whether language servers should be used                                                                                                                            |
-| `lsp`                        | `null`            | See 'lsp' section below                                                                                                                                                      |
-| `format_on_save`             | `on`              | See 'format on save' section below                                                                                                                                           |
-| `formatter`                  | `language_server` | See 'formatter' section below                                                                                                                                                |
-| `hard_tabs`                  | `false`           | `boolean` Indent using tabs instead of spaces                                                                                                                                |
-| `hover_popover_enabled`      | `true`            | `boolean` Enables triggering the hover popover with the mouse                                                                                                                |
-| `show_completions_on_input`  | `true`            | `boolean` Causes the completion menu to show in editors while typing                                                                                                         |
-| `language_overrides`         | `null`            | See 'overrides' section below                                                                                                                                                |
-| `tab_size`                   | `4`               | The number of columns occupied by a tab                                                                                                                                      |
-| `theme`                      | `One Dark`        | `string` The name of a Zed theme                                                                                                                                             |
-| `preferred_line_length`      | `80`              | The number of characters at which to soft wrap lines, when soft wrap is enabled                                                                                              |
-| `projects_online_by_default` | `true`            | `boolean` Project goes online when opened.                                                                                                                                   |
-| `soft_wrap`                  | `editor_width`    | `editor_width`, `none`, `preferred_line_length`                                                                                                                              |
-| `active_pane_magnification`  | `1.0`             | Scale by which to zoom the active pane. When set to `1.0`, the active pane has the same size as others, but when set to a larger value, the active pane takes up more space. |
-| `vim_mode`                   | `false`           | `boolean` Enables Vim mode (WIP)                                                                                                                                             |
-| `terminal`                   | See below         | See 'Terminal' section below                                                                                                                                                 |
-| `experiments`                | `{}`              | See the [Experimental Features](/docs/configuration/experimental-features) page                                                                                              |
+| **Option**                           | **Default**       | **Description**                                                                                                                                                              |
+| ------------------------------------ | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `autosave`                           | `off`             | See 'autosave' section below                                                                                                                                                 |
+| `buffer_font_family`                 | `zed-mono`        | `string` Either `zed-mono` or the name of an installed Font family                                                                                                           |
+| `buffer_font_size`                   | `16`              | `number` The editor font size                                                                                                                                                |
+| `enable_language_server`             | `true`            | `boolean` Whether language servers should be used                                                                                                                            |
+| `ensure_final_newline_on_save`       | `true`            | `boolean` If missing, whether an empty newline will be added at the end of the file                                                                                          |
+| `lsp`                                | `null`            | See 'lsp' section below                                                                                                                                                      |
+| `format_on_save`                     | `on`              | See 'format on save' section below                                                                                                                                           |
+| `formatter`                          | `language_server` | See 'formatter' section below                                                                                                                                                |
+| `hard_tabs`                          | `false`           | `boolean` Indent using tabs instead of spaces                                                                                                                                |
+| `hover_popover_enabled`              | `true`            | `boolean` Enables triggering the hover popover with the mouse                                                                                                                |
+| `show_completions_on_input`          | `true`            | `boolean` Causes the completion menu to show in editors while typing                                                                                                         |
+| `language_overrides`                 | `null`            | See 'overrides' section below                                                                                                                                                |
+| `tab_size`                           | `4`               | The number of columns occupied by a tab                                                                                                                                      |
+| `theme`                              | `One Dark`        | `string` The name of a Zed theme                                                                                                                                             |
+| `preferred_line_length`              | `80`              | The number of characters at which to soft wrap lines, when soft wrap is enabled                                                                                              |
+| `projects_online_by_default`         | `true`            | `boolean` Project goes online when opened.                                                                                                                                   |
+| `remove_trailing_whitespace_on_save` | `true`            | `boolean` Whether all trailing whitespace will be removed on each line                                                                                                       |
+| `soft_wrap`                          | `editor_width`    | `editor_width`, `none`, `preferred_line_length`                                                                                                                              |
+| `active_pane_magnification`          | `1.0`             | Scale by which to zoom the active pane. When set to `1.0`, the active pane has the same size as others, but when set to a larger value, the active pane takes up more space. |
+| `vim_mode`                           | `false`           | `boolean` Enables Vim mode (WIP)                                                                                                                                             |
+| `terminal`                           | See below         | See 'Terminal' section below                                                                                                                                                 |
 
 ## Autosave
 
@@ -178,7 +179,7 @@ To override settings for a language, add an entry for that languages name to the
 }
 ```
 
-For a complete list of languages you can override settings for see [Supported Languages](/docs/languages/supported-languages).
+For a complete list of languages you can override settings for see [Supported Languages](../languages/support-languages.md).
 
 ## Terminal
 
@@ -275,10 +276,10 @@ May take 2 values:
    "alternate_scroll": "off",
    ```
 
-### Terminal: Enviroment Variables
+### Terminal: Environment Variables
 
 Any key-value pairs added to this object will be added to the terminal's
-enviroment. Keys must be unique, use `:` to seperate multiple values in a single variable:
+environment. Keys must be unique, use `:` to separate multiple values in a single variable:
 
 ```json
 "env": {

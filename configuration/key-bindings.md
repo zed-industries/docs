@@ -4,13 +4,13 @@ Zed can be configured via a simple JSON file located at `~/.config/zed/keymap.js
 
 ### Predefined keymaps
 
-We have a growing collection of pre-defined keymaps in our [keymaps respository](https://github.com/zed-industries/keymaps).
+We have a growing collection of pre-defined keymaps in our [keymaps repository](https://github.com/zed-industries/keymaps).
 
 ### Custom key bindings
 
 #### Accessing custom key bindings
 
-You can open `keymap.json` via `CMD + K, CMD + S`, the command palette, or the `Zed > Preferences > Open Key Bindings` application menu item.
+You can open `keymap.json` via `CMD + K, CMD + S`, the command palette, or the `Zed > Settings > Open Key Bindings` application menu item.
 
 #### Adding a custom key binding
 
@@ -203,7 +203,7 @@ There are some key bindings that can't be overridden; we are working on an issue
 | --------------------------- | ---------------------------- |
 | Deploy project search       | `Command + Shift + F`        |
 | Toggle theme selctor        | `Command + K , Command + T`  |
-| Open key map                | `Command + K , Command + S`  |
+| Open keymap                 | `Command + K , Command + S`  |
 | Toggle project symbols      | `Command + T`                |
 | Toggle file finder          | `Command + P`                |
 | Toggle command palette      | `Command + Shift + P`        |

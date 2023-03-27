@@ -10,13 +10,12 @@
 ## 🟡 Configuration
 
 * [Configuring Zed](configuration/configuring-zed.md)
-* [Experimental features](configuration/experimental-features.md)
 * [Key bindings](configuration/key-bindings.md)
 * [Themes](configuration/themes.md)
 
 ## 🟢 Languages
 
-* [Support languages](languages/support-languages.md)
+* [Supported languages](languages/supported-languages.md)
 * [JavaScript](languages/javascript.md)
 * [Python](languages/python.md)
 * [Ruby](languages/ruby.md)

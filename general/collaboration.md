@@ -10,16 +10,6 @@ description: >-
 
 You can add an existing Zed user as a contact from the collaboration menu, deployed from the plus icon in the upper right corner of the window or by pressing `cmd-shift-c` and then clicking the add icon button to the right of the search box.
 
-#### Adding a contact
-
-<figure><img src="../.gitbook/assets/add-contacts.png" alt=""><figcaption><p>Adding a contact</p></figcaption></figure>
-
-You can invite new Zed users if you have invites by copying an invite link at the bottom of the menu.
-
-<figure><img src="../.gitbook/assets/invite-link.png" alt=""><figcaption><p>Copy an invite link to share the joy with your friends</p></figcaption></figure>
-
-We're limiting invites in order to grow our userbase at a sustainable pace, but contact us at `hi@zed.dev` with your GitHub login if you're an existing user and need invites. When someone joins via your invite link, they're automatically added as a contact.
-
 ### Sharing a project
 
 <figure><img src="../.gitbook/assets/contacts.png" alt=""><figcaption><p>Contacts list</p></figcaption></figure>
