@@ -129,9 +129,9 @@ def _():
     """
 
     markdown_tables = {
-        "insert_global_bindings": textwrap.dedent(global_markdown_table).strip(),
-        "insert_editor_bindings": textwrap.dedent(editor_markdown_table).strip(),
-        "insert_pane_bindings": textwrap.dedent(pane_markdown_table).strip(),
+        "{{ global_bindings }}": textwrap.dedent(global_markdown_table).strip(),
+        "{{ editor_bindings }}": textwrap.dedent(editor_markdown_table).strip(),
+        "{{ pane_bindings }}": textwrap.dedent(pane_markdown_table).strip(),
     }
 
     assert get_markdown_tables(keymap_data) == markdown_tables

@@ -41,32 +41,32 @@ There are some key bindings that can't be overridden; we are working on an issue
 
 #### Global
 
-insert_global_bindings
+{{ global_bindings }}
 
 #### Editor
 
-insert_editor_bindings
+{{ editor_bindings }}
 
 #### Pane
 
-insert_pane_bindings
+{{ pane_bindings }}
 
 #### Buffer Search Bar
 
-insert_buffer_search_bar_bindings
+{{ buffer_search_bar_bindings }}
 
 #### Workspace
 
-insert_workspace_bindings
+{{ workspace_bindings }}
 
 #### Project Panel
 
-insert_project_panel_bindings
+{{ project_panel_bindings }}
 
 #### Project Search Bar
 
-insert_project_search_bar_bindings
+{{ project_search_bar_bindings }}
 
 #### Terminal
 
-insert_terminal_bindings
+{{ terminal_bindings }}
