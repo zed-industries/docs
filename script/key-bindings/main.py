@@ -53,10 +53,10 @@ def main():
 
 
 def get_markdown_tables(keymap_data):
-    markdown_data = get_markdown_data(keymap_data)
+    markdown_column_data = get_markdown_column_data(keymap_data)
     markdown_tables = {}
 
-    for context, column_data in markdown_data.items():
+    for context, column_data in markdown_column_data.items():
         markdown_table = get_markdown_table(column_data)
 
         marker = "_".join(context.split())
@@ -82,7 +82,7 @@ def get_markdown_table(column_data):
     return data_frame.to_markdown(tablefmt="github", index=False)
 
 
-def get_markdown_data(keymap_data):
+def get_markdown_column_data(keymap_data):
     markdown_data = collections.defaultdict(lambda: collections.defaultdict(list))
 
     for binding_dictionary in keymap_data:

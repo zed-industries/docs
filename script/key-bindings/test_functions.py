@@ -5,7 +5,7 @@ from ward import test
 
 from main import (
     camel_case_to_readable,
-    get_markdown_data,
+    get_markdown_column_data,
     get_markdown_table,
     get_markdown_tables,
     get_readable_command_and_target,
@@ -73,7 +73,7 @@ def _():
             ],
         }
     }
-    assert get_markdown_data(keymap_data) == markdown_data
+    assert get_markdown_column_data(keymap_data) == markdown_data
 
 
 @test("test get_markdown_tables")
