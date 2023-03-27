@@ -40,7 +40,7 @@ Currently, many of Zed's themes are largely inaccessible. We are working on a ne
 
 A11y (accessibility) in Zed will be a long project. Likely lasting far beyond 1.0. Due to GPUI being written from the ground up we don't have access to the same a11y features that Swift, Web-based apps or [insert other language] does.
 
-Making Zed accessible will be a join effort between things on the Zed side, and building out features in GPUI.
+Making Zed accessible will be a joint effort between things on the Zed side, and building out features in GPUI.
 
 For now, you can join this discussion to talk futher about a11y in Zed: [Accessibility (a11y) in Zed]
 (https://github.com/zed-industries/community/discussions/1297)
