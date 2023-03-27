@@ -66,7 +66,7 @@ _**Subject to change**. This is to provide some insight into our plans around th
 
 - **Low contrast**: The current contrast beween elements from theme to theme ranges from ok to very low. This will be addressed when we ship the tokens portion of our new system (see roadmap)
 - Spacing between groups and elements in places is insufficient or inconsistent
-- Some elements have insufficent states, or do not have states at all.
+- Some elements have insufficient states, or do not have states at all.
 
 ---
 
