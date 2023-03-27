@@ -16,7 +16,7 @@ We will not have separate UI and syntax themes the like Atom, but will provide a
 
 ## Philosophy
 
-The theme you use in your editor is deeply personal. Whether it is focused on utterly on function, or just an asthetic that you enjoy, ultimately, a theme should be a reflection of what is imporant to you.
+The theme you use in your editor is deeply personal. Whether it is focused utterly on function, or just an asthetic that you enjoy, ultimately, a theme should be a reflection of what is imporant to you.
 
 We want to provide the right balance of good defaults and a powerful toolkit to make your editor your own.
 
@@ -49,7 +49,7 @@ For now, you can join this discussion to talk further about a11y in Zed: [Access
 
 _**Subject to change**. This is to provide some insight into our plans around themes, and the amount of work that needs to go into the system before user themes can be launched._
 
-- [x] **Default Palette**: The set of colors that Zed pulls from to build it's default themes and uses for semantic colors. This is almost entirely internal facing, but eventually we will expose it for use in custon themes.
+- [x] **Default Palette**: The set of colors that Zed pulls from to build its default themes and uses for semantic colors. This is almost entirely internal facing, but eventually we will expose it for use in custon themes.
 - [x] **Syntax Overrides**: The ability to override syntax colors from a theme. This will ship before public beta to allow us to correctly color the One theme family, which will continue to be the default for now.
 - [ ] **Theme 1.0 Specification**: The spec for a theme. This will include the ability to override syntax colors, as well as UI colors. We likely will define more features than we will build at the start, but this will allow us to add more features in the future without breaking existing themes.
 - [ ] **Port Existing Themes**: We will need to bring our existing themes up to spec. Some themes will likely be removed or replaced at this point.
