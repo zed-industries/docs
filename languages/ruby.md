@@ -1,8 +1,7 @@
 # Ruby
 
-### Editing Ruby in Zed
-
-When editing Ruby, Zed provides code intelligence using the [Solargraph](https://solargraph.org/) language server.
+- Tree Sitter: [tree-sitter-ruby](https://github.com/tree-sitter/tree-sitter-ruby)
+- Language Server: [solargraph](https://github.com/castwide/solargraph)
 
 ### Setup
 
