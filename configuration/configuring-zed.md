@@ -8,7 +8,7 @@ Zed can be configured via a simple JSON file located at `~/.config/zed/settings.
 
 ## Opening your settings file
 
-You can open `~/.config/zed/settings.json` via `cmd-,`, the command palette, or the `Zed > Preferences > Open Settings` application menu item.
+You can open `~/.config/zed/settings.json` via `cmd-,`, the command palette, or the `Zed > Settings > Open Settings` application menu item.
 
 You should see something that looks like this:
 
@@ -180,8 +180,6 @@ To override settings for a language, add an entry for that languages name to the
 }
 ```
 
-For a complete list of languages you can override settings for see [Supported Languages](../languages/support-languages.md).
-
 ## Font Features
 
 Zed supports a subset of OpenType features that can be enabled or disabled for a given buffer or terminal font. For example, to disable ligatures for a given font you can add the following to your settings:
@@ -199,7 +197,7 @@ Optionally, the following [OpenType features](https://en.wikipedia.org/wiki/List
 ## Terminal
 
 | **Option**          | **Default**                   | **Description**                                                                                            |
-| ------------------- | ----------------------------- | -------------------------------------------------------------------------------------------------          |
+| ------------------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------- |
 | `shell`             | `"system"`                    | What shell to use on launch, see below.                                                                    |
 | `working_directory` | `"current_project_directory"` | What working directory strategy to use, see below.                                                         |
 | `blinking`          | `"terminal_controlled"`       | Set the terminal cursor blink, see below.                                                                  |
