@@ -29,6 +29,7 @@ Here are all the currently available settings.
 | `autosave`                           | `off`             | See 'autosave' section below                                                                                                                                                 |
 | `buffer_font_family`                 | `zed-mono`        | `string` Either `zed-mono` or the name of an installed Font family                                                                                                           |
 | `buffer_font_size`                   | `16`              | `number` The editor font size                                                                                                                                                |
+| `buffer_font_features`               | `null`            | See 'font features' section below                                                                                                                                            |
 | `enable_language_server`             | `true`            | `boolean` Whether language servers should be used                                                                                                                            |
 | `ensure_final_newline_on_save`       | `true`            | `boolean` If missing, whether an empty newline will be added at the end of the file                                                                                          |
 | `lsp`                                | `null`            | See 'lsp' section below                                                                                                                                                      |
@@ -179,19 +180,34 @@ To override settings for a language, add an entry for that languages name to the
 }
 ```
 
+## Font Features
+
+Zed supports a subset of OpenType features that can be enabled or disabled for a given buffer or terminal font. For example, to disable ligatures for a given font you can add the following to your settings:
+
+```json
+{
+  "buffer_font_features": {
+    "calt": false
+  }
+}
+```
+
+Optionally, the following [OpenType features](https://en.wikipedia.org/wiki/List_of_typographic_features) can be enabled or disabled too: `calt`, `case`, `cpsp`, `frac`, `liga`, `onum`, `ordn`, `pnum`, `ss01`, `ss02`, `ss03`, `ss04`, `ss05`, `ss06`, `ss07`, `ss08`, `ss09`, `ss10`, `ss11`, `ss12`, `ss13`, `ss14`, `ss15`, `ss16`, `ss17`, `ss18`, `ss19`, `ss20`, `subs`, `sups`, `swsh`, `titl`, `tnum`, `zero`.
+
 ## Terminal
 
-| **Option**          | **Default**                   | **Description**                                                                                   |
-| ------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------- |
-| `shell`             | `"system"`                    | What shell to use on launch, see below.                                                           |
-| `working_directory` | `"current_project_directory"` | What working directory strategy to use, see below.                                                |
-| `blinking`          | `"terminal_controlled"`       | Set the terminal cursor blink, see below.                                                         |
-| `alternate_scroll`  | `"on"`                        | Default for the terminal alternate scroll mode, see below.                                        |
-| `option_as_meta`    | `true`                        | Re-interprets the option keys to act like a 'meta' key, like in Emacs.                            |
-| `copy_on_select`    | `false`                       | Whether or not selecting text in the terminal will automatically copy to the system clipboard.    |
-| `env`               | `{}`                          | See below.                                                                                        |
-| `font_size`         | not set                       | What font size to use for the terminal. When not set defaults to matching the editor's font size. |
-| `font_family`       | not set                       | What font to use for the terminal. When not set, defaults to matching the editor's font.          |
+| **Option**          | **Default**                   | **Description**                                                                                            |
+| ------------------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| `shell`             | `"system"`                    | What shell to use on launch, see below.                                                                    |
+| `working_directory` | `"current_project_directory"` | What working directory strategy to use, see below.                                                         |
+| `blinking`          | `"terminal_controlled"`       | Set the terminal cursor blink, see below.                                                                  |
+| `alternate_scroll`  | `"on"`                        | Default for the terminal alternate scroll mode, see below.                                                 |
+| `option_as_meta`    | `true`                        | Re-interprets the option keys to act like a 'meta' key, like in Emacs.                                     |
+| `copy_on_select`    | `false`                       | Whether or not selecting text in the terminal will automatically copy to the system clipboard.             |
+| `env`               | `{}`                          | See below.                                                                                                 |
+| `font_size`         | not set                       | What font size to use for the terminal. When not set defaults to matching the editor's font size.          |
+| `font_family`       | not set                       | What font to use for the terminal. When not set, defaults to matching the editor's font.                   |
+| `font_features`     | not set                       | What font features to use for the terminal. When not set, defaults to matching the editor's font features. |
 
 ### Terminal: Launch Shell
 
