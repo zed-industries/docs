@@ -94,10 +94,6 @@ def get_markdown_column_data(keymap_data):
 
         context = camel_case_to_readable(context)
 
-        commands = []
-        targets = []
-        shortcuts = []
-
         for shortcut, command in binding_dictionary["bindings"].items():
             result = get_readable_command_and_target(command, context)
 
@@ -107,13 +103,9 @@ def get_markdown_column_data(keymap_data):
             readable_command, readable_target = result
             readable_shortcut = get_readable_shortcut(shortcut)
 
-            commands.append(readable_command)
-            targets.append(readable_target)
-            shortcuts.append(f"`{readable_shortcut}`")
-
-        markdown_data[context]["commands"] += commands
-        markdown_data[context]["targets"] += targets
-        markdown_data[context]["shortcuts"] += shortcuts
+            markdown_data[context]["commands"].append(readable_command)
+            markdown_data[context]["targets"].append(readable_target)
+            markdown_data[context]["shortcuts"].append(f"`{readable_shortcut}`")
 
     return markdown_data
 
