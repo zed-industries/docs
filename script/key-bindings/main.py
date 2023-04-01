@@ -66,6 +66,7 @@ def get_markdown_tables(keymap_data):
 
     return markdown_tables
 
+
 def get_markdown_table(column_data):
     command_column_name = "**Command**"
     target_column_name = "**Target**"
