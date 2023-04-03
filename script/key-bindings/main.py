@@ -112,12 +112,14 @@ def get_markdown_column_data(keymap_data):
 
 
 def get_readable_command_and_target(command, context):
+    original_command = command
+
+    # Special cases - pre-processing
     if isinstance(command, list):
         # In place of some commands, are lists that contain the command and additional information
         # See `Workspace -> cmd-1` or `Terminal -> cmd-right` for examples
         command, misc_text = command
 
-        # Special cases for terminal
         if context == "terminal":
             if command == "terminal::SendText":
                 command = TERMINAL_CONTROL_CODE_MAP[misc_text]
@@ -129,6 +131,13 @@ def get_readable_command_and_target(command, context):
 
     readable_command = camel_case_to_readable(readable_command)
     readable_command = readable_command.lower().capitalize()
+
+    # Special cases - post-processing
+    if isinstance(original_command, list):
+        command, misc_text = original_command
+
+        if command in ["pane::ActivateItem", "workspace::ActivatePane"]:
+            readable_command = f"{readable_command} {misc_text + 1}"
 
     return readable_command, readable_target
 

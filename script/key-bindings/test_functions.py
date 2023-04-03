@@ -35,10 +35,13 @@ def _():
     assert get_readable_command_and_target("editor::DeleteToPreviousWordStart", "Workspace") == ("Delete to previous word start", "Editor")
 
 
-@test("test get_readable_command_and_target for special terminal cases")
+@test("test get_readable_command_and_target for special cases")
 def _():
     assert get_readable_command_and_target(["terminal::SendText", "\u0001"], "terminal") == ("Move to beginning of line", "Terminal")
     assert get_readable_command_and_target(["terminal::SendKeystroke", "ctrl-c"], "terminal") == None
+
+    assert get_readable_command_and_target(["pane::ActivateItem", 0], "pane") == ("Activate item 1", "Pane")
+    assert get_readable_command_and_target(["workspace::ActivatePane", 0], "workspace") == ("Activate pane 1", "Workspace")
 
 
 @test("test get_markdown_data")
