@@ -18,7 +18,7 @@ The script works by:
 3. Injecting those Markdown tables into a template file (`script/key-bindings/source/key-bindings-template.md`)
 4. Writing the final product to the document file (`configuration/key-bindings.md`)
 
-Note: Don't modify `configuration/key-bindings.md` directly - only files within the `script/key-bindings/source/` directory should be modified.  You'll notice that we have a `.gitignore` line `script/key-bindings/source/default.json`.  It is expected that you make this file and populate it by:
+Note: Don't modify `configuration/key-bindings.md` directly - only files within the `script/key-bindings/source/` directory should be modified.  In the `.gitignore`, you'll notice that we have the following entry: `script/key-bindings/source/default.json`.  It is expected that you make this file and populate it by:
 
 1. Running the `zed: open default keymap` command in Zed
 2. Copying and pasting the contents into `script/key-bindings/source/default.json` (**use Zed stable for this step**)
