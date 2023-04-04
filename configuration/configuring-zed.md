@@ -24,13 +24,13 @@ Here are all the currently available settings.
 
 ## Available settings
 
+Sort headers
+remove this table and use just headers with defined sections for description and setting options
+
 | **Option**                           | **Default**       | **Description**                                                                                                                                                              |
 | ------------------------------------ | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `autosave`                           | `off`             | See 'autosave' section below                                                                                                                                                 |
-| `buffer_font_family`                 | `zed-mono`        | `string` Either `zed-mono` or the name of an installed Font family                                                                                                           |
-| `buffer_font_size`                   | `16`              | `number` The editor font size                                                                                                                                                |
-| `buffer_font_features`               | `null`            | See 'font features' section below                                                                                                                                            |
-| `enable_language_server`             | `true`            | `boolean` Whether language servers should be used                                                                                                                            |
+| `buffer_font_size`                   | `15`              | `number` The editor font size                                                                                                                                                |
+| `enable_language_server`             | `true`            | `boolean` Whether or not language servers should be used                                                                                                                     |
 | `ensure_final_newline_on_save`       | `true`            | `boolean` If missing, whether an empty newline will be added at the end of the file                                                                                          |
 | `lsp`                                | `null`            | See 'lsp' section below                                                                                                                                                      |
 | `format_on_save`                     | `on`              | See 'format on save' section below                                                                                                                                           |
@@ -43,17 +43,25 @@ Here are all the currently available settings.
 | `theme`                              | `One Dark`        | `string` The name of a Zed theme                                                                                                                                             |
 | `preferred_line_length`              | `80`              | The number of characters at which to soft wrap lines, when soft wrap is enabled                                                                                              |
 | `projects_online_by_default`         | `true`            | `boolean` Project goes online when opened.                                                                                                                                   |
-| `remove_trailing_whitespace_on_save` | `true`            | `boolean` Whether all trailing whitespace will be removed on each line                                                                                                       |
-| `soft_wrap`                          | `editor_width`    | `editor_width`, `none`, `preferred_line_length`                                                                                                                              |
+| `remove_trailing_whitespace_on_save` | `true`            | `boolean` Whether or not all trailing whitespace will be removed on each line                                                                                                |
+| `soft_wrap`                          | `none`            | `editor_width`, `none`, `preferred_line_length`                                                                                                                              |
 | `active_pane_magnification`          | `1.0`             | Scale by which to zoom the active pane. When set to `1.0`, the active pane has the same size as others, but when set to a larger value, the active pane takes up more space. |
 | `vim_mode`                           | `false`           | `boolean` Enables Vim mode (WIP)                                                                                                                                             |
 | `terminal`                           | See below         | See 'Terminal' section below                                                                                                                                                 |
+| `confirm_quit`                       | `false`           | `boolean` Whether or not to ask the user to confirm before closing the application                                                                                           |
+| `cursor_blink`                       | `true`            | `boolean` Whether or not the cursor blinks                                                                                                                                   |
+| `show_call_status_icon`              | `true`            | `boolean` Whether or not the screen sharing icon is shown in the os status bar                                                                                               |
+| `default_dock_anchor`                | `bottom`          | `string` See 'Default Dock Anchor' section below                                                                                                                             |*
+| `telemetry`                          | See below         | `string` See 'Telemetry' section below                                                                                                                                       |*
+| `auto_update`                        | `true`            | `boolean` See 'Telemetry' section below                                                                                                                                       |*
 
-## Autosave
 
-The `autosave` setting has four different modes:
+## autosave
 
-1. To disable autosave, set it to `"off"`
+Default: `off`
+Options:
+
+1. To disable autosave, set it to `off`
 
    ```json
    {
@@ -61,7 +69,7 @@ The `autosave` setting has four different modes:
    }
    ```
 
-2. To autosave when focus changes, use `"on_focus_change"`:
+2. To autosave when focus changes, use `on_focus_change`:
 
    ```json
    {
@@ -69,7 +77,7 @@ The `autosave` setting has four different modes:
    }
    ```
 
-3. To autosave when the active window changes, use `"on_window_change"`:
+3. To autosave when the active window changes, use `on_window_change`:
 
    ```json
    {
@@ -77,7 +85,7 @@ The `autosave` setting has four different modes:
    }
    ```
 
-4. To autosave after an inactivity period, use `"after_delay"`:
+4. To autosave after an inactivity period, use `after_delay`:
 
    ```json
    {
@@ -88,6 +96,33 @@ The `autosave` setting has four different modes:
      }
    }
    ```
+
+## buffer_font_family
+
+Default: `Zed Mono`
+Options: The name of an installed font family
+
+## buffer_font_features
+
+Default: `null`
+Options:
+
+Zed supports a subset of OpenType features that can be enabled or disabled for a given buffer or terminal font.  The following [OpenType features](https://en.wikipedia.org/wiki/List_of_typographic_features) can be enabled or disabled too: `calt`, `case`, `cpsp`, `frac`, `liga`, `onum`, `ordn`, `pnum`, `ss01`, `ss02`, `ss03`, `ss04`, `ss05`, `ss06`, `ss07`, `ss08`, `ss09`, `ss10`, `ss11`, `ss12`, `ss13`, `ss14`, `ss15`, `ss16`, `ss17`, `ss18`, `ss19`, `ss20`, `subs`, `sups`, `swsh`, `titl`, `tnum`, `zero`.
+
+For example, to disable ligatures for a given font you can add the following to your settings:
+
+```json
+{
+  "buffer_font_features": {
+    "calt": false
+  }
+}
+```
+
+
+
+
+
 
 ## Format On Save
 
@@ -179,20 +214,6 @@ To override settings for a language, add an entry for that languages name to the
   }
 }
 ```
-
-## Font Features
-
-Zed supports a subset of OpenType features that can be enabled or disabled for a given buffer or terminal font. For example, to disable ligatures for a given font you can add the following to your settings:
-
-```json
-{
-  "buffer_font_features": {
-    "calt": false
-  }
-}
-```
-
-Optionally, the following [OpenType features](https://en.wikipedia.org/wiki/List_of_typographic_features) can be enabled or disabled too: `calt`, `case`, `cpsp`, `frac`, `liga`, `onum`, `ordn`, `pnum`, `ss01`, `ss02`, `ss03`, `ss04`, `ss05`, `ss06`, `ss07`, `ss08`, `ss09`, `ss10`, `ss11`, `ss12`, `ss13`, `ss14`, `ss15`, `ss16`, `ss17`, `ss18`, `ss19`, `ss20`, `subs`, `sups`, `swsh`, `titl`, `tnum`, `zero`.
 
 ## Terminal
 
