@@ -56,9 +56,10 @@ remove this table and use just headers with defined sections for description and
 | `auto_update`                        | `true`            | `boolean` See 'Telemetry' section below                                                                                                                                       |*
 
 
-## autosave
+## Autosave
 
-Default: `off`
+- Name: `autosave`
+- Default: `off`
 
 Options:
 
@@ -98,15 +99,17 @@ Options:
 }
 ```
 
-## buffer_font_family
+## Buffer Font Family
 
-Default: `Zed Mono`
+- Name: `buffer_font_family`
+- Default: `Zed Mono`
 
 Options: The name of an installed font family
 
-## buffer_font_features
+## Buffer Font Features
 
-Default: `null`
+- Name: `buffer_font_features`
+- Default: `null`
 
 Options:
 
