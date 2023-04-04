@@ -59,6 +59,7 @@ remove this table and use just headers with defined sections for description and
 ## autosave
 
 Default: `off`
+
 Options:
 
 1. To disable autosave, set it to `off`
@@ -100,11 +101,13 @@ Options:
 ## buffer_font_family
 
 Default: `Zed Mono`
+
 Options: The name of an installed font family
 
 ## buffer_font_features
 
 Default: `null`
+
 Options:
 
 Zed supports a subset of OpenType features that can be enabled or disabled for a given buffer or terminal font.  The following [OpenType features](https://en.wikipedia.org/wiki/List_of_typographic_features) can be enabled or disabled too: `calt`, `case`, `cpsp`, `frac`, `liga`, `onum`, `ordn`, `pnum`, `ss01`, `ss02`, `ss03`, `ss04`, `ss05`, `ss06`, `ss07`, `ss08`, `ss09`, `ss10`, `ss11`, `ss12`, `ss13`, `ss14`, `ss15`, `ss16`, `ss17`, `ss18`, `ss19`, `ss20`, `subs`, `sups`, `swsh`, `titl`, `tnum`, `zero`.
