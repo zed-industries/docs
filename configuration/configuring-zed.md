@@ -64,39 +64,39 @@ Options:
 
 1. To disable autosave, set it to `off`
 
-   ```json
-   {
-     "autosave": "off"
-   }
-   ```
+```json
+{
+    "autosave": "off"
+}
+```
 
 2. To autosave when focus changes, use `on_focus_change`:
 
-   ```json
-   {
-     "autosave": "on_focus_change"
-   }
-   ```
+```json
+{
+    "autosave": "on_focus_change"
+}
+```
 
 3. To autosave when the active window changes, use `on_window_change`:
 
-   ```json
-   {
-     "autosave": "on_window_change"
-   }
-   ```
+```json
+{
+    "autosave": "on_window_change"
+}
+```
 
 4. To autosave after an inactivity period, use `after_delay`:
 
-   ```json
-   {
-     "autosave": {
-       "after_delay": {
-         "milliseconds": 1000
-       }
-     }
-   }
-   ```
+```json
+{
+    "autosave": {
+    "after_delay": {
+        "milliseconds": 1000
+    }
+    }
+}
+```
 
 ## buffer_font_family
 
