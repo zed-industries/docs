@@ -91,9 +91,9 @@ Options:
 ```json
 {
     "autosave": {
-    "after_delay": {
-        "milliseconds": 1000
-    }
+        "after_delay": {
+            "milliseconds": 1000
+        }
     }
 }
 ```
