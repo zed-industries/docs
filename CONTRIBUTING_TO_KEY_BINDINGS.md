@@ -21,6 +21,6 @@ The script works by:
 Note: Don't modify `configuration/key-bindings.md` directly - only files within the `script/key-bindings/source/` directory should be modified.  You'll notice that we have a `.gitignore` line `script/key-bindings/source/default.json`.  It is expected that you make this file and populate it by:
 
 1. Running the `zed: open default keymap` command in Zed
-2. Copying and pasting the contents into `script/key-bindings/source/default.json`
+2. Copying and pasting the contents into `script/key-bindings/source/default.json` (**use Zed stable for this step**)
 
 Once the updates are in place, run the script via `python main.py`.

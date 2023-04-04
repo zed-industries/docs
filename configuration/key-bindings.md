@@ -172,13 +172,11 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Newline below                    | Editor        | `Command + Alt + Enter`         |
 | Newline below                    | Editor        | `Command + Enter`               |
 | Next screen                      | Editor        | `Control + L`                   |
-| Next suggestion                  | Copilot       | `Alt + ]`                       |
 | Open excerpts                    | Editor        | `Alt + Enter`                   |
 | Outdent                          | Editor        | `Command + [`                   |
 | Page down                        | Editor        | `Page Down`                     |
 | Page up                          | Editor        | `Page Up`                       |
 | Paste                            | Editor        | `Command + V`                   |
-| Previous suggestion              | Copilot       | `Alt + [`                       |
 | Redo                             | Editor        | `Command + Shift + Z`           |
 | Redo selection                   | Editor        | `Command + Shift + U`           |
 | Rename                           | Editor        | `F2`                            |
@@ -218,7 +216,6 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Split selection into lines       | Editor        | `Command + Shift + L`           |
 | Tab                              | Editor        | `Tab`                           |
 | Tab prev                         | Editor        | `Shift + Tab`                   |
-| Toggle                           | Copilot       | `Alt + \`                       |
 | Toggle                           | Outline       | `Command + Shift + O`           |
 | Toggle                           | Go To Line    | `Control + G`                   |
 | Toggle code actions              | Editor        | `Command + .`                   |
