@@ -24,8 +24,8 @@ Here are all the currently available settings.
 
 ## Active Pane Magnification
 
-- Setting: `active_pane_magnification`
 - Description: Scale by which to zoom the active pane. When set to `1.0`, the active pane has the same size as others, but when set to a larger value, the active pane takes up more space.
+- Setting: `active_pane_magnification`
 - Default: `1.0`
 
 **Options**
@@ -34,8 +34,8 @@ Here are all the currently available settings.
 
 ## Autosave
 
-- Setting: `autosave`
 - Description: When to automatically save edited buffers.
+- Setting: `autosave`
 - Default: `off`
 
 **Options**
@@ -78,8 +78,8 @@ Here are all the currently available settings.
 
 ## Auto Update
 
-- Setting: `auto_update`
 - Description: Whether or not to automatically check for updates.
+- Setting: `auto_update`
 - Default: `true`
 
 **Options**
@@ -88,8 +88,8 @@ Here are all the currently available settings.
 
 ## Buffer Font Family
 
-- Setting: `buffer_font_family`
 - Description: The name of a font to use for rendering text in the editor.
+- Setting: `buffer_font_family`
 - Default: `Zed Mono`
 
 **Options**
@@ -98,8 +98,8 @@ The name of any font family installed on the user's system
 
 ## Buffer Font Features
 
-- Setting: `buffer_font_features`
 - Description: The OpenType features to enable for text in the editor.
+- Setting: `buffer_font_features`
 - Default: `null`
 
 **Options**
@@ -118,8 +118,8 @@ For example, to disable ligatures for a given font you can add the following to 
 
 ## Buffer Font Size
 
-- Setting: `buffer_font_size`
 - Description: The default font size for text in the editor.
+- Setting: `buffer_font_size`
 - Default: `15`
 
 **Options**
@@ -128,8 +128,8 @@ For example, to disable ligatures for a given font you can add the following to 
 
 ## Confirm Quit
 
-- Setting: `confirm_quit`
 - Description: Whether or not to prompt the user to confirm before closing the application.
+- Setting: `confirm_quit`
 - Default: `false`
 
 **Options**
@@ -138,8 +138,8 @@ For example, to disable ligatures for a given font you can add the following to 
 
 ## Cursor Blink
 
-- Setting: `cursor_blink`
 - Description: Whether or not the cursor blinks.
+- Setting: `cursor_blink`
 - Default: `true`
 
 **Options**
@@ -148,8 +148,8 @@ For example, to disable ligatures for a given font you can add the following to 
 
 ## Default Dock Anchor
 
-- Setting: `default_dock_anchor`
 - Description: The default anchor for new docks.
+- Setting: `default_dock_anchor`
 - Default: `bottom`
 
 **Options**
@@ -160,8 +160,8 @@ For example, to disable ligatures for a given font you can add the following to 
 
 ## Enable Language Server
 
-- Setting: `enable_language_server`
 - Description: Whether or not to use language servers to provide code intelligence.
+- Setting: `enable_language_server`
 - Default: `true`
 
 **Options**
@@ -170,8 +170,8 @@ For example, to disable ligatures for a given font you can add the following to 
 
 ## Ensure Final Newline On Save
 
-- Setting: `ensure_final_newline_on_save`
 - Description: Whether or not to ensure there's a single newline at the end of a buffer when saving it.
+- Setting: `ensure_final_newline_on_save`
 - Default: `true`
 
 **Options**
@@ -180,8 +180,8 @@ For example, to disable ligatures for a given font you can add the following to 
 
 ## LSP
 
-- Setting: `lsp`
 - Description: Configuration for language servers.
+- Setting: `lsp`
 - Default: `null`
 
 **Options**
@@ -206,8 +206,8 @@ To override settings for a language, add an entry for that language server's nam
 
 ## Format On Save
 
-- Setting: `format_on_save`
 - Description: Whether or not to perform a buffer format before saving.
+- Setting: `format_on_save`
 - Default: `on`
 
 **Options**
@@ -230,8 +230,8 @@ To override settings for a language, add an entry for that language server's nam
 
 ## Formatter
 
-- Setting: `formatter`
 - Description: How to perform a buffer format.
+- Setting: `formatter`
 - Default: `language_server`
 
 **Options**
@@ -259,8 +259,8 @@ To override settings for a language, add an entry for that language server's nam
 
 ## Git
 
-- Setting: `git`
 - Description: Configuration for git-related features.
+- Setting: `git`
 - Default:
 
 ```json
@@ -271,8 +271,8 @@ To override settings for a language, add an entry for that language server's nam
 
 ### Git Gutter
 
-- Setting: `git_gutter`
 - Description: Whether or not to show the git gutter.
+- Setting: `git_gutter`
 - Default: `tracked_files`
 
 **Options**
@@ -295,8 +295,8 @@ To override settings for a language, add an entry for that language server's nam
 
 ## Hard Tabs
 
-- Setting: `hard_tabs`
 - Description: Whether to indent lines using tab characters or multiple spaces.
+- Setting: `hard_tabs`
 - Default: `false`
 
 **Options**
@@ -305,8 +305,8 @@ To override settings for a language, add an entry for that language server's nam
 
 ## Hover Popover Enabled
 
-- Setting: `hover_popover_enabled`
 - Description: Whether or not to show the informational hover box when moving the mouse over symbols in the editor.
+- Setting: `hover_popover_enabled`
 - Default: `true`
 
 **Options**
@@ -315,8 +315,8 @@ To override settings for a language, add an entry for that language server's nam
 
 ## Journal
 
-- Setting: `journal`
 - Description: Configuration for the journal.
+- Setting: `journal`
 - Default:
 
 ```json
@@ -328,8 +328,8 @@ To override settings for a language, add an entry for that language server's nam
 
 ### Path
 
-- Setting: `path`
 - Description: The path of the directory where journal entries are stored.
+- Setting: `path`
 - Default: `~`
 
 **Options**
@@ -338,8 +338,8 @@ To override settings for a language, add an entry for that language server's nam
 
 ### Hour Format
 
-- Setting: `hour_format`
 - Description: The format to use for displaying hours in the journal.
+- Setting: `hour_format`
 - Default: `hour12`
 
 **Options**
@@ -362,8 +362,8 @@ To override settings for a language, add an entry for that language server's nam
 
 ## Language Overrides
 
-- Setting: `language_overrides`
 - Description: Configuration overrides for specific languages.
+- Setting: `language_overrides`
 - Default: `null`
 
 **Options**
@@ -399,8 +399,8 @@ These values take in the same options as the root-level settings with the same n
 
 ## Preferred Line Length
 
-- Setting: `preferred_line_length`
 - Description: The column at which to soft-wrap lines, for buffers where soft-wrap is enabled.
+- Setting: `preferred_line_length`
 - Default: `80`
 
 **Options**
@@ -409,8 +409,8 @@ These values take in the same options as the root-level settings with the same n
 
 ## Projects Online By Default
 
-- Setting: `projects_online_by_default`
 - Description: Whether or not to show the online projects view by default.
+- Setting: `projects_online_by_default`
 - Default: `true`
 
 **Options**
@@ -419,8 +419,8 @@ These values take in the same options as the root-level settings with the same n
 
 ## Remove Trailing Whitespace On Save
 
-- Setting: `remove_trailing_whitespace_on_save`
 - Description: Whether or not to remove any trailing whitespace from lines of a buffer before saving it.
+- Setting: `remove_trailing_whitespace_on_save`
 - Default: `true`
 
 **Options**
@@ -429,8 +429,8 @@ These values take in the same options as the root-level settings with the same n
 
 ## Show Call Status Icon
 
-- Setting: `show_call_status_icon`
 - Description: Whether or not to show the call status icon in the status bar.
+- Setting: `show_call_status_icon`
 - Default: `true`
 
 **Options**
@@ -439,8 +439,8 @@ These values take in the same options as the root-level settings with the same n
 
 ## Show Completions On Input
 
-- Setting: `show_completions_on_input`
 - Description: Whether or not to show completions as you type.
+- Setting: `show_completions_on_input`
 - Default: `true`
 
 **Options**
@@ -449,8 +449,8 @@ These values take in the same options as the root-level settings with the same n
 
 ## Soft Wrap
 
-- Setting: `soft_wrap`
 - Description: Whether or not the screen sharing icon is shown in the os status bar.
+- Setting: `soft_wrap`
 - Default: `none`
 
 **Options**
@@ -461,8 +461,8 @@ These values take in the same options as the root-level settings with the same n
 
 ## Tab Size
 
-- Setting: `tab_size`
 - Description: The number of spaces to use for each tab character.
+- Setting: `tab_size`
 - Default: `4`
 
 **Options**
@@ -471,8 +471,8 @@ These values take in the same options as the root-level settings with the same n
 
 ## Telemetry
 
-- Setting: `telemetry`
 - Description: Control what info is collected by Zed.
+- Setting: `telemetry`
 - Default:
 
 ```json
@@ -486,8 +486,8 @@ These values take in the same options as the root-level settings with the same n
 
 ### Diagnostics
 
-- Setting: `diagnostics`
 - Description: Setting for sending debug-related data, such as crash reports.
+- Setting: `diagnostics`
 - Default: `true`
 
 **Options**
@@ -496,8 +496,8 @@ These values take in the same options as the root-level settings with the same n
 
 ### Metrics
 
-- Setting: `metrics`
 - Description: Setting for sending anonymized usage data, such what languages you're using Zed with.
+- Setting: `metrics`
 - Default: `true`
 
 **Options**
@@ -506,8 +506,8 @@ These values take in the same options as the root-level settings with the same n
 
 ## Terminal
 
-- Setting: `terminal`
 - Description: Configuration for the terminal.
+- Setting: `terminal`
 - Default:
 
 ```json
@@ -527,8 +527,8 @@ These values take in the same options as the root-level settings with the same n
 
 ### Alternate Scroll
 
-- Setting: `alternate_scroll`
 - Description: Set whether Alternate Scroll mode (DECSET code: `?1007`) is active by default. Alternate Scroll mode converts mouse scroll events into up / down key presses when in the alternate screen (e.g. when running applications like vim or less). The terminal can still set and unset this mode with ANSI escape codes.
+- Setting: `alternate_scroll`
 - Default: `off`
 
 **Options**
@@ -551,8 +551,8 @@ These values take in the same options as the root-level settings with the same n
 
 ### Blinking
 
-- Setting: `blinking`
 - Description: Set the cursor blinking behavior in the terminal
+- Setting: `blinking`
 - Default: `terminal_controlled`
 
 **Options**
@@ -581,8 +581,8 @@ These values take in the same options as the root-level settings with the same n
 
 ### Copy On Select
 
-- Setting: `copy_on_select`
 - Description: Whether or not selecting text in the terminal will automatically copy to the system clipboard.
+- Setting: `copy_on_select`
 - Default: `false`
 
 **Options**
@@ -591,8 +591,8 @@ These values take in the same options as the root-level settings with the same n
 
 ### Env
 
-- Setting: `env`
 - Description: Any key-value pairs added to this object will be added to the terminal's environment. Keys must be unique, use `:` to separate multiple values in a single variable
+- Setting: `env`
 - Default: `{}`
 
 **Example**
@@ -606,8 +606,8 @@ These values take in the same options as the root-level settings with the same n
 
 ### Font Size
 
-- Setting: `font_size`
 - Description: What font size to use for the terminal. When not set defaults to matching the editor's font size
+- Setting: `font_size`
 - Default: `null`
 
 **Options**
@@ -616,8 +616,8 @@ These values take in the same options as the root-level settings with the same n
 
 ### Font Family
 
-- Setting: `font_family`
 - Description: What font to use for the terminal. When not set, defaults to matching the editor's font.
+- Setting: `font_family`
 - Default: `null`
 
 **Options**
@@ -626,8 +626,8 @@ The name of any font family installed on the user's system
 
 ### Font Features
 
-- Setting: `font_features`
 - Description: What font features to use for the terminal. When not set, defaults to matching the editor's font features.
+- Setting: `font_features`
 - Default: `null`
 
 **Options**
@@ -636,8 +636,8 @@ See Buffer Font Features
 
 ### Option As Meta
 
-- Setting: `option_as_meta`
 - Description: Re-interprets the option keys to act like a 'meta' key, like in Emacs.
+- Setting: `option_as_meta`
 - Default: `true`
 
 **Options**
@@ -646,8 +646,8 @@ See Buffer Font Features
 
 ### Shell
 
-- Setting: `shell`
 - Description: What working directory to use when launching the terminal.
+- Setting: `shell`
 - Default: `system`
 
 **Options**
@@ -681,8 +681,8 @@ See Buffer Font Features
 
 ### Working Directory
 
-- Setting: `working_directory`
 - Description: What working directory to use when launching the terminal.
+- Setting: `working_directory`
 - Default: `"current_project_directory"`
 
 **Options**
@@ -723,8 +723,8 @@ See Buffer Font Features
 
 ## Theme
 
-- Setting: `theme`
 - Description: The name of the Zed theme to use for the UI.
+- Setting: `theme`
 - Default: `One Dark`
 
 **Options**
@@ -733,8 +733,8 @@ Run the `theme selector: toggle` action in the command palette to see a current 
 
 ## Vim
 
-- Setting: `vim_mode`
 - Description: Whether or not to enable vim mode (work in progress).
+- Setting: `vim_mode`
 - Default: `false`
 
 **Options**
