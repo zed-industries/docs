@@ -269,7 +269,7 @@ To override settings for a language, add an entry for that language server's nam
 },
 ```
 
-### Git: Git Gutter
+### Git Gutter
 
 - Setting: `git_gutter`
 - Description: Whether or not to show the git gutter.
@@ -326,7 +326,7 @@ To override settings for a language, add an entry for that language server's nam
 }
 ```
 
-### Journal: Path
+### Path
 
 - Setting: `path`
 - Description: The path of the directory where journal entries are stored.
@@ -336,7 +336,7 @@ To override settings for a language, add an entry for that language server's nam
 
 `string` values
 
-### Journal: Hour Format
+### Hour Format
 
 - Setting: `hour_format`
 - Description: The format to use for displaying hours in the journal.
@@ -484,7 +484,7 @@ These values take in the same options as the root-level settings with the same n
 
 **Options**
 
-### Telemetry: Diagnostics
+### Diagnostics
 
 - Setting: `diagnostics`
 - Description: Setting for sending debug-related data, such as crash reports.
@@ -494,7 +494,7 @@ These values take in the same options as the root-level settings with the same n
 
 `boolean` values
 
-### Telemetry: Metrics
+### Metrics
 
 - Setting: `metrics`
 - Description: Setting for sending anonymized usage data, such what languages you're using Zed with.
@@ -525,7 +525,7 @@ These values take in the same options as the root-level settings with the same n
 }
 ```
 
-### Terminal: Alternate Scroll
+### Alternate Scroll
 
 - Setting: `alternate_scroll`
 - Description: Set whether Alternate Scroll mode (DECSET code: `?1007`) is active by default. Alternate Scroll mode converts mouse scroll events into up / down key presses when in the alternate screen (e.g. when running applications like vim or less). The terminal can still set and unset this mode with ANSI escape codes.
@@ -549,7 +549,7 @@ These values take in the same options as the root-level settings with the same n
 }
 ```
 
-### Terminal: Blinking
+### Blinking
 
 - Setting: `blinking`
 - Description: Set the cursor blinking behavior in the terminal
@@ -579,7 +579,7 @@ These values take in the same options as the root-level settings with the same n
 "blinking": "on",
 ```
 
-### Terminal: Copy On Select
+### Copy On Select
 
 - Setting: `copy_on_select`
 - Description: Whether or not selecting text in the terminal will automatically copy to the system clipboard.
@@ -589,7 +589,7 @@ These values take in the same options as the root-level settings with the same n
 
 `boolean` values
 
-### Terminal: Env
+### Env
 
 - Setting: `env`
 - Description: Any key-value pairs added to this object will be added to the terminal's environment. Keys must be unique, use `:` to separate multiple values in a single variable
@@ -604,7 +604,7 @@ These values take in the same options as the root-level settings with the same n
 }
 ```
 
-### Terminal: Font Size
+### Font Size
 
 - Setting: `font_size`
 - Description: What font size to use for the terminal. When not set defaults to matching the editor's font size
@@ -614,7 +614,7 @@ These values take in the same options as the root-level settings with the same n
 
 `integer` values
 
-### Terminal: Font Family
+### Font Family
 
 - Setting: `font_family`
 - Description: What font to use for the terminal. When not set, defaults to matching the editor's font.
@@ -624,7 +624,7 @@ These values take in the same options as the root-level settings with the same n
 
 The name of any font family installed on the user's system
 
-### Terminal: Font Features
+### Font Features
 
 - Setting: `font_features`
 - Description: What font features to use for the terminal. When not set, defaults to matching the editor's font features.
@@ -632,9 +632,9 @@ The name of any font family installed on the user's system
 
 **Options**
 
-See [Buffer Font Features](.#buffer-font-family) for options.
+See Buffer Font Features
 
-### Terminal: Option As Meta
+### Option As Meta
 
 - Setting: `option_as_meta`
 - Description: Re-interprets the option keys to act like a 'meta' key, like in Emacs.
@@ -644,7 +644,7 @@ See [Buffer Font Features](.#buffer-font-family) for options.
 
 `boolean` values
 
-### Terminal: Shell
+### Shell
 
 - Setting: `shell`
 - Description: What working directory to use when launching the terminal.
@@ -679,7 +679,7 @@ See [Buffer Font Features](.#buffer-font-family) for options.
 }
 ```
 
-### Terminal: Working Directory
+### Working Directory
 
 - Setting: `working_directory`
 - Description: What working directory to use when launching the terminal.
