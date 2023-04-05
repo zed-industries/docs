@@ -22,52 +22,29 @@ You should see something that looks like this:
 
 Here are all the currently available settings.
 
-## Available settings
+## Active Pane Magnification
 
-Sort headers
-remove this table and use just headers with defined sections for description and setting options
+- Setting: `active_pane_magnification`
+- Description: Scale by which to zoom the active pane. When set to `1.0`, the active pane has the same size as others, but when set to a larger value, the active pane takes up more space.
+- Default: `1.0`
 
-| **Option**                           | **Default**       | **Description**                                                                                                                                                              |
-| ------------------------------------ | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `buffer_font_size`                   | `15`              | `number` The editor font size                                                                                                                                                |
-| `enable_language_server`             | `true`            | `boolean` Whether or not language servers should be used                                                                                                                     |
-| `ensure_final_newline_on_save`       | `true`            | `boolean` If missing, whether an empty newline will be added at the end of the file                                                                                          |
-| `lsp`                                | `null`            | See 'lsp' section below                                                                                                                                                      |
-| `format_on_save`                     | `on`              | See 'format on save' section below                                                                                                                                           |
-| `formatter`                          | `language_server` | See 'formatter' section below                                                                                                                                                |
-| `hard_tabs`                          | `false`           | `boolean` Indent using tabs instead of spaces                                                                                                                                |
-| `hover_popover_enabled`              | `true`            | `boolean` Enables triggering the hover popover with the mouse                                                                                                                |
-| `show_completions_on_input`          | `true`            | `boolean` Causes the completion menu to show in editors while typing                                                                                                         |
-| `language_overrides`                 | `null`            | See 'overrides' section below                                                                                                                                                |
-| `tab_size`                           | `4`               | The number of columns occupied by a tab                                                                                                                                      |
-| `theme`                              | `One Dark`        | `string` The name of a Zed theme                                                                                                                                             |
-| `preferred_line_length`              | `80`              | The number of characters at which to soft wrap lines, when soft wrap is enabled                                                                                              |
-| `projects_online_by_default`         | `true`            | `boolean` Project goes online when opened.                                                                                                                                   |
-| `remove_trailing_whitespace_on_save` | `true`            | `boolean` Whether or not all trailing whitespace will be removed on each line                                                                                                |
-| `soft_wrap`                          | `none`            | `editor_width`, `none`, `preferred_line_length`                                                                                                                              |
-| `active_pane_magnification`          | `1.0`             | Scale by which to zoom the active pane. When set to `1.0`, the active pane has the same size as others, but when set to a larger value, the active pane takes up more space. |
-| `vim_mode`                           | `false`           | `boolean` Enables Vim mode (WIP)                                                                                                                                             |
-| `terminal`                           | See below         | See 'Terminal' section below                                                                                                                                                 |
-| `confirm_quit`                       | `false`           | `boolean` Whether or not to ask the user to confirm before closing the application                                                                                           |
-| `cursor_blink`                       | `true`            | `boolean` Whether or not the cursor blinks                                                                                                                                   |
-| `show_call_status_icon`              | `true`            | `boolean` Whether or not the screen sharing icon is shown in the os status bar                                                                                               |
-| `default_dock_anchor`                | `bottom`          | `string` See 'Default Dock Anchor' section below                                                                                                                             |*
-| `telemetry`                          | See below         | `string` See 'Telemetry' section below                                                                                                                                       |*
-| `auto_update`                        | `true`            | `boolean` See 'Telemetry' section below                                                                                                                                       |*
+**Options**
 
+`float` values
 
 ## Autosave
 
-- Name: `autosave`
+- Setting: `autosave`
+- Description: When to automatically save edited buffers.
 - Default: `off`
 
-Options:
+**Options**
 
 1. To disable autosave, set it to `off`
 
 ```json
 {
-    "autosave": "off"
+  "autosave": "off"
 }
 ```
 
@@ -75,7 +52,7 @@ Options:
 
 ```json
 {
-    "autosave": "on_focus_change"
+  "autosave": "on_focus_change"
 }
 ```
 
@@ -83,7 +60,7 @@ Options:
 
 ```json
 {
-    "autosave": "on_window_change"
+  "autosave": "on_window_change"
 }
 ```
 
@@ -91,27 +68,41 @@ Options:
 
 ```json
 {
-    "autosave": {
-        "after_delay": {
-            "milliseconds": 1000
-        }
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000
     }
+  }
 }
 ```
 
+## Auto Update
+
+- Setting: `auto_update`
+- Description: Whether or not to automatically check for updates.
+- Default: `true`
+
+**Options**
+
+`boolean`
+
 ## Buffer Font Family
 
-- Name: `buffer_font_family`
+- Setting: `buffer_font_family`
+- Description: The name of a font to use for rendering text in the editor.
 - Default: `Zed Mono`
 
-Options: The name of an installed font family
+**Options**
+
+The name of any font family installed on the user's system
 
 ## Buffer Font Features
 
-- Name: `buffer_font_features`
+- Setting: `buffer_font_features`
+- Description: The OpenType features to enable for text in the editor.
 - Default: `null`
 
-Options:
+**Options**
 
 Zed supports a subset of OpenType features that can be enabled or disabled for a given buffer or terminal font.  The following [OpenType features](https://en.wikipedia.org/wiki/List_of_typographic_features) can be enabled or disabled too: `calt`, `case`, `cpsp`, `frac`, `liga`, `onum`, `ordn`, `pnum`, `ss01`, `ss02`, `ss03`, `ss04`, `ss05`, `ss06`, `ss07`, `ss08`, `ss09`, `ss10`, `ss11`, `ss12`, `ss13`, `ss14`, `ss15`, `ss16`, `ss17`, `ss18`, `ss19`, `ss20`, `subs`, `sups`, `swsh`, `titl`, `tnum`, `zero`.
 
@@ -125,56 +116,75 @@ For example, to disable ligatures for a given font you can add the following to 
 }
 ```
 
+## Buffer Font Size
 
+- Setting: `buffer_font_size`
+- Description: The default font size for text in the editor.
+- Default: `15`
 
+**Options**
 
+`integer`
 
+## Confirm Quit
 
-## Format On Save
+- Setting: `confirm_quit`
+- Description: Whether or not to prompt the user to confirm before closing the application.
+- Default: `false`
 
-The `format_on_save` setting controls if files are formatted before saving. There are two modes:
+**Options**
 
-1. `on`, enables format on save obeying `formatter` setting:
+`boolean`
 
-   ```json
-   {
-     "format_on_save": "on"
-   }
-   ```
+## Cursor Blink
 
-2. `off`, disables format on save:
-   ```json
-   {
-     "format_on_save": "off"
-   }
-   ```
+- Setting: `cursor_blink`
+- Description: Whether or not the cursor blinks.
+- Default: `true`
 
-## Formatter
+**Options**
 
-The `formatter` setting dictates how a format is performed and has two different modes:
+`boolean`
 
-1. To use the current language server, use `"language_server"`:
+## Default Dock Anchor
 
-   ```json
-   {
-     "formatter": "language_server"
-   }
-   ```
+- Setting: `default_dock_anchor`
+- Description: The default anchor for new docks.
+- Default: `bottom`
 
-2. Or to use an external command, use `"external"`. Specify the name of the formatting program to run, and an array of arguments to pass to the program. The buffer's text will be passed to the program on stdin, and the formatted output should be written to stdout. For example, the following command would strip trailing spaces using [`sed(1)`](https://linux.die.net/man/1/sed):
+**Options**
 
-   ```json
-   {
-     "formatter": {
-       "external": {
-         "command": "sed",
-         "arguments": ["-e", "s/ *$//"]
-       }
-     }
-   }
-   ```
+1. Position the dock attached to the bottom of the workspace: `bottom`
+2. Position the dock to the right of the workspace like a side panel: `right`
+3. Position the dock full screen over the entire workspace: `expanded`
 
-## Lsp
+## Enable Language Server
+
+- Setting: `enable_language_server`
+- Description: Whether or not to use language servers to provide code intelligence.
+- Default: `true`
+
+**Options**
+
+`boolean`
+
+## Ensure Final Newline On Save
+
+- Setting: `ensure_final_newline_on_save`
+- Description: Whether or not to ensure there's a single newline at the end of a buffer when saving it.
+- Default: `true`
+
+**Options**
+
+`boolean`
+
+## LSP
+
+- Setting: `lsp`
+- Description: Configuration for language servers.
+- Default: `null`
+
+**Options**
 
 The following settings can be overridden for specific language servers:
 
@@ -194,17 +204,86 @@ To override settings for a language, add an entry for that language server's nam
 }
 ```
 
-## Overrides
+## Format On Save
 
-The following settings can be overridden for specific languages:
+- Setting: `format_on_save`
+- Description: Whether or not to perform a buffer format before saving.
+- Default: `on`
 
-- `tab_size`
-- `hard_tabs`
-- `soft_wrap`
-- `preferred_line_length`
-- `format_on_save`
-- `formatter`
-- `enable_language_server`
+**Options**
+
+1. `on`, enables format on save obeying `formatter` setting:
+
+```json
+{
+  "format_on_save": "on"
+}
+```
+
+2. `off`, disables format on save:
+
+```json
+{
+  "format_on_save": "off"
+}
+```
+
+## Formatter
+
+- Setting: `formatter`
+- Description: How to perform a buffer format.
+- Default: `language_server`
+
+**Options**
+
+1. To use the current language server, use `"language_server"`:
+
+```json
+{
+  "formatter": "language_server"
+}
+```
+
+2. Or to use an external command, use `"external"`. Specify the name of the formatting program to run, and an array of arguments to pass to the program. The buffer's text will be passed to the program on stdin, and the formatted output should be written to stdout. For example, the following command would strip trailing spaces using [`sed(1)`](https://linux.die.net/man/1/sed):
+
+```json
+{
+  "formatter": {
+    "external": {
+      "command": "sed",
+      "arguments": ["-e", "s/ *$//"]
+    }
+  }
+}
+```
+
+## Hard Tabs
+
+- Setting: `hard_tabs`
+- Description: Whether to indent lines using tab characters or multiple spaces.
+- Default: `false`
+
+**Options**
+
+`boolean`
+
+## Hover Popover Enabled
+
+- Setting: `hover_popover_enabled`
+- Description: Whether or not to show the informational hover box when moving the mouse over symbols in the editor.
+- Default: `true`
+
+**Options**
+
+`boolean`
+
+## Language Overrides
+
+- Setting: `language_overrides`
+- Description: Configuration overrides for specific languages.
+- Default: `null`
+
+**Options**
 
 To override settings for a language, add an entry for that languages name to the `language_overrides` value. Example:
 
@@ -221,11 +300,112 @@ To override settings for a language, add an entry for that languages name to the
 }
 ```
 
+The following settings can be overridden for each specific languages:
+
+- `enable_language_server`
+- `ensure_final_newline_on_save`
+- `format_on_save`
+- `formatter`
+- `hard_tabs`
+- `preferred_line_length`
+- `remove_trailing_whitespace_on_save`
+- `soft_wrap`
+- `tab_size`
+
+## Preferred Line Length
+
+- Setting: `preferred_line_length`
+- Description: The column at which to soft-wrap lines, for buffers where soft-wrap is enabled.
+- Default: `80`
+
+**Options**
+
+`integer`
+
+## Projects Online By Default
+
+- Setting: `projects_online_by_default`
+- Description: Whether or not to show the online projects view by default.
+- Default: `true`
+
+**Options**
+
+`boolean`
+
+## Remove Trailing Whitespace On Save
+
+- Setting: `remove_trailing_whitespace_on_save`
+- Description: Whether or not to remove any trailing whitespace from lines of a buffer before saving it.
+- Default: `true`
+
+**Options**
+
+`boolean`
+
+## Show Call Status Icon
+
+- Setting: `show_call_status_icon`
+- Description: Whether or not to show the call status icon in the status bar.
+- Default: `true`
+
+**Options**
+
+`boolean`
+
+## Show Completions On Input
+
+- Setting: `show_completions_on_input`
+- Description: Whether or not to show completions as you type.
+- Default: `true`
+
+**Options**
+
+`boolean`
+
+## Soft Wrap
+
+- Setting: `soft_wrap`
+- Description: Whether or not the screen sharing icon is shown in the os status bar.
+- Default: `none`
+
+**Options**
+
+1. `editor_width`
+2. `preferred_line_length`
+3. `none`
+
+## Tab Size
+
+- Setting: `tab_size`
+- Description: The number of spaces to use for each tab character.
+- Default: `4`
+
+**Options**
+
+`integer`
+
+## Telemetry
+
+- Setting: `telemetry`
+- Description: Control what info is collected by Zed.
+- Default: `"diagnostics": true`, `"metrics": true`
+
+**Options**
+
+- Setting for sending debug-related info (crash reports): `diagnostics`
+- Setting for sending anonymized usage data like what languages you're using Zed with: `metrics`
+
+```json
+"telemetry": {
+  "diagnostics": true,
+  "metrics": true
+},
+```
+
 ## Terminal
 
 | **Option**          | **Default**                   | **Description**                                                                                            |
 | ------------------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| `shell`             | `"system"`                    | What shell to use on launch, see below.                                                                    |
 | `working_directory` | `"current_project_directory"` | What working directory strategy to use, see below.                                                         |
 | `blinking`          | `"terminal_controlled"`       | Set the terminal cursor blink, see below.                                                                  |
 | `alternate_scroll`  | `"on"`                        | Default for the terminal alternate scroll mode, see below.                                                 |
@@ -236,9 +416,13 @@ To override settings for a language, add an entry for that languages name to the
 | `font_family`       | not set                       | What font to use for the terminal. When not set, defaults to matching the editor's font.                   |
 | `font_features`     | not set                       | What font features to use for the terminal. When not set, defaults to matching the editor's font features. |
 
-### Terminal: Launch Shell
+### Terminal: Shell
 
-What shell to use when opening a terminal. May take 3 values:
+- Setting: `shell`
+- Description: What working directory to use when launching the terminal.
+- Default: `system`
+
+**Options**
 
 1. Use the system's default terminal configuration (usually the pw file).
    ```json
@@ -328,6 +512,26 @@ environment. Keys must be unique, use `:` to separate multiple values in a singl
     "KEY": "value1:value2"
 }
 ```
+
+## Theme
+
+- Setting: `theme`
+- Description: The name of the Zed theme to use for the UI.
+- Default: `One Dark`
+
+**Options**
+
+Run the `theme selector: toggle` action in the command palette to see a current list of valid themes names.
+
+## Vim
+
+- Setting: `vim_mode`
+- Description: Whether or not to enable vim mode (work in progress).
+- Default: `false`
+
+**Options**
+
+`boolean`
 
 ## An example configuration:
 
