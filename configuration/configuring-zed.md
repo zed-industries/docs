@@ -257,6 +257,12 @@ To override settings for a language, add an entry for that language server's nam
 }
 ```
 
+## Git
+
+- Setting: `git`
+- Description: Configuration for git integration.
+
+
 ## Hard Tabs
 
 - Setting: `hard_tabs`
@@ -404,17 +410,129 @@ The following settings can be overridden for each specific languages:
 
 ## Terminal
 
+- Setting: `terminal`
+- Description: Configuration for the terminal.
+- Default:
+
+```json
+"terminal": {
+  "alternate_scroll": "off",
+  "blinking": "terminal_controlled",
+  "copy_on_select": false,
+  "env": {},
+  "font_family": null,
+  "font_features": null,
+  "font_size": null,
+  "option_as_meta": false,
+  "shell": {},
+  "working_directory": "current_project_directory"
+}
+```
+
+
 | **Option**          | **Default**                   | **Description**                                                                                            |
 | ------------------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------- |
 | `working_directory` | `"current_project_directory"` | What working directory strategy to use, see below.                                                         |
-| `blinking`          | `"terminal_controlled"`       | Set the terminal cursor blink, see below.                                                                  |
-| `alternate_scroll`  | `"on"`                        | Default for the terminal alternate scroll mode, see below.                                                 |
-| `option_as_meta`    | `true`                        | Re-interprets the option keys to act like a 'meta' key, like in Emacs.                                     |
-| `copy_on_select`    | `false`                       | Whether or not selecting text in the terminal will automatically copy to the system clipboard.             |
-| `env`               | `{}`                          | See below.                                                                                                 |
 | `font_size`         | not set                       | What font size to use for the terminal. When not set defaults to matching the editor's font size.          |
 | `font_family`       | not set                       | What font to use for the terminal. When not set, defaults to matching the editor's font.                   |
 | `font_features`     | not set                       | What font features to use for the terminal. When not set, defaults to matching the editor's font features. |
+shell
+
+### Terminal: Alternate Scroll
+
+- Setting: `alternate_scroll`
+- Description: Set whether Alternate Scroll mode (DECSET code: `?1007`) is active by default. Alternate Scroll mode converts mouse scroll events into up / down key presses when in the alternate screen (e.g. when running applications like vim or less). The terminal can still set and unset this mode with ANSI escape codes.
+- Default: `off`
+
+**Options**
+
+1. Default alternate scroll mode to on
+
+```json
+{
+  "alternate_scroll": "on"
+}
+```
+
+2. Default alternate scroll mode to off
+
+```json
+{
+  "alternate_scroll": "off"
+}
+```
+
+### Terminal: Blinking
+
+- Setting: `blinking`
+- Description: Set the cursor blinking behavior in the terminal
+- Default: `terminal_controlled`
+
+**Options**
+
+1. Never blink the cursor, ignore the terminal mode
+
+```json
+{
+  "blinking": "off"
+}
+```
+
+2. Default the cursor blink to off, but allow the terminal to turn blinking on
+
+```json
+{
+  "blinking": "terminal_controlled"
+}
+```
+
+3. Always blink the cursor, ignore the terminal mode
+
+```json
+"blinking": "on",
+```
+
+### Terminal: Copy On Select
+
+- Setting: `copy_on_select`
+- Description: Whether or not selecting text in the terminal will automatically copy to the system clipboard.
+- Default: `false`
+
+**Options**
+
+`boolean`
+
+### Env
+
+- Setting: `env`
+- Description: Any key-value pairs added to this object will be added to the terminal's environment. Keys must be unique, use `:` to separate multiple values in a single variable
+- Default: `{}`
+
+**Example**
+
+```json
+"env": {
+  "ZED": "1",
+  "KEY": "value1:value2"
+}
+```
+
+### Option As Meta
+
+- Setting: `option_as_meta`
+- Description: Re-interprets the option keys to act like a 'meta' key, like in Emacs.
+- Default: `true`
+
+**Options**
+
+`boolean`
+
+
+
+
+
+
+
 
 ### Terminal: Shell
 
@@ -427,7 +545,9 @@ The following settings can be overridden for each specific languages:
 1. Use the system's default terminal configuration (usually the pw file).
 
 ```json
-"shell": "system"
+{
+  "shell": "system"
+}
 ```
 
 2. A program to launch:
@@ -456,19 +576,25 @@ There are four possible values:
 1. Use the current file's project directory. Will Fallback to the first project directory strategy if unsuccessful
 
 ```json
-"working_directory": "current_project_directory"
+{
+  "working_directory": "current_project_directory"
+}
 ```
 
 2. Use the first project in this workspace's directory. Will fallback to using this platform's home directory.
 
 ```json
-"working_directory": "first_project_directory"
+{
+  "working_directory": "first_project_directory"
+}
 ```
 
 3. Always use this platform's home directory (if we can find it)
 
 ```json
-"working_directory": "always_home"
+{
+  "working_directory": "always_home"
+}
 ```
 
 4. Always use a specific directory. This value will be shell expanded. If this path is not a valid directory the terminal will default to this platform's home directory.
@@ -478,58 +604,6 @@ There are four possible values:
   "always": {
     "directory": "~/zed/projects/"
   }
-}
-```
-
-### Terminal: Cursor Blink
-
-Set the cursor blinking behavior in the terminal.
-May take 3 values:
-
-1. Never blink the cursor, ignore the terminal mode
-
-```json
-"blinking": "off",
-```
-
-2. Default the cursor blink to off, but allow the terminal to turn blinking on
-
-```json
-"blinking": "terminal_controlled",
-```
-
-3. Always blink the cursor, ignore the terminal mode
-
-```json
-"blinking": "on",
-```
-
-### Terminal: Alternate Scroll Mode
-
-Set whether Alternate Scroll mode (DECSET code: `?1007`) is active by default. Alternate Scroll mode converts mouse scroll events into up / down key presses when in the alternate screen (e.g. when running applications like vim or less). The terminal can still set and unset this mode with ANSI escape codes.
-May take 2 values:
-
-1. Default alternate scroll mode to on
-
-```json
-"alternate_scroll": "on",
-```
-
-2. Default alternate scroll mode to off
-
-```json
-"alternate_scroll": "off",
-```
-
-### Terminal: Environment Variables
-
-Any key-value pairs added to this object will be added to the terminal's
-environment. Keys must be unique, use `:` to separate multiple values in a single variable:
-
-```json
-"env": {
-  "ZED": "1",
-  "KEY": "value1:value2"
 }
 ```
 
