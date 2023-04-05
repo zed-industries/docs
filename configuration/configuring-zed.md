@@ -84,7 +84,7 @@ Here are all the currently available settings.
 
 **Options**
 
-`boolean`
+`boolean` values
 
 ## Buffer Font Family
 
@@ -124,7 +124,7 @@ For example, to disable ligatures for a given font you can add the following to 
 
 **Options**
 
-`integer`
+`integer` values
 
 ## Confirm Quit
 
@@ -134,7 +134,7 @@ For example, to disable ligatures for a given font you can add the following to 
 
 **Options**
 
-`boolean`
+`boolean` values
 
 ## Cursor Blink
 
@@ -144,7 +144,7 @@ For example, to disable ligatures for a given font you can add the following to 
 
 **Options**
 
-`boolean`
+`boolean` values
 
 ## Default Dock Anchor
 
@@ -166,7 +166,7 @@ For example, to disable ligatures for a given font you can add the following to 
 
 **Options**
 
-`boolean`
+`boolean` values
 
 ## Ensure Final Newline On Save
 
@@ -176,7 +176,7 @@ For example, to disable ligatures for a given font you can add the following to 
 
 **Options**
 
-`boolean`
+`boolean` values
 
 ## LSP
 
@@ -260,8 +260,38 @@ To override settings for a language, add an entry for that language server's nam
 ## Git
 
 - Setting: `git`
-- Description: Configuration for git integration.
+- Description: Configuration for git-related features.
+- Default:
 
+```json
+"git": {
+  "git_gutter": "tracked_files"
+},
+```
+
+### Git: Git Gutter
+
+- Setting: `git_gutter`
+- Description: Whether or not to show the git gutter.
+- Default: `tracked_files`
+
+**Options**
+
+1. Show git gutter in tracked files
+
+```json
+{
+  "git_gutter": "tracked_files"
+}
+```
+
+2. Hide git gutter
+
+```json
+{
+  "git_gutter": "hide"
+}
+```
 
 ## Hard Tabs
 
@@ -271,7 +301,7 @@ To override settings for a language, add an entry for that language server's nam
 
 **Options**
 
-`boolean`
+`boolean` values
 
 ## Hover Popover Enabled
 
@@ -281,7 +311,54 @@ To override settings for a language, add an entry for that language server's nam
 
 **Options**
 
-`boolean`
+`boolean` values
+
+## Journal
+
+- Setting: `journal`
+- Description: Configuration for the journal.
+- Default:
+
+```json
+"journal": {
+  "path": "~",
+  "hour_format": "hour12"
+}
+```
+
+### Journal: Path
+
+- Setting: `path`
+- Description: The path of the directory where journal entries are stored.
+- Default: `~`
+
+**Options**
+
+`string` values
+
+### Journal: Hour Format
+
+- Setting: `hour_format`
+- Description: The format to use for displaying hours in the journal.
+- Default: `hour12`
+
+**Options**
+
+1. 12-hour format:
+
+```json
+{
+  "hour_format": "hour12"
+}
+```
+
+2. 24-hour format:
+
+```json
+{
+  "hour_format": "hour24"
+}
+```
 
 ## Language Overrides
 
@@ -318,6 +395,8 @@ The following settings can be overridden for each specific languages:
 - `soft_wrap`
 - `tab_size`
 
+These values take in the same options as the root-level settings with the same name.
+
 ## Preferred Line Length
 
 - Setting: `preferred_line_length`
@@ -326,7 +405,7 @@ The following settings can be overridden for each specific languages:
 
 **Options**
 
-`integer`
+`integer` values
 
 ## Projects Online By Default
 
@@ -336,7 +415,7 @@ The following settings can be overridden for each specific languages:
 
 **Options**
 
-`boolean`
+`boolean` values
 
 ## Remove Trailing Whitespace On Save
 
@@ -346,7 +425,7 @@ The following settings can be overridden for each specific languages:
 
 **Options**
 
-`boolean`
+`boolean` values
 
 ## Show Call Status Icon
 
@@ -356,7 +435,7 @@ The following settings can be overridden for each specific languages:
 
 **Options**
 
-`boolean`
+`boolean` values
 
 ## Show Completions On Input
 
@@ -366,7 +445,7 @@ The following settings can be overridden for each specific languages:
 
 **Options**
 
-`boolean`
+`boolean` values
 
 ## Soft Wrap
 
@@ -388,18 +467,13 @@ The following settings can be overridden for each specific languages:
 
 **Options**
 
-`integer`
+`integer` values
 
 ## Telemetry
 
 - Setting: `telemetry`
 - Description: Control what info is collected by Zed.
-- Default: `"diagnostics": true`, `"metrics": true`
-
-**Options**
-
-- Setting for sending debug-related info (crash reports): `diagnostics`
-- Setting for sending anonymized usage data like what languages you're using Zed with: `metrics`
+- Default:
 
 ```json
 "telemetry": {
@@ -407,6 +481,28 @@ The following settings can be overridden for each specific languages:
   "metrics": true
 },
 ```
+
+**Options**
+
+### Telemetry: Diagnostics
+
+- Setting: `diagnostics`
+- Description: Setting for sending debug-related data, such as crash reports.
+- Default: `true`
+
+**Options**
+
+`boolean` values
+
+### Telemetry: Metrics
+
+- Setting: `metrics`
+- Description: Setting for sending anonymized usage data, such what languages you're using Zed with.
+- Default: `true`
+
+**Options**
+
+`boolean` values
 
 ## Terminal
 
@@ -428,15 +524,6 @@ The following settings can be overridden for each specific languages:
   "working_directory": "current_project_directory"
 }
 ```
-
-
-| **Option**          | **Default**                   | **Description**                                                                                            |
-| ------------------- | ----------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| `working_directory` | `"current_project_directory"` | What working directory strategy to use, see below.                                                         |
-| `font_size`         | not set                       | What font size to use for the terminal. When not set defaults to matching the editor's font size.          |
-| `font_family`       | not set                       | What font to use for the terminal. When not set, defaults to matching the editor's font.                   |
-| `font_features`     | not set                       | What font features to use for the terminal. When not set, defaults to matching the editor's font features. |
-shell
 
 ### Terminal: Alternate Scroll
 
@@ -500,9 +587,9 @@ shell
 
 **Options**
 
-`boolean`
+`boolean` values
 
-### Env
+### Terminal: Env
 
 - Setting: `env`
 - Description: Any key-value pairs added to this object will be added to the terminal's environment. Keys must be unique, use `:` to separate multiple values in a single variable
@@ -517,7 +604,37 @@ shell
 }
 ```
 
-### Option As Meta
+### Terminal: Font Size
+
+- Setting: `font_size`
+- Description: What font size to use for the terminal. When not set defaults to matching the editor's font size
+- Default: `null`
+
+**Options**
+
+`integer` values
+
+### Terminal: Font Family
+
+- Setting: `font_family`
+- Description: What font to use for the terminal. When not set, defaults to matching the editor's font.
+- Default: `null`
+
+**Options**
+
+The name of any font family installed on the user's system
+
+### Terminal: Font Features
+
+- Setting: `font_features`
+- Description: What font features to use for the terminal. When not set, defaults to matching the editor's font features.
+- Default: `null`
+
+**Options**
+
+See [Buffer Font Features](.#buffer-font-family) for options.
+
+### Terminal: Option As Meta
 
 - Setting: `option_as_meta`
 - Description: Re-interprets the option keys to act like a 'meta' key, like in Emacs.
@@ -525,14 +642,7 @@ shell
 
 **Options**
 
-`boolean`
-
-
-
-
-
-
-
+`boolean` values
 
 ### Terminal: Shell
 
@@ -569,9 +679,13 @@ shell
 }
 ```
 
-### Terminal: Working Directory Strategy
+### Terminal: Working Directory
 
-There are four possible values:
+- Setting: `working_directory`
+- Description: What working directory to use when launching the terminal.
+- Default: `"current_project_directory"`
+
+**Options**
 
 1. Use the current file's project directory. Will Fallback to the first project directory strategy if unsuccessful
 
@@ -625,7 +739,7 @@ Run the `theme selector: toggle` action in the command palette to see a current 
 
 **Options**
 
-`boolean`
+`boolean` values
 
 ## An example configuration:
 
