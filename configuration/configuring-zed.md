@@ -425,49 +425,61 @@ The following settings can be overridden for each specific languages:
 **Options**
 
 1. Use the system's default terminal configuration (usually the pw file).
-   ```json
-   "shell": "system"
-   ```
+
+```json
+"shell": "system"
+```
+
 2. A program to launch:
-   ```json
-   "shell": {
-     "program": "sh"
-   }
-   ```
+
+```json
+"shell": {
+    "program": "sh"
+}
+```
+
 3. A program with arguments:
-   ```json
-   "shell": {
-       "with_arguments": {
-         "program": "/bin/bash",
-         "arguments": ["--login"]
-       }
-   }
-   ```
+
+```json
+"shell": {
+  "with_arguments": {
+    "program": "/bin/bash",
+    "arguments": ["--login"]
+  }
+}
+```
 
 ### Terminal: Working Directory Strategy
 
 There are four possible values:
 
 1. Use the current file's project directory. Will Fallback to the first project directory strategy if unsuccessful
-   ```json
-   "working_directory": "current_project_directory"
-   ```
+
+```json
+"working_directory": "current_project_directory"
+```
+
 2. Use the first project in this workspace's directory. Will fallback to using this platform's home directory.
-   ```json
-   "working_directory": "first_project_directory"
-   ```
+
+```json
+"working_directory": "first_project_directory"
+```
+
 3. Always use this platform's home directory (if we can find it)
-   ```json
-   "working_directory": "always_home"
-   ```
+
+```json
+"working_directory": "always_home"
+```
+
 4. Always use a specific directory. This value will be shell expanded. If this path is not a valid directory the terminal will default to this platform's home directory.
-   ```json
-     "working_directory": {
-       "always": {
-         "directory": "~/zed/projects/"
-       }
-     }
-   ```
+
+```json
+"working_directory": {
+  "always": {
+    "directory": "~/zed/projects/"
+  }
+}
+```
 
 ### Terminal: Cursor Blink
 
@@ -475,17 +487,22 @@ Set the cursor blinking behavior in the terminal.
 May take 3 values:
 
 1. Never blink the cursor, ignore the terminal mode
-   ```json
-   "blinking": "off",
-   ```
+
+```json
+"blinking": "off",
+```
+
 2. Default the cursor blink to off, but allow the terminal to turn blinking on
-   ```json
-   "blinking": "terminal_controlled",
-   ```
+
+```json
+"blinking": "terminal_controlled",
+```
+
 3. Always blink the cursor, ignore the terminal mode
-   ```json
-   "blinking": "on",
-   ```
+
+```json
+"blinking": "on",
+```
 
 ### Terminal: Alternate Scroll Mode
 
@@ -493,13 +510,16 @@ Set whether Alternate Scroll mode (DECSET code: `?1007`) is active by default. A
 May take 2 values:
 
 1. Default alternate scroll mode to on
-   ```json
-   "alternate_scroll": "on",
-   ```
+
+```json
+"alternate_scroll": "on",
+```
+
 2. Default alternate scroll mode to off
-   ```json
-   "alternate_scroll": "off",
-   ```
+
+```json
+"alternate_scroll": "off",
+```
 
 ### Terminal: Environment Variables
 
@@ -508,8 +528,8 @@ environment. Keys must be unique, use `:` to separate multiple values in a singl
 
 ```json
 "env": {
-    "ZED": "1",
-    "KEY": "value1:value2"
+  "ZED": "1",
+  "KEY": "value1:value2"
 }
 ```
 
