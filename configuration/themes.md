@@ -42,8 +42,7 @@ A11y (accessibility) in Zed will be a long project. Likely lasting far beyond 1.
 
 Making Zed accessible will be a joint effort between things on the Zed side, and building out features in GPUI.
 
-For now, you can join this discussion to talk further about a11y in Zed: [Accessibility (a11y) in Zed]
-(https://github.com/zed-industries/community/discussions/1297)
+For now, you can join this discussion to talk further about a11y in Zed: [Accessibility (a11y) in Zed](https://github.com/zed-industries/community/discussions/1297)
 
 ### Roadmap
 
@@ -58,7 +57,7 @@ _**Subject to change**. This is to provide some insight into our plans around th
 
 *Future things*:
 - [ ] **UI Overrides**: Similar to syntax overrides, but for UI elements. This would, for example, allow you to change the color of the sidebar background or the label color of an active tab.
-- [ ] **UI surface for downlading themes**:
+- [ ] **UI surface for downlading themes**: This might be a palette or panel in the editor, an external site for exploring and downloading themes, etc.
 
 ---
 
@@ -93,5 +92,13 @@ This isn't a theme issue. If you would like to discuss something you would like 
 <summary>Can you add file type icons to themes?</summary>
 
 Not yet, but it is [highly requested](https://github.com/zed-industries/community/issues/206) in our community board. If you would like to see this feature specifically, feel free to share any projects for sourcing these in the [GitHub issue](https://github.com/zed-industries/community/issues/206).
+
+</details>
+
+<details>
+
+<summary>How can I get involved with Themes in Zed?</summary>
+
+There is an open themes discussion in our community repository here: [Themes: Ideas, Feedback, Accessibility, Discussion](https://github.com/zed-industries/community/discussions/503)
 
 </details>
