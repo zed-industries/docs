@@ -34,6 +34,7 @@ TERMINAL_CONTROL_CODE_MAP = {
     "\u001bf": "terminal::MoveToNextWordEnd",
 }
 
+
 def main():
     with open(DEFAULT_KEY_BINDINGS, "r") as keymap_file:
         keymap_data = commentjson.load(keymap_file)
@@ -73,10 +74,12 @@ def get_markdown_table(column_data):
     data = {
         command_column_name: column_data["commands"],
         target_column_name: column_data["targets"],
-        shortcut_column_name: column_data["shortcuts"]
+        shortcut_column_name: column_data["shortcuts"],
     }
 
-    data_frame = pandas.DataFrame(data).sort_values(by=[command_column_name, shortcut_column_name])
+    data_frame = pandas.DataFrame(data).sort_values(
+        by=[command_column_name, shortcut_column_name]
+    )
 
     return data_frame.to_markdown(tablefmt="github", index=False)
 
@@ -142,14 +145,26 @@ def get_readable_command_and_target(command, context):
 
 def get_readable_shortcut(shortcut):
     shortcut_components = re.split("(-|\s)+", shortcut)
-    readable_shortcut_components = [KEY_NAME_MAP.get(component, component).title() for component in shortcut_components]
+    readable_shortcut_components = [
+        KEY_NAME_MAP.get(component, component).title()
+        for component in shortcut_components
+    ]
     readable_shortcut = "".join(readable_shortcut_components)
 
     return readable_shortcut
 
 
 def camel_case_to_readable(text):
-    return "".join([" " + character if character.isupper() else character for character in text]).lower().strip()
+    return (
+        "".join(
+            [
+                " " + character if character.isupper() else character
+                for character in text
+            ]
+        )
+        .lower()
+        .strip()
+    )
 
 
 def snake_case_to_readable(text):
