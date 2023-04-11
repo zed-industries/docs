@@ -23,17 +23,23 @@ Before you can collaborate, you'll need to add a collaborator to your contacts. 
 
 You can add an existing Zed user as a contact from the contacts menu, deployed from the `Show contacts menu` button in the upper right-hand corner of the window or by `collab: toggle contacts menu` (`cmd-shift-c`) and then clicking the `Search for new contact` button to the right of the search box.
 
+![Inviting a collaborator to the current project](https://docs.zed.dev/assets/collaboration/add-a-collaborator.png)
+
 When you invite a collaborator to a project not in a call they will receive a notification to join, and a new call is created.
+
+![Receiving an invite to join a call](https://docs.zed.dev/assets/collaboration/receiving-an-invite.jpg)
 
 ### Inviting non-Zed users
 
-If someone you want to collaborate with has not yet signed up for Zed, they will need to download the app and sign in for the first time before you can add them.
+If someone you want to collaborate with has not yet signed up for Zed, they will need to [download the app](https://zed.dev/download) and sign in for the first time before you can add them.
 
 ## Collaborating on a project
 
 ### Share a project
 
 When you invite a collaborator to join your project, a new call begins. Your Zed windows will show the call participants in the top right of the window.
+
+![A new Zed call with two collaborators](https://docs.zed.dev/assets/collaboration/new-call.png)
 
 Collaborators in the same project as you are in color, and have a cursor color. Collaborators in other projects are shown in gray. Collaborators that have access to the current project will have their own cursor color under their avatar.
 
@@ -50,6 +56,8 @@ If you are in a project that isn't shared, others will not be able to join it or
 To follow a collaborator, click on their avatar in the top right of the window. You can also cycle through collaborators using `workspace: follow next collaborator` (`ctrl-alt-cmd-f`).
 
 When you join a project, you'll immediately start following the collaborator that invited you.
+
+![Automatically following the person inviting us to a project](https://docs.zed.dev/assets/collaboration/joining-a-call.png)
 
 When you are in a pane that is following a collaborator, you will:
 - follow their cursor and scroll position
