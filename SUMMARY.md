@@ -36,6 +36,10 @@
 * [TypeScript](languages/typescript.md)
 * [YAML](languages/yaml.md)
 
+## 🔴 Troubleshooting
+
+* [Language server download issues](troubleshooting/language-server-download-issues.md)
+
 ## 🔵 Community
 
 * [Giving feedback](community/feedback.md)
