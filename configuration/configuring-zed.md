@@ -383,7 +383,7 @@ To override settings for a language, add an entry for that languages name to the
 }
 ```
 
-The following settings can be overridden for each specific languages:
+The following settings can be overridden for each specific language:
 
 - `enable_language_server`
 - `ensure_final_newline_on_save`
