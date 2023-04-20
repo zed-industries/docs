@@ -172,11 +172,13 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Newline below                    | Editor        | `Command + Alt + Enter`         |
 | Newline below                    | Editor        | `Command + Enter`               |
 | Next screen                      | Editor        | `Control + L`                   |
+| Next suggestion                  | Copilot       | `Alt + ]`                       |
 | Open excerpts                    | Editor        | `Alt + Enter`                   |
 | Outdent                          | Editor        | `Command + [`                   |
 | Page down                        | Editor        | `Page Down`                     |
 | Page up                          | Editor        | `Page Up`                       |
 | Paste                            | Editor        | `Command + V`                   |
+| Previous suggestion              | Copilot       | `Alt + [`                       |
 | Redo                             | Editor        | `Command + Shift + Z`           |
 | Redo selection                   | Editor        | `Command + Shift + U`           |
 | Rename                           | Editor        | `F2`                            |
@@ -214,6 +216,7 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Show character palette           | Editor        | `Control + Command + Space`     |
 | Show completions                 | Editor        | `Control + Space`               |
 | Split selection into lines       | Editor        | `Command + Shift + L`           |
+| Suggest                          | Copilot       | `Alt + \`                       |
 | Tab                              | Editor        | `Tab`                           |
 | Tab prev                         | Editor        | `Shift + Tab`                   |
 | Toggle                           | Outline       | `Command + Shift + O`           |
@@ -295,17 +298,18 @@ There are some key bindings that can't be overridden; we are working on an issue
 
 #### Project Panel
 
-| **Command**             | **Target**    | **Default Shortcut**   |
-|-------------------------|---------------|------------------------|
-| Collapse selected entry | Project Panel | `Left`                 |
-| Copy                    | Project Panel | `Command + C`          |
-| Copy path               | Project Panel | `Command + Alt + C`    |
-| Cut                     | Project Panel | `Command + X`          |
-| Delete                  | Project Panel | `Backspace`            |
-| Expand selected entry   | Project Panel | `Right`                |
-| Paste                   | Project Panel | `Command + V`          |
-| Rename                  | Project Panel | `F2`                   |
-| Reveal in finder        | Project Panel | `Alt + Command + R`    |
+| **Command**             | **Target**    | **Default Shortcut**        |
+|-------------------------|---------------|-----------------------------|
+| Collapse selected entry | Project Panel | `Left`                      |
+| Copy                    | Project Panel | `Command + C`               |
+| Copy path               | Project Panel | `Command + Alt + C`         |
+| Copy relative path      | Project Panel | `Alt + Command + Shift + C` |
+| Cut                     | Project Panel | `Command + X`               |
+| Delete                  | Project Panel | `Backspace`                 |
+| Expand selected entry   | Project Panel | `Right`                     |
+| Paste                   | Project Panel | `Command + V`               |
+| Rename                  | Project Panel | `F2`                        |
+| Reveal in finder        | Project Panel | `Alt + Command + R`         |
 
 #### Project Search Bar
 
