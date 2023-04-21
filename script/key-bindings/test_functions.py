@@ -10,8 +10,9 @@ from main import (
     get_markdown_tables,
     get_readable_command_and_target,
     get_readable_shortcut,
-    snake_case_to_readable
+    snake_case_to_readable,
 )
+
 
 @test("test snake_case_to_readable")
 def _():
@@ -31,17 +32,33 @@ def _():
 
 @test("test get_readable_command_and_target")
 def _():
-    assert get_readable_command_and_target("editor::DeleteToPreviousWordStart", "Editor") == ("Delete to previous word start", "Editor")
-    assert get_readable_command_and_target("editor::DeleteToPreviousWordStart", "Workspace") == ("Delete to previous word start", "Editor")
+    assert get_readable_command_and_target(
+        "editor::DeleteToPreviousWordStart", "Editor"
+    ) == ("Delete to previous word start", "Editor")
+    assert get_readable_command_and_target(
+        "editor::DeleteToPreviousWordStart", "Workspace"
+    ) == ("Delete to previous word start", "Editor")
 
 
 @test("test get_readable_command_and_target for special cases")
 def _():
-    assert get_readable_command_and_target(["terminal::SendText", "\u0001"], "terminal") == ("Move to beginning of line", "Terminal")
-    assert get_readable_command_and_target(["terminal::SendKeystroke", "ctrl-c"], "terminal") == None
+    assert get_readable_command_and_target(
+        ["terminal::SendText", "\u0001"], "terminal"
+    ) == ("Move to beginning of line", "Terminal")
+    assert (
+        get_readable_command_and_target(
+            ["terminal::SendKeystroke", "ctrl-c"], "terminal"
+        )
+        == None
+    )
 
-    assert get_readable_command_and_target(["pane::ActivateItem", 0], "pane") == ("Activate item 1", "Pane")
-    assert get_readable_command_and_target(["workspace::ActivatePane", 0], "workspace") == ("Activate pane 1", "Workspace")
+    assert get_readable_command_and_target(["pane::ActivateItem", 0], "pane") == (
+        "Activate item 1",
+        "Pane",
+    )
+    assert get_readable_command_and_target(
+        ["workspace::ActivatePane", 0], "workspace"
+    ) == ("Activate pane 1", "Workspace")
 
 
 @test("test get_markdown_data")
@@ -53,7 +70,7 @@ def _():
                 "ctrl-k": "editor::CutToEndOfLine",
                 "ctrl-t": "editor::Transpose",
                 "cmd-backspace": "editor::DeleteToBeginningOfLine",
-            }
+            },
         }
     ]
 
@@ -62,18 +79,10 @@ def _():
             "commands": [
                 "Cut to end of line",
                 "Transpose",
-                "Delete to beginning of line"
+                "Delete to beginning of line",
             ],
-            "targets": [
-                "Editor",
-                "Editor",
-                "Editor"
-            ],
-            "shortcuts": [
-                "`Control + K`",
-                "`Control + T`",
-                "`Command + Backspace`"
-            ],
+            "targets": ["Editor", "Editor", "Editor"],
+            "shortcuts": ["`Control + K`", "`Control + T`", "`Command + Backspace`"],
         }
     }
     assert get_markdown_column_data(keymap_data) == markdown_data
@@ -95,7 +104,7 @@ def _():
                 "ctrl-l": "editor::NextScreen",
                 "ctrl-f": "editor::MoveRight",
                 "alt-left": "editor::MoveToPreviousWordStart",
-            }
+            },
         },
         {
             "context": "Pane",
@@ -103,7 +112,7 @@ def _():
                 "ctrl--": "pane::GoBack",
                 "ctrl-_": "pane::GoForward",
                 "ctrl-0": "pane::ActivateLastItem",
-            }
+            },
         },
     ]
 
