@@ -1,4 +1,4 @@
-# C
+# C++
 
-- Tree Sitter: [tree-sitter-c](https://github.com/tree-sitter/tree-sitter-c)
+- Tree Sitter: [tree-sitter-cpp](https://github.com/tree-sitter/tree-sitter-cpp)
 - Language Server: [clangd](https://github.com/clangd/clangd)
