@@ -19,6 +19,21 @@ Alternatively, if your project uses Bundler, you can add the Solargraph gem to y
 gem 'solargraph', group: :development
 ```
 
+Solargraph have formatting and diagnostics disabled by default. We can tell Zed to enable them by adding the following to your `settings.json`:
+
+```json
+{
+   "lsp": {
+      "solargraph": {
+         "initialization_options": {
+            "diagnostics": true,
+            "formatting": true
+         }
+      }
+   }
+}
+```
+
 ### Configuration
 
 Solargraph reads its configuration from a file called `.solargraph.yml` in the root of your project. For more information about this file, see the [Solargraph configuration documentation](https://solargraph.org/guides/configuration).
