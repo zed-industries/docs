@@ -3,6 +3,12 @@
 - Tree Sitter: [tree-sitter-python](https://github.com/tree-sitter/tree-sitter-python)
 - Language Server: [pyright](https://github.com/microsoft/pyright)
 
+### Configuration
+
+The [pyright](https://github.com/microsoft/pyright) language server offers flexible configuration options specified in a JSON-formatted text configuration. By default, the file is called `pyrightconfig.json` and is located within the root directory of your project. Pyright settings can also be specified in a `[tool.pyright]` section of a `pyproject.toml` file. A `pyrightconfig.json` file always takes precedent over `pyproject.toml` if both are present.
+
+For more information, see the Pyright [configuration documentation](https://microsoft.github.io/pyright/#/configuration).
+
 ### Virtual environments
 
 A python [virtual environment](https://docs.python.org/3/tutorial/venv.html) allows you to store all of a project's dependencies, including the Python interpreter and package manager, in a single directory that's isolated from any other Python projects on your computer.
@@ -31,8 +37,6 @@ Having done that, you would create a `pyrightconfig.json` with the following con
   "venv": ".venv"
 }
 ```
-
-For more information, see the Pyright [configuration documentation](https://github.com/microsoft/pyright/blob/main/docs/configuration.md).
 
 ### Code formatting
 
