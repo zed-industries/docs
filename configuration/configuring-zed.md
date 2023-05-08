@@ -449,7 +449,7 @@ These values take in the same options as the root-level settings with the same n
 
 ## Soft Wrap
 
-- Description: Whether or not to automatically wraps lines of text to fit editor / preferred width.
+- Description: Whether or not to automatically wrap lines of text to fit editor / preferred width.
 - Setting: `soft_wrap`
 - Default: `none`
 
