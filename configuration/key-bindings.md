@@ -68,7 +68,7 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Increase buffer font size | Zed          | `Command + =`                                  |
 | Minimize                  | Zed          | `Command + M`                                  |
 | New file                  | Workspace    | `Command + N`                                  |
-| New terminal              | Workspace    | `Control + \` `                                |
+| New terminal              | Workspace    | ``Control + \``                                |
 | New window                | Workspace    | `Command + Shift + N`                          |
 | Open                      | Workspace    | `Command + O`                                  |
 | Open recent               | Projects     | `Alt + Command + O`                            |
