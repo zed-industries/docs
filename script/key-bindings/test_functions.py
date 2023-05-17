@@ -61,7 +61,7 @@ def _():
     ) == ("Activate pane 1", "Workspace")
 
 
-@test("test get_markdown_data")
+@test("test get_markdown_column_data")
 def _():
     keymap_data = [
         {
@@ -85,6 +85,26 @@ def _():
             "shortcuts": ["`Control + K`", "`Control + T`", "`Command + Backspace`"],
         }
     }
+
+    assert get_markdown_column_data(keymap_data) == markdown_data
+
+@test("test get_markdown_column_data for special cases")
+def _():
+    keymap_data = [
+        {
+            "context": "Editor",
+            "bindings": {"ctrl-`": "workspace::NewTerminal"},
+        }
+    ]
+
+    markdown_data = {
+        "editor": {
+            "commands": ["New terminal"],
+            "targets": ["Workspace"],
+            "shortcuts": ["``Control + ` ``"],
+        }
+    }
+
     assert get_markdown_column_data(keymap_data) == markdown_data
 
 
