@@ -92,13 +92,12 @@ def _():
 def _():
     keymap_data = [
         {
-            "context": "Editor",
             "bindings": {"ctrl-`": "workspace::NewTerminal"},
         }
     ]
 
     markdown_data = {
-        "editor": {
+        "global": {
             "commands": ["New terminal"],
             "targets": ["Workspace"],
             "shortcuts": ["``Control + ` ``"],
