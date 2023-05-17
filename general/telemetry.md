@@ -10,7 +10,7 @@ Diagnostic events include debug information (stack traces) from crash reports.  
 
 ### Metrics
 
-Zed also collects metric information based on user actions.  Metric events are reported over HTTPS, and requests are rate-limited to avoid using significant network bandwidth. The telemetry data is not shared with Zed's servers; it is sent directly to an analytics service called [Mixpanel](https://mixpanel.com), where it remains anonymous, and can't be related to specific Zed users.
+Zed also collects metric information based on user actions.  Metric events are reported over HTTPS, and requests are rate-limited to avoid using significant network bandwidth. Telemetry data is proxied through our servers to enable us to easily switch analytics services; we never store this data.  At the moment, we are sending events to both [Mixpanel](https://mixpanel.com) and [Clickhouse](https://clickhouse.com), as we transition from the former to the latter.  All data remains anonymous, and can't be related to specific Zed users.
 
 The following actions are captured:
 
