@@ -169,6 +169,7 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Move up                          | Editor        | `Up`                            |
 | Newline                          | Editor        | `Alt + Enter`                   |
 | Newline                          | Editor        | `Enter`                         |
+| Newline above                    | Editor        | `Command + Shift + Enter`       |
 | Newline below                    | Editor        | `Command + Alt + Enter`         |
 | Newline below                    | Editor        | `Command + Enter`               |
 | Next screen                      | Editor        | `Control + L`                   |
