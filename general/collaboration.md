@@ -23,7 +23,7 @@ Before you can collaborate, you'll need to add a collaborator to your contacts. 
 
 You can add an existing Zed user as a contact from the contacts menu, deployed from the `Show contacts menu` button in the upper right-hand corner of the window or by `collab: toggle contacts menu` (`cmd-shift-c`) and then clicking the `Search for new contact` button to the right of the search box.
 
-![Inviting a collaborator to the current project](https://docs.zed.dev/.gitbook/assets/collaboration/add-a-collaborator.png)
+<figure><img src="https://docs.zed.dev/.gitbook/assets/collaboration/add-a-collaborator.png" alt=""><figcaption><p>Inviting a collaborator to the current project</p></figcaption></figure>
 
 When you invite a collaborator to a project not in a call they will receive a notification to join, and a new call is created.
 
