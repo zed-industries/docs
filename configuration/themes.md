@@ -14,7 +14,24 @@ We will not have separate UI and syntax themes the like Atom, but will provide a
 
 ---
 
-## Philosophy
+A variety of Zed flavoured ports of various syntax themes are avaiable in Zed. These are mostly placeholders while we develop the system and develop our own themes. I tis likely the themes that exist today in Zed will be converted into community themes in the future when we ship user-creatable themes.
+
+## Choosing a Theme
+
+You can choose a theme in Zed a few ways:
+- by pressing `CMD + K` then `CMD + T`
+- by typing `theme` in the command palette
+- by editing your `settings.json` with a specific theme name:
+
+```json
+{
+    "theme": "Ayu Mirage",
+}
+```
+
+---
+
+## Theme Philosophy
 
 The theme you use in your editor is deeply personal. Whether it is focused utterly on function, or just an aesthetic that you enjoy, ultimately, a theme should be a reflection of what is important to you.
 
@@ -75,7 +92,7 @@ _**Subject to change**. This is to provide some insight into our plans around th
 
 <summary>Can I create my own theme?</summary>
 
-This is planned, though we don't have a timeline.
+This is planned, though we don't have a timeline. We'll let the community know when this is ready to test and get feedback on.
 
 </details>
 
@@ -99,6 +116,8 @@ Not yet, but it is [highly requested](https://github.com/zed-industries/communit
 
 <summary>How can I get involved with Themes in Zed?</summary>
 
-There is an open themes discussion in our community repository here: [Themes: Ideas, Feedback, Accessibility, Discussion](https://github.com/zed-industries/community/discussions/503)
+There is an open themes discussion in our community repository here: [Themes: Ideas, Feedback, Accessibility, Discussion](https://github.com/zed-industries/community/discussions/503).
+
+You can also join [our Discord](https://discord.gg/h4az9geD4Y) to talk about themes and design, but note we **do not** take feature requests or questions about feature timelines in Discord.
 
 </details>
