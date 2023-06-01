@@ -41,54 +41,52 @@ There are some key bindings that can't be overridden; we are working on an issue
 
 #### Global
 
-| **Command**               | **Target**   | **Default Shortcut**                           |
-|---------------------------|--------------|------------------------------------------------|
-| Activate next item        | Pane         | `Alt + Command + Right`                        |
-| Activate next item        | Pane         | `Command + }`                                  |
-| Activate next pane        | Workspace    | `Command + K, Command + Right`                 |
-| Activate prev item        | Pane         | `Alt + Command + Left`                         |
-| Activate prev item        | Pane         | `Command + {`                                  |
-| Activate previous pane    | Workspace    | `Command + K, Command + Left`                  |
-| Anchor dock bottom        | Dock         | `Command + Shift + K, Command + Shift + Down`  |
-| Anchor dock right         | Dock         | `Command + Shift + K, Command + Shift + Right` |
-| Cancel                    | Menu         | `Control + C`                                  |
-| Cancel                    | Menu         | `Escape`                                       |
-| Close active item         | Pane         | `Command + W`                                  |
-| Close all items           | Pane         | `Command + K, Command + W`                     |
-| Close clean items         | Pane         | `Command + K, U`                               |
-| Close inactive items      | Pane         | `Alt + Command + T`                            |
-| Close window              | Workspace    | `Command + Shift + W`                          |
-| Confirm                   | Menu         | `Enter`                                        |
-| Debug elements            | Zed          | `Command + Alt + I`                            |
-| Decrease buffer font size | Zed          | `Command + `                                   |
-| Expand dock               | Dock         | `Command + Shift + K, Command + Shift + Up`    |
-| Follow next collaborator  | Workspace    | `Control + Alt + Command + F`                  |
-| Hide                      | Zed          | `Command + H`                                  |
-| Hide others               | Zed          | `Alt + Command + H`                            |
-| Increase buffer font size | Zed          | `Command + =`                                  |
-| Minimize                  | Zed          | `Command + M`                                  |
-| New file                  | Workspace    | `Command + N`                                  |
-| New terminal              | Workspace    | ``Control + ` ``                               |
-| New window                | Workspace    | `Command + Shift + N`                          |
-| Open                      | Workspace    | `Command + O`                                  |
-| Open recent               | Projects     | `Alt + Command + O`                            |
-| Open settings             | Zed          | `Command + ,`                                  |
-| Quit                      | Zed          | `Command + Q`                                  |
-| Reset buffer font size    | Zed          | `Command + 0`                                  |
-| Save                      | Workspace    | `Command + S`                                  |
-| Save as                   | Workspace    | `Command + Shift + S`                          |
-| Select first              | Menu         | `Command + Up`                                 |
-| Select first              | Menu         | `Page Up`                                      |
-| Select first              | Menu         | `Shift + Page Down`                            |
-| Select first              | Menu         | `Shift + Page Up`                              |
-| Select last               | Menu         | `Command + Down`                               |
-| Select last               | Menu         | `Page Down`                                    |
-| Select next               | Menu         | `Control + N`                                  |
-| Select next               | Menu         | `Down`                                         |
-| Select prev               | Menu         | `Control + P`                                  |
-| Select prev               | Menu         | `Up`                                           |
-| Toggle contacts menu      | Collab       | `Command + Shift + C`                          |
-| Toggle full screen        | Zed          | `Control + Command + F`                        |
+| **Command**               | **Target**     | **Default Shortcut**           |
+|---------------------------|----------------|--------------------------------|
+| Activate next item        | Pane           | `Alt + Command + Right`        |
+| Activate next item        | Pane           | `Command + }`                  |
+| Activate next pane        | Workspace      | `Command + K, Command + Right` |
+| Activate prev item        | Pane           | `Alt + Command + Left`         |
+| Activate prev item        | Pane           | `Command + {`                  |
+| Activate previous pane    | Workspace      | `Command + K, Command + Left`  |
+| Cancel                    | Menu           | `Control + C`                  |
+| Cancel                    | Menu           | `Escape`                       |
+| Close active item         | Pane           | `Command + W`                  |
+| Close all items           | Pane           | `Command + K, Command + W`     |
+| Close clean items         | Pane           | `Command + K, U`               |
+| Close inactive items      | Pane           | `Alt + Command + T`            |
+| Close window              | Workspace      | `Command + Shift + W`          |
+| Confirm                   | Menu           | `Enter`                        |
+| Debug elements            | Zed            | `Command + Alt + I`            |
+| Decrease buffer font size | Zed            | `Command + `                   |
+| Follow next collaborator  | Workspace      | `Control + Alt + Command + F`  |
+| Hide                      | Zed            | `Command + H`                  |
+| Hide others               | Zed            | `Alt + Command + H`            |
+| Increase buffer font size | Zed            | `Command + =`                  |
+| Minimize                  | Zed            | `Command + M`                  |
+| New file                  | Workspace      | `Command + N`                  |
+| New terminal              | Workspace      | `Control + ~`                  |
+| New window                | Workspace      | `Command + Shift + N`          |
+| Open                      | Workspace      | `Command + O`                  |
+| Open recent               | Projects       | `Alt + Command + O`            |
+| Open settings             | Zed            | `Command + ,`                  |
+| Quit                      | Zed            | `Command + Q`                  |
+| Reset buffer font size    | Zed            | `Command + 0`                  |
+| Save                      | Workspace      | `Command + S`                  |
+| Save as                   | Workspace      | `Command + Shift + S`          |
+| Select first              | Menu           | `Command + Up`                 |
+| Select first              | Menu           | `Page Up`                      |
+| Select first              | Menu           | `Shift + Page Down`            |
+| Select first              | Menu           | `Shift + Page Up`              |
+| Select last               | Menu           | `Command + Down`               |
+| Select last               | Menu           | `Page Down`                    |
+| Select next               | Menu           | `Control + N`                  |
+| Select next               | Menu           | `Down`                         |
+| Select prev               | Menu           | `Control + P`                  |
+| Select prev               | Menu           | `Up`                           |
+| Toggle contacts menu      | Collab         | `Command + Shift + C`          |
+| Toggle focus              | Terminal Panel | ``Control + ` ``               |
+| Toggle full screen        | Zed            | `Control + Command + F`        |
 
 #### Editor
 
@@ -98,6 +96,7 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Add selection above              | Editor        | `Command + Control + P`         |
 | Add selection below              | Editor        | `Command + Alt + Down`          |
 | Add selection below              | Editor        | `Command + Control + N`         |
+| Assist                           | Ai            | `Command + Enter`               |
 | Backspace                        | Editor        | `Backspace`                     |
 | Backspace                        | Editor        | `Control + H`                   |
 | Backspace                        | Editor        | `Shift + Backspace`             |
@@ -157,6 +156,7 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Move to end of line              | Editor        | `Command + Right`               |
 | Move to end of line              | Editor        | `Control + E`                   |
 | Move to end of line              | Editor        | `End`                           |
+| Move to end of paragraph         | Editor        | `Control + Down`                |
 | Move to next subword end         | Editor        | `Control + Alt + F`             |
 | Move to next subword end         | Editor        | `Control + Alt + Right`         |
 | Move to next word end            | Editor        | `Alt + F`                       |
@@ -165,6 +165,7 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Move to previous subword start   | Editor        | `Control + Alt + Left`          |
 | Move to previous word start      | Editor        | `Alt + B`                       |
 | Move to previous word start      | Editor        | `Alt + Left`                    |
+| Move to start of paragraph       | Editor        | `Control + Up`                  |
 | Move up                          | Editor        | `Control + P`                   |
 | Move up                          | Editor        | `Up`                            |
 | Newline                          | Editor        | `Alt + Enter`                   |
@@ -204,6 +205,7 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Select to end of line            | Editor        | `Command + Shift + Right`       |
 | Select to end of line            | Editor        | `Control + Shift + E`           |
 | Select to end of line            | Editor        | `Shift + End`                   |
+| Select to end of paragraph       | Editor        | `Control + Shift + Down`        |
 | Select to next subword end       | Editor        | `Control + Alt + Shift + F`     |
 | Select to next subword end       | Editor        | `Control + Alt + Shift + Right` |
 | Select to next word end          | Editor        | `Alt + Shift + F`               |
@@ -212,6 +214,7 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Select to previous subword start | Editor        | `Control + Alt + Shift + Left`  |
 | Select to previous word start    | Editor        | `Alt + Shift + B`               |
 | Select to previous word start    | Editor        | `Alt + Shift + Left`            |
+| Select to start of paragraph     | Editor        | `Control + Shift + Up`          |
 | Select up                        | Editor        | `Control + Shift + P`           |
 | Select up                        | Editor        | `Shift + Up`                    |
 | Show character palette           | Editor        | `Control + Command + Space`     |
@@ -244,11 +247,8 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Activate item 8       | Pane           | `Control + 8`          |
 | Activate item 9       | Pane           | `Control + 9`          |
 | Activate last item    | Pane           | `Control + 0`          |
-| Add tab to dock       | Dock           | `Command + Escape`     |
 | Go back               | Pane           | `Control + `           |
 | Go forward            | Pane           | `Control + _`          |
-| Hide dock             | Dock           | `Shift + Escape`       |
-| Remove tab from dock  | Dock           | `Command + Escape`     |
 | Reopen closed item    | Pane           | `Command + Shift + T`  |
 | Select next match     | Search         | `Command + G`          |
 | Select prev match     | Search         | `Command + Shift + G`  |
@@ -261,6 +261,7 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Toggle focus          | Project Search | `Command + Shift + F`  |
 | Toggle regex          | Search         | `Alt + Command + R`    |
 | Toggle whole word     | Search         | `Alt + Command + W`    |
+| Toggle zoom           | Workspace      | `Shift + Escape`       |
 
 #### Buffer Search Bar
 
@@ -273,29 +274,30 @@ There are some key bindings that can't be overridden; we are working on an issue
 
 #### Workspace
 
-| **Command**         | **Target**        | **Default Shortcut**       |
-|---------------------|-------------------|----------------------------|
-| Activate pane 1     | Workspace         | `Command + 1`              |
-| Activate pane 2     | Workspace         | `Command + 2`              |
-| Activate pane 3     | Workspace         | `Command + 3`              |
-| Activate pane 4     | Workspace         | `Command + 4`              |
-| Activate pane 5     | Workspace         | `Command + 5`              |
-| Activate pane 6     | Workspace         | `Command + 6`              |
-| Activate pane 7     | Workspace         | `Command + 7`              |
-| Activate pane 8     | Workspace         | `Command + 8`              |
-| Activate pane 9     | Workspace         | `Command + 9`              |
-| Deploy              | Diagnostics       | `Command + Shift + M`      |
-| Focus dock          | Dock              | `Shift + Escape`           |
-| New search          | Workspace         | `Command + Shift + F`      |
-| Open keymap         | Zed               | `Command + K, Command + S` |
-| Save all            | Workspace         | `Command + Alt + S`        |
-| Toggle              | Theme Selector    | `Command + K, Command + T` |
-| Toggle              | Language Selector | `Command + K, M`           |
-| Toggle              | File Finder       | `Command + P`              |
-| Toggle              | Command Palette   | `Command + Shift + P`      |
-| Toggle              | Project Symbols   | `Command + T`              |
-| Toggle focus        | Project Panel     | `Command + Shift + E`      |
-| Toggle left sidebar | Workspace         | `Command + B`              |
+| **Command**        | **Target**        | **Default Shortcut**       |
+|--------------------|-------------------|----------------------------|
+| Activate pane 1    | Workspace         | `Command + 1`              |
+| Activate pane 2    | Workspace         | `Command + 2`              |
+| Activate pane 3    | Workspace         | `Command + 3`              |
+| Activate pane 4    | Workspace         | `Command + 4`              |
+| Activate pane 5    | Workspace         | `Command + 5`              |
+| Activate pane 6    | Workspace         | `Command + 6`              |
+| Activate pane 7    | Workspace         | `Command + 7`              |
+| Activate pane 8    | Workspace         | `Command + 8`              |
+| Activate pane 9    | Workspace         | `Command + 9`              |
+| Deploy             | Diagnostics       | `Command + Shift + M`      |
+| New search         | Workspace         | `Command + Shift + F`      |
+| Open keymap        | Zed               | `Command + K, Command + S` |
+| Save all           | Workspace         | `Command + Alt + S`        |
+| Toggle             | Theme Selector    | `Command + K, Command + T` |
+| Toggle             | Language Selector | `Command + K, M`           |
+| Toggle             | File Finder       | `Command + P`              |
+| Toggle             | Command Palette   | `Command + Shift + P`      |
+| Toggle             | Project Symbols   | `Command + T`              |
+| Toggle bottom dock | Workspace         | `Command + J`              |
+| Toggle focus       | Project Panel     | `Command + Shift + E`      |
+| Toggle left dock   | Workspace         | `Command + B`              |
+| Toggle right dock  | Workspace         | `Command + R`              |
 
 #### Project Panel
 
@@ -317,6 +319,7 @@ There are some key bindings that can't be overridden; we are working on an issue
 | **Command**   | **Target**     | **Default Shortcut**   |
 |---------------|----------------|------------------------|
 | Search in new | Project Search | `Command + Enter`      |
+| Toggle focus  | Project Search | `Escape`               |
 
 #### Terminal
 
