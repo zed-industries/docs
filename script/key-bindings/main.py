@@ -78,7 +78,7 @@ def get_markdown_table(column_data):
     }
 
     data_frame = pandas.DataFrame(data).sort_values(
-        by=[command_column_name, shortcut_column_name]
+        by=[target_column_name, command_column_name, shortcut_column_name]
     )
 
     return data_frame.to_markdown(tablefmt="github", index=False)
