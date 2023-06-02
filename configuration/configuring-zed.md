@@ -737,6 +737,70 @@ Run the `theme selector: toggle` action in the command palette to see a current 
 - Setting: `vim_mode`
 - Default: `false`
 
+## Project Panel
+
+- Description: Customise project panel
+- Setting: `project_panel`
+- Default:
+
+```json
+"project_panel": {
+  "dock": "left",
+  "git_status": true,
+  "default_width": "N/A - width in pixels"
+},
+```
+
+### Dock
+
+- Description: Control the position of the dock
+- Setting: `dock`
+- Default: `left`
+
+**Options**
+
+1. Default dock position to left
+
+```json
+{
+  "dock": "left"
+}
+```
+
+2. Default dock position to right
+
+```json
+{
+  "dock": "right"
+}
+```
+
+### Git Status
+- Description: Indicates newly created and updated files
+- Setting: `git_status`
+- Default: `true`
+
+1. Default enable git status
+
+```json
+{
+  "git_status": true
+}
+```
+
+2. Default disable git status
+
+```json
+{
+  "git_status": false
+}
+```
+
+### Default Width
+- Description: Customise default width taken by project panel
+- Setting: `default_width`
+- Default: N/A width in pixels (eg: 420)
+
 **Options**
 
 `boolean` values
