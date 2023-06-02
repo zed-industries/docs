@@ -776,7 +776,7 @@ Run the `theme selector: toggle` action in the command palette to see a current 
 ```
 
 ### Git Status
-- Description: Indicates newed created and updated files
+- Description: Indicates newly created and updated files
 - Setting: `git_status`
 - Default: `true`
 
