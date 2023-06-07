@@ -14,7 +14,7 @@ We will not have separate UI and syntax themes the like Atom, but will provide a
 
 ---
 
-A variety of Zed flavoured ports of various syntax themes are avaiable in Zed. These are mostly placeholders while we develop the system and develop our own themes. I tis likely the themes that exist today in Zed will be converted into community themes in the future when we ship user-creatable themes.
+A variety of Zed flavoured ports of various syntax themes are avaiable in Zed. These are mostly placeholders while we develop the system and develop our own themes. It is likely the themes that exist today in Zed will be converted into community themes in the future when we ship user-creatable themes.
 
 ## Choosing a Theme
 
