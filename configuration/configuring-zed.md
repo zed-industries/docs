@@ -148,6 +148,32 @@ For example, to disable ligatures for a given font you can add the following to 
 
 `boolean` values
 
+## Copilot
+
+- Description: Copilot-specific settings.
+- Setting: `copilot`
+- Default:
+
+```json
+"copilot": {
+  "disabled_globs": [
+    ".env"
+  ]
+}
+```
+
+**Options**
+
+### Disabled Globs
+
+- Description: The set of glob patterns for which Copilot should be disabled in any matching file.
+- Setting: `disabled_globs`
+- Default: [".env"]
+
+**Options**
+
+List of `string` values
+
 ## Cursor Blink
 
 - Description: Whether or not the cursor blinks.
@@ -463,7 +489,7 @@ These values take in the same options as the root-level settings with the same n
 
 ## Show Copilot Suggestions
 
-- Description: Whether or not to show Copilot suggestions as you type.
+- Description: Whether or not to show Copilot suggestions as you type or wait for a `copilot::Toggle`.
 - Setting: `show_copilot_suggestions`
 - Default: `true`
 
