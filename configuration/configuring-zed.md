@@ -469,6 +469,18 @@ These values take in the same options as the root-level settings with the same n
 
 `boolean` values
 
+## Show Whitespaces
+
+- Description: Whether or not to show render whitespace characters in the editor.
+- Setting: `show_whitespaces`
+- Default: `selection`
+
+**Options**
+
+1. `all`
+2. `selection`
+3. `none`
+
 ## Soft Wrap
 
 - Description: Whether or not to automatically wrap lines of text to fit editor / preferred width.
