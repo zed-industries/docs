@@ -404,6 +404,8 @@ The following settings can be overridden for each specific language:
 - `hard_tabs`
 - `preferred_line_length`
 - `remove_trailing_whitespace_on_save`
+- `show_copilot_suggestions`
+- `show_whitespaces`
 - `soft_wrap`
 - `tab_size`
 
