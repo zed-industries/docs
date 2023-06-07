@@ -459,6 +459,16 @@ These values take in the same options as the root-level settings with the same n
 
 `boolean` values
 
+## Show Copilot Suggestions
+
+- Description: Whether or not to show Copilot suggestions as you type.
+- Setting: `show_copilot_suggestions`
+- Default: `true`
+
+**Options**
+
+`boolean` values
+
 ## Soft Wrap
 
 - Description: Whether or not to automatically wrap lines of text to fit editor / preferred width.
