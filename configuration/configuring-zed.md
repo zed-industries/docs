@@ -14,11 +14,13 @@ Folder-specific settings are used to override Zed's global settings for files wi
 
 The following global settings can be overriden with a folder-specific configuration:
 
+- `copilot`
 - `enable_language_server`
 - `ensure_final_newline_on_save`
 - `format_on_save`
 - `formatter`
 - `hard_tabs`
+- `language_overrides`
 - `preferred_line_length`
 - `remove_trailing_whitespace_on_save`
 - `soft_wrap`
