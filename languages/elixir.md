@@ -5,7 +5,7 @@
 
 ### Formatting with Mix
 
-[Mix](https://hexdocs.pm/mix/Mix.html) is often used to format Elixir code. With the following snippet in your `settings.json` file, Zed will format Elixir files on save:
+If you prefer to format your code with [Mix](https://hexdocs.pm/mix/Mix.html), use the following snippet in your `settings.json` file to configure it as an external formatter.  Formatting will occur on file save.
 
 ```json
 {
