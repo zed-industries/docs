@@ -14,7 +14,7 @@ brew install elixir
 2. Install `elixir-ls`:
 
 ```bash
-brew install elixir
+brew install elixir-ls
 ```
 
 3. Restart Zed
