@@ -19,7 +19,7 @@ Alternatively, if your project uses Bundler, you can add the Solargraph gem to y
 gem 'solargraph', group: :development
 ```
 
-Solargraph have formatting and diagnostics disabled by default. We can tell Zed to enable them by adding the following to your `settings.json`:
+Solargraph has formatting and diagnostics disabled by default. We can tell Zed to enable them by adding the following to your `settings.json`:
 
 ```json
 {
