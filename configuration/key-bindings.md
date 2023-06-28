@@ -77,6 +77,7 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Open                      | Workspace      | `Command + O`                  |
 | Save                      | Workspace      | `Command + S`                  |
 | Save as                   | Workspace      | `Command + Shift + S`          |
+| Toggle zoom               | Workspace      | `Shift + Escape`               |
 | Debug elements            | Zed            | `Command + Alt + I`            |
 | Decrease buffer font size | Zed            | `Command + `                   |
 | Hide                      | Zed            | `Command + H`                  |
@@ -263,7 +264,6 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Toggle case sensitive | Search         | `Alt + Command + C`    |
 | Toggle regex          | Search         | `Alt + Command + R`    |
 | Toggle whole word     | Search         | `Alt + Command + W`    |
-| Toggle zoom           | Workspace      | `Shift + Escape`       |
 
 #### Buffer Search Bar
 
@@ -278,6 +278,7 @@ There are some key bindings that can't be overridden; we are working on an issue
 
 | **Command**        | **Target**        | **Default Shortcut**       |
 |--------------------|-------------------|----------------------------|
+| Toggle focus       | Assistant         | `Command + ?`              |
 | Toggle             | Command Palette   | `Command + Shift + P`      |
 | Deploy             | Diagnostics       | `Command + Shift + M`      |
 | Toggle             | File Finder       | `Command + P`              |
@@ -339,7 +340,10 @@ There are some key bindings that can't be overridden; we are working on an issue
 
 #### Assistant Editor
 
-| **Command**     | **Target**   | **Default Shortcut**   |
-|-----------------|--------------|------------------------|
-| Assist          | Assistant    | `Command + Enter`      |
-| Quote selection | Assistant    | `Command + >`          |
+| **Command**        | **Target**   | **Default Shortcut**   |
+|--------------------|--------------|------------------------|
+| Assist             | Assistant    | `Command + Enter`      |
+| Cycle message role | Assistant    | `Control + R`          |
+| Quote selection    | Assistant    | `Command + >`          |
+| Split              | Assistant    | `Shift + Enter`        |
+| Save               | Workspace    | `Command + S`          |

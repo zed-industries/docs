@@ -73,4 +73,4 @@ There are some key bindings that can't be overridden; we are working on an issue
 
 #### Assistant Editor
 
-{{ assistant_editor_bindings }}
+{{ conversation_editor_bindings }}
