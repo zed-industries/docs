@@ -70,3 +70,7 @@ There are some key bindings that can't be overridden; we are working on an issue
 #### Terminal
 
 {{ terminal_bindings }}
+
+#### Assistant Editor
+
+{{ conversation_editor_bindings }}
