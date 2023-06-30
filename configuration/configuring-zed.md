@@ -366,10 +366,11 @@ To override settings for a language, add an entry for that language server's nam
 
 **Options**
 
-Inlay hints can be disabled or enabled per language and may toggle certain hint types separately.
-In addition to that, corresponding language server might have more hint types than LSP defines, and more hint-related settings.
-To configure them, refer to server's documentation and use `lsp` section for the server settings.
-Example for rust-analyzer language server:
+Inlay hints querying consists of two parts: editor (client) and LSP server.
+With the inlay settings above are changed to enable the hints, editor will start to query certain types of hints and react on LSP hint refresh request from the server.
+At this point, the server may or may not return hints depending on its implementation, further configuration might be needed, refer to the corresponding LSP server documentation.
+
+Use `lsp` section for the server configuration, below is an example of Rust and TypeScript servers:
 
 ```json
 "lsp": {
@@ -386,6 +387,20 @@ Example for rust-analyzer language server:
             }
         }
     }
+  },
+  "typescript-language-server": {
+      "initialization_options": {
+          "preferences": {
+              "includeInlayParameterNameHints": "all",
+              "includeInlayParameterNameHintsWhenArgumentMatchesName": true,
+              "includeInlayFunctionParameterTypeHints": true,
+              "includeInlayVariableTypeHints": true,
+              "includeInlayVariableTypeHintsWhenTypeMatchesName": false,
+              "includeInlayPropertyDeclarationTypeHints": true,
+              "includeInlayFunctionLikeReturnTypeHints": true,
+              "includeInlayEnumMemberValueHints": true
+          }
+      }
   }
 }
 ```
