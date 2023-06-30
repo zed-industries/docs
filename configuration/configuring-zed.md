@@ -349,6 +349,47 @@ To override settings for a language, add an entry for that language server's nam
 
 `boolean` values
 
+## Inlay hints
+
+- Description: Configuration for displaying extra text with hints in the editor.
+- Setting: `inlay_hints`
+- Default:
+
+```json
+"inlay_hints": {
+  "enabled": false,
+  "show_type_hints": true,
+  "show_parameter_hints": true,
+  "show_other_hints": true
+}
+```
+
+**Options**
+
+Inlay hints can be disabled or enabled per language and may toggle certain hint types separately.
+In addition to that, corresponding language server might have more hint types than LSP defines, and more hint-related settings.
+To configure them, refer to server's documentation and use `lsp` section for the server settings.
+Example for rust-analyzer language server:
+
+```json
+"lsp": {
+  "rust-analyzer": {
+    "initialization_options": {
+        "inlayHints": {
+            "maxLength": null,
+            "lifetimeElisionHints": {
+                "useParameterNames": true,
+                "enable": "skip_trivial"
+            },
+            "closureReturnTypeHints": {
+                "enable": "always"
+            }
+        }
+    }
+  }
+}
+```
+
 ## Journal
 
 - Description: Configuration for the journal.
