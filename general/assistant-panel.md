@@ -1,38 +1,44 @@
 # Assistant Panel
 
-The assistant panel provides you with a way of interacting with OpenAI's large language models. The assistant is good for a sorts of tasks, such as generating code, asking questions about existing code, and writing plaintext, such as for emails, documentation. Open the assistant panel by toggling the right dock via the `workspace: toggle right toggle` action in the command palette (`cmd-shift-p`).
+The assistant panel provides you with a way of interacting with OpenAI's large language models. The assistant is good for all sorts of tasks, such as generating code, asking questions about existing code, and even writing plaintext, such as for emails, documentation. Open the assistant panel by toggling the right dock via the `workspace: toggle right toggle` action in the command palette (`cmd-shift-p`).
 
 *Note: A default binding can be set to toggle the right dock via the settings.*
 
 ## Setup
 
-When you first open the panel, Zed will ask you for an [OpenAI API key](https://platform.openai.com/account/api-keys), which is saved to your keychain. It will also use the `OPENAI_API_KEY` environment variable if it's defined. Once your conversation is given a name, we automatically save it to your file system in `~/.config/zed/conversations`.
+When you first open the panel, Zed will ask you for an [OpenAI API key](https://platform.openai.com/account/api-keys), which is saved to your keychain.
 
-[image]
+![Adding your OpenAI key to Zed](../.gitbook/assets/assistant/openai-key.png)
 
-If you need to resete your OpenAI API key, focus on the assistant panel and run the command palette action `assistant: reset key`.
+Zed will also use the `OPENAI_API_KEY` environment variable if it's defined. If you need to reset your OpenAI API key, focus on the assistant panel and run the command palette action `assistant: reset key`.
 
 ## Having a conversation
 
-The assistant editor works mostly like any other editor in Zed: You have access to all of your familiar custom key bindings and can manipulate text with multiple cursors, which allows for frictionless context switching between coding and having conversations with LLMs. The main difference in the assistant editor is message blocks. Message blocks are "containers" for text that belong to the different roles within the conversation.  These roles include:
+The assistant editor functions similarly to any other editor in Zed. You can utilize your preferred custom key bindings and work with multiple cursors, enabling seamless transitions between coding and engaging in discussions with LLMs. However, the assistant editor differs with the inclusion of message blocks. Message blocks serve as containers for text that ' to the various roles within the conversation. These roles include:
 
 - `You`
 - `Assistant`
 - `System`
 
-Begin by selecting a model and starting to type a message in a `You` block.
+Begin by selecting a model and typing a message in a `You` block.
 
-[image]
+![Asking a question](../.gitbook/assets/assistant/ask-a-question.png)
 
-As you type, the remaining tokens for a given model is updated. To submit a message, use `cmd-enter` (`assistant: assist`). This may feel different when compared to typical chat applications, where `enter` submits the message, but our goal when designing the assistant was to make it feel as close to a normal editor as possible, so `enter` simply inserts a newline.
+As you type, the remaining tokens count for a given model is updated.
 
-[image]
+Inserting text from an editor is as simple as hightlighting the text and running `cmd->` (`assistant: quote selection`); Zed will wrap it in a fenced code block if it is code.
 
-After submitting a message, the assistant's response will be streamed below, in an `Assistant` message block; the stream can be cancelled with `escape`. This is useful when you notice early on that the response is not what you were looking for.
+![Asking a question](../.gitbook/assets/assistant/quoting-a-selection.png)
 
-In addition to typing messages directly, you can also insert selected text from the last active editor pane with `cmd->` (`assistant: quote selection`), and Zed will wrap it in a fenced code block if it is code.
+To submit a message, use `cmd-enter` (`assistant: assist`). This may feel different when compared to typical chat applications, where `enter` submits the message, but our goal when designing the assistant was to make it feel as close to a normal editor as possible, so `enter` simply inserts a newline.
 
-If at any point in time, you want to start a new conversation, the `New Nonversation` button at the top-right corner of the assistant panel can be used.
+After submitting a message, the assistant's response will be streamed below, in an `Assistant` message block.
+
+![Receiving an answer](../.gitbook/assets/assistant/receiving-an-answer.png)
+
+The stream can be cancelled at any point with `escape`. This is useful when you notice early on that the response is not what you were looking for.
+
+If at any point in time, you want to start a new conversation, the `New Conversation` button at the top-right corner of the assistant panel can be used.
 
 Simple back-and-forth conversations work pretty well with the assistant, but there will likely come a time when you find yourself wanting to change some previous text in the conversation and steer it a different direction.
 
@@ -53,20 +59,15 @@ Being able to edit previous messages puts control over how tokens are consumed i
 - You are free to change the model type at any point in the conversation.
 - You can cycle the role of a message block, by clicking on the role, which is useful when you receive a response in an `Assistant` block that you want to edit and send back up as a `You` block.
 
-[image?]
-
 ## Saving a converation
 
 After you submit your first message, a name for your conversation is generated by the LLM and the conversation is automatically saved to your file system in `~/.config/zed/conversations`. You can access and load previous messages via the hamburger button in the top-left corner of the assistant panel.
 
-[image]
+![Viewing assistant history](../.gitbook/assets/assistant/assistant-history.png)
 
 Most of the aforementioned actions have toolbar-button equivalents that you can use if you're more GUI driven.
 
-[image]
-
-
-
+![Viewing assistant history](../.gitbook/assets/assistant/assistant-toolbar.png)
 
 ---
 
