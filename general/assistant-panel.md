@@ -69,6 +69,4 @@ After you submit your first message, a name for your conversation is generated b
 
 ## Multiple cursor demo
 
-The assistant is capable of sending multiple requests, and receiving multiple responses, in parallel.
-
-[Editing a conversation with multiple cursors, then sending multiple requests to the language model in parallel.](https://zed.dev/img/post/assistant/demo.webm)
+The assistant is capable of sending multiple requests, and receiving multiple responses, in parallel. [Here's a demo](https://zed.dev/img/post/assistant/demo.webm).
