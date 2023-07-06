@@ -73,7 +73,8 @@ Most of the actions mentioned above also have toolbar-button equivalents that yo
 
 ---
 
-## Tricks and tips
+## Multiple cursor demo
 
-Split message
-Multicursor
+The assistant is capable of sending multiple requests, and receiving multiple responses, in parallel.
+
+[Editing a conversation with multiple cursors, then sending multiple requests to the language model in parallel.](../.gitbook/assets/assistant/multiple-cursor-demo.webm)
