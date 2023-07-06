@@ -67,14 +67,8 @@ After you submit your first message, a name for your conversation is generated b
 
 ![Viewing assistant history](../.gitbook/assets/assistant/assistant-history.png)
 
-Most of the actions mentioned above also have toolbar-button equivalents that you can use if you prefer a more GUI-driven approach.
-
-![Viewing assistant history](../.gitbook/assets/assistant/assistant-toolbar.png)
-
----
-
 ## Multiple cursor demo
 
 The assistant is capable of sending multiple requests, and receiving multiple responses, in parallel.
 
-[Editing a conversation with multiple cursors, then sending multiple requests to the language model in parallel.](../.gitbook/assets/assistant/multiple-cursor-demo.webm)
+[Editing a conversation with multiple cursors, then sending multiple requests to the language model in parallel.](https://zed.dev/img/post/assistant/demo.webm)
