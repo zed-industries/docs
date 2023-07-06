@@ -6,6 +6,7 @@
 * [System requirements](general/system-requirements.md)
 * [How to collaborate](general/collaboration.md)
 * [Telemetry in Zed](general/telemetry.md)
+* [The Assistant Panel](general/assistant-panel.md)
 
 ## 🟡 Configuration
 
