@@ -349,6 +349,62 @@ To override settings for a language, add an entry for that language server's nam
 
 `boolean` values
 
+## Inlay hints
+
+- Description: Configuration for displaying extra text with hints in the editor.
+- Setting: `inlay_hints`
+- Default:
+
+```json
+"inlay_hints": {
+  "enabled": false,
+  "show_type_hints": true,
+  "show_parameter_hints": true,
+  "show_other_hints": true
+}
+```
+
+**Options**
+
+Inlay hints querying consists of two parts: editor (client) and LSP server.
+With the inlay settings above are changed to enable the hints, editor will start to query certain types of hints and react on LSP hint refresh request from the server.
+At this point, the server may or may not return hints depending on its implementation, further configuration might be needed, refer to the corresponding LSP server documentation.
+
+Use `lsp` section for the server configuration, below is an example of Rust and TypeScript servers:
+
+```json
+"lsp": {
+  "rust-analyzer": {
+    "initialization_options": {
+        "inlayHints": {
+            "maxLength": null,
+            "lifetimeElisionHints": {
+                "useParameterNames": true,
+                "enable": "skip_trivial"
+            },
+            "closureReturnTypeHints": {
+                "enable": "always"
+            }
+        }
+    }
+  },
+  "typescript-language-server": {
+      "initialization_options": {
+          "preferences": {
+              "includeInlayParameterNameHints": "all",
+              "includeInlayParameterNameHintsWhenArgumentMatchesName": true,
+              "includeInlayFunctionParameterTypeHints": true,
+              "includeInlayVariableTypeHints": true,
+              "includeInlayVariableTypeHintsWhenTypeMatchesName": false,
+              "includeInlayPropertyDeclarationTypeHints": true,
+              "includeInlayFunctionLikeReturnTypeHints": true,
+              "includeInlayEnumMemberValueHints": true
+          }
+      }
+  }
+}
+```
+
 ## Journal
 
 - Description: Configuration for the journal.
