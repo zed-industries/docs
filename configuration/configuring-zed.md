@@ -370,37 +370,66 @@ Inlay hints querying consists of two parts: editor (client) and LSP server.
 With the inlay settings above are changed to enable the hints, editor will start to query certain types of hints and react on LSP hint refresh request from the server.
 At this point, the server may or may not return hints depending on its implementation, further configuration might be needed, refer to the corresponding LSP server documentation.
 
-Use `lsp` section for the server configuration, below is an example of Rust and TypeScript servers:
+Use `lsp` section for the server configuration, below are some examples for well known servers:
+
+### Rust
 
 ```json
 "lsp": {
   "rust-analyzer": {
     "initialization_options": {
-        "inlayHints": {
-            "maxLength": null,
-            "lifetimeElisionHints": {
-                "useParameterNames": true,
-                "enable": "skip_trivial"
-            },
-            "closureReturnTypeHints": {
-                "enable": "always"
-            }
+      "inlayHints": {
+        "maxLength": null,
+        "lifetimeElisionHints": {
+          "useParameterNames": true,
+          "enable": "skip_trivial"
+        },
+        "closureReturnTypeHints": {
+          "enable": "always"
         }
-    }
-  },
-  "typescript-language-server": {
-      "initialization_options": {
-          "preferences": {
-              "includeInlayParameterNameHints": "all",
-              "includeInlayParameterNameHintsWhenArgumentMatchesName": true,
-              "includeInlayFunctionParameterTypeHints": true,
-              "includeInlayVariableTypeHints": true,
-              "includeInlayVariableTypeHintsWhenTypeMatchesName": false,
-              "includeInlayPropertyDeclarationTypeHints": true,
-              "includeInlayFunctionLikeReturnTypeHints": true,
-              "includeInlayEnumMemberValueHints": true
-          }
       }
+    }
+  }
+}
+```
+
+### Typescript
+
+```json
+"lsp": {
+  "typescript-language-server": {
+    "initialization_options": {
+      "preferences": {
+        "includeInlayParameterNameHints": "all",
+        "includeInlayParameterNameHintsWhenArgumentMatchesName": true,
+        "includeInlayFunctionParameterTypeHints": true,
+        "includeInlayVariableTypeHints": true,
+        "includeInlayVariableTypeHintsWhenTypeMatchesName": false,
+        "includeInlayPropertyDeclarationTypeHints": true,
+        "includeInlayFunctionLikeReturnTypeHints": true,
+        "includeInlayEnumMemberValueHints": true
+      }
+    }
+  }
+}
+```
+
+### Go
+
+```json
+"lsp": {
+  "gopls": {
+    "initialization_options": {
+      "hints": {
+        "assignVariableTypes": true,
+        "compositeLiteralFields": true,
+        "compositeLiteralTypes": true,
+        "constantValues": true,
+        "functionTypeParameters": true,
+        "parameterNames": true,
+        "rangeVariableTypes": true
+      }
+    }
   }
 }
 ```
