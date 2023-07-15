@@ -139,6 +139,7 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Go to type definition            | Editor        | `Command + F12`                      |
 | Hover                            | Editor        | `Command + K, Command + I`           |
 | Indent                           | Editor        | `Command + ]`                        |
+| Join lines                       | Editor        | `Control + J`                        |
 | Move down                        | Editor        | `Control + N`                        |
 | Move down                        | Editor        | `Down`                               |
 | Move left                        | Editor        | `Control + B`                        |
