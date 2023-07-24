@@ -43,6 +43,7 @@ There are some key bindings that can't be overridden; we are working on an issue
 
 | **Command**               | **Target**     | **Default Shortcut**           |
 |---------------------------|----------------|--------------------------------|
+| Open recent               | Branches       | `Alt + Command + B`            |
 | Toggle contacts menu      | Collab         | `Command + Shift + C`          |
 | Cancel                    | Menu           | `Control + C`                  |
 | Cancel                    | Menu           | `Escape`                       |
