@@ -819,7 +819,7 @@ See Buffer Font Features
 "shell": {
   "with_arguments": {
     "program": "/bin/bash",
-    "arguments": ["--login"]
+    "args": ["--login"]
   }
 }
 ```
