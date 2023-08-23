@@ -791,13 +791,13 @@ See Buffer Font Features
 
 ### Shell
 
-- Description: What working directory to use when launching the terminal.
+- Description: What shell to use when launching the terminal.
 - Setting: `shell`
 - Default: `system`
 
 **Options**
 
-1. Use the system's default terminal configuration (usually the pw file).
+1. Use the system's default terminal configuration (usually the `/etc/passwd` file).
 
 ```json
 {
