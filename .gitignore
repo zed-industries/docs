@@ -1,4 +1,5 @@
-__pycache__
 .DS_Store
-virtual_environment
+.venv
+__pycache__
 script/key-bindings/source/default.json
+virtual_environment
