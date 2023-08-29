@@ -88,16 +88,23 @@ def get_markdown_column_data(keymap_data):
     markdown_data = collections.defaultdict(lambda: collections.defaultdict(list))
 
     for binding_dictionary in keymap_data:
-        context = binding_dictionary.get("context", "Global")
+        context_string: str = binding_dictionary.get("context", "Global")
+        context_list = parse_context_string(context_string)
 
-        for operator in ("&&", ">"):
-            if operator in context:
-                context = context.split(operator)[0].strip()
+        if not context_list:
+            continue
 
-        context = camel_case_to_readable(context)
+        # We don't currently don't use anything, but the first item in the list
+        context_dictionary = context_list[0]
+        context_name = context_dictionary["name"]
+        context_name = camel_case_to_readable(context_dictionary["name"])
+        mode = context_dictionary.get("mode", None)
+
+        if mode:
+            context_name = f"{mode}_{context_name}"
 
         for shortcut, command in binding_dictionary["bindings"].items():
-            result = get_readable_command_and_target(command, context)
+            result = get_readable_command_and_target(command, context_name)
 
             if result is None:
                 continue
@@ -105,17 +112,46 @@ def get_markdown_column_data(keymap_data):
             readable_command, readable_target = result
             readable_shortcut = get_readable_shortcut(shortcut)
 
-            markdown_data[context]["commands"].append(readable_command)
-            markdown_data[context]["targets"].append(readable_target)
+            markdown_data[context_name]["commands"].append(readable_command)
+            markdown_data[context_name]["targets"].append(readable_target)
 
             # Special case for shortcuts that end in backticks
             # Unfortunately, these will render with an extra trailing space on GitHub.com
             if readable_shortcut.endswith("`"):
-                markdown_data[context]["shortcuts"].append(f"``{readable_shortcut} ``")
+                markdown_data[context_name]["shortcuts"].append(
+                    f"``{readable_shortcut} ``"
+                )
             else:
-                markdown_data[context]["shortcuts"].append(f"`{readable_shortcut}`")
+                markdown_data[context_name]["shortcuts"].append(
+                    f"`{readable_shortcut}`"
+                )
 
     return markdown_data
+
+
+def parse_context_string(context_string):
+    context_list = []
+    parts = context_string.split(" > ")
+
+    for part in parts:
+        bools = []
+        mode = None
+
+        if "&&" in part:
+            key, *values = part.split(" && ")
+
+            for value in values:
+                if "==" in value:
+                    mode_key, mode_value = value.split(" == ")
+                    mode = mode_value
+                else:
+                    bools.append(value)
+
+            context_list.append({"name": key, "bools": bools, "mode": mode})
+        else:
+            context_list.append({"name": part, "bools": [], "mode": None})
+
+    return context_list
 
 
 def get_readable_command_and_target(command, context):

@@ -10,6 +10,7 @@ from main import (
     get_markdown_tables,
     get_readable_command_and_target,
     get_readable_shortcut,
+    parse_context_string,
     snake_case_to_readable,
 )
 
@@ -22,6 +23,30 @@ def _():
 @test("test camel_case_to_readable")
 def _():
     assert camel_case_to_readable("ResetBufferFontSize") == "reset buffer font size"
+
+
+@test("test parse_context_string")
+def _():
+    assert parse_context_string("Editor") == [
+        {"name": "Editor", "bools": [], "mode": None}
+    ]
+    # We aren't outputting anything in the script for this case
+    assert parse_context_string("Editor && renaming") == [
+        {"name": "Editor", "bools": ["renaming"], "mode": None}
+    ]
+    assert parse_context_string("Editor && mode == full") == [
+        {"name": "Editor", "bools": [], "mode": "full"}
+    ]
+    # We aren't outputting anything in the script for this case, it may not make
+    # any sense for it to be this way.
+    assert parse_context_string("ConversationEditor > Editor") == [
+        {
+            "name": "ConversationEditor",
+            "bools": [],
+            "mode": None,
+        },
+        {"name": "Editor", "bools": [], "mode": None},
+    ]
 
 
 @test("test get_readable_shortcut")
@@ -88,6 +113,7 @@ def _():
 
     assert get_markdown_column_data(keymap_data) == markdown_data
 
+
 @test("test get_markdown_column_data for special cases")
 def _():
     keymap_data = [
@@ -126,6 +152,13 @@ def _():
             },
         },
         {
+            "context": "Editor && mode == full",
+            "bindings": {
+                "cmd-shift-o": "outline::Toggle",
+                "ctrl-g": "go_to_line::Toggle",
+            },
+        },
+        {
             "context": "Pane",
             "bindings": {
                 "ctrl--": "pane::GoBack",
@@ -151,6 +184,13 @@ def _():
         | Next screen                 | Editor       | `Control + L`          |
     """
 
+    full_editor_markdown_table = """
+        | **Command**   | **Target**   | **Default Shortcut**   |
+        |---------------|--------------|------------------------|
+        | Toggle        | Go To Line   | `Control + G`          |
+        | Toggle        | Outline      | `Command + Shift + O`  |
+    """
+
     pane_markdown_table = """
         | **Command**        | **Target**   | **Default Shortcut**   |
         |--------------------|--------------|------------------------|
@@ -162,6 +202,9 @@ def _():
     markdown_tables = {
         "{{ global_bindings }}": textwrap.dedent(global_markdown_table).strip(),
         "{{ editor_bindings }}": textwrap.dedent(editor_markdown_table).strip(),
+        "{{ full_editor_bindings }}": textwrap.dedent(
+            full_editor_markdown_table
+        ).strip(),
         "{{ pane_bindings }}": textwrap.dedent(pane_markdown_table).strip(),
     }
 

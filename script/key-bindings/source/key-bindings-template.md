@@ -47,6 +47,14 @@ There are some key bindings that can't be overridden; we are working on an issue
 
 {{ editor_bindings }}
 
+#### Editor (Full Only)
+
+{{ full_editor_bindings }}
+
+#### Editor (Auto Height Only)
+
+{{ auto_height_editor_bindings }}
+
 #### Pane
 
 {{ pane_bindings }}
