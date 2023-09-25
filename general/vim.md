@@ -3,14 +3,14 @@
 Zed includes a vim emulation layer known as “vim mode”. This document aims to describe how it works, and how to make the most out of it.
 
 ### Philosophy
-Vim mode in Zed is supposed to primarily "do what you expect": it mostly tries to copy vim exactly, but will use zed-specific functionality when available to make things smoother.
+Vim mode in Zed is supposed to primarily "do what you expect": it mostly tries to copy vim exactly, but will use Zed-specific functionality when available to make things smoother.
 
 This means Zed will never be 100% vim compatible, but should be 100% vim familiar! We expect that our vim mode already copes with 90% of your workflow, and we'd like to keep improving it. If you find things that you can’t yet do in vim mode, but which you rely on in your current workflow, please leave feedback in the editor itself (`cmd-shift-p Feedback`), or [file an issue](https://github.com/zed-industries/community).
 
 ### Zed-specific features
 Zed is built on a modern foundation that (among other things) uses tree-sitter to understand the content of the file you're editing, and supports multiple cursors out of the box.
 
-Vim mode has several "core Zed" keybindings, that will help you make the most of zed's specific feature set.
+Vim mode has several "core Zed" keybindings, that will help you make the most of Zed's specific feature set.
 ```
 g d   Go to definition
 g D   Go to type definition
@@ -29,9 +29,9 @@ g a   Add a visual selection for every copy of the current word
 g h   Show inline error (hover)
 ```
 
-Vim mode uses zed to define concepts like "brackets" (for the `%` key) and "words" (for motions like `w` and `e`). This does lead to some differences, but they are mostly positive. For example `%` considers `|` to be a bracket in languages like Rust; and `w` considers `$` to be a word-character in languages like Javascript.
+Vim mode uses Zed to define concepts like "brackets" (for the `%` key) and "words" (for motions like `w` and `e`). This does lead to some differences, but they are mostly positive. For example `%` considers `|` to be a bracket in languages like Rust; and `w` considers `$` to be a word-character in languages like Javascript.
 
-Vim mode emulates visual block mode using zed's multiple cursor support. This again leads to some differences, but is much more powerful.
+Vim mode emulates visual block mode using Zed's multiple cursor support. This again leads to some differences, but is much more powerful.
 
 Finally, vim mode's search and replace functinality is backed by Zed's. This causes a few differences:
 * Most importantly, regular expressions use the [rust regex crate](https://docs.rs/regex/latest/regex/#syntax) not vim's custom engine, so the syntax differs slightly.
@@ -114,7 +114,7 @@ Currently supported vim-specific commands (as of Zed 0.106):
 
 # replacement
 :%s/foo/bar/
-    to replace instances of foo with bar (/g is always assumed, the range must always be %, and zed uses different regex syntax to vim)
+    to replace instances of foo with bar (/g is always assumed, the range must always be %, and Zed uses different regex syntax to vim)
 
 # editing
 :j[oin]
@@ -127,7 +127,7 @@ Currently supported vim-specific commands (as of Zed 0.106):
 
 
 ### Related settings
-There are a few zed settings that you may also enjoy if you use vim mode:
+There are a few Zed settings that you may also enjoy if you use vim mode:
 ```
 {
   // disable cursor blink
