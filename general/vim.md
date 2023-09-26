@@ -10,7 +10,7 @@ This means Zed will never be 100% vim compatible, but should be 100% vim familia
 ### Zed-specific features
 Zed is built on a modern foundation that (among other things) uses tree-sitter to understand the content of the file you're editing, and supports multiple cursors out of the box.
 
-Vim mode has several "core Zed" key bindingss, that will help you make the most of Zed's specific feature set.
+Vim mode has several "core Zed" key bindings, that will help you make the most of Zed's specific feature set.
 ```
 g d   Go to definition
 g D   Go to type definition
@@ -40,7 +40,7 @@ Finally, vim mode's search and replace functinality is backed by Zed's. This cau
 ### Custom key bindings
 Zed does not yet have an equivalent to vim’s `map` command to convert one set of keystrokes into another, however you can bind any sequence of keys to fire any Action documented in the  [Key bindings documentation](https://docs.zed.dev/configuration/key-bindings).
 
-You can edit your personal key bindingss with `:keymap`.
+You can edit your personal key bindings with `:keymap`.
 For vim-specific shortcuts, you may find the following template a good place to start:
 ```
 [{
