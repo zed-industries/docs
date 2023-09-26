@@ -35,7 +35,7 @@ Vim mode emulates visual block mode using Zed's multiple cursor support. This ag
 
 Finally, vim mode's search and replace functinality is backed by Zed's. This causes a few differences:
 * Most importantly, regular expressions use the [rust regex crate](https://docs.rs/regex/latest/regex/#syntax) not vim's custom engine, so the syntax differs slightly.
-* Additionally, some options must be toggled differently: In Vim `/a/i` will look for `a` or `A`; in Zed you can either search for `(?i)a`, or search for `a` and toggle case-sensitivity with `cmd-option-c`.
+* Additionally, some options must be toggled differently: In vim `/a/i` will look for `a` or `A`; in Zed you can either search for `(?i)a`, or search for `a` and toggle case-sensitivity with `cmd-option-c`.
 
 ### Custom key bindings
 Zed does not yet have an equivalent to vim’s `map` command to convert one set of keystrokes into another, however you can bind any sequence of keys to fire any Action documented in the  [Key bindings documentation](https://docs.zed.dev/configuration/key-bindings).
