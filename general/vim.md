@@ -10,7 +10,7 @@ This means Zed will never be 100% vim compatible, but should be 100% vim familia
 ### Zed-specific features
 Zed is built on a modern foundation that (among other things) uses tree-sitter to understand the content of the file you're editing, and supports multiple cursors out of the box.
 
-Vim mode has several "core Zed" keybindings, that will help you make the most of Zed's specific feature set.
+Vim mode has several "core Zed" key bindingss, that will help you make the most of Zed's specific feature set.
 ```
 g d   Go to definition
 g D   Go to type definition
@@ -40,7 +40,7 @@ Finally, vim mode's search and replace functinality is backed by Zed's. This cau
 ### Custom key bindings
 Zed does not yet have an equivalent to vim’s `map` command to convert one set of keystrokes into another, however you can bind any sequence of keys to fire any Action documented in the  [Key bindings documentation](https://docs.zed.dev/configuration/key-bindings).
 
-You can edit your personal keybindings with `:keymap`.
+You can edit your personal key bindingss with `:keymap`.
 For vim-specific shortcuts, you may find the following template a good place to start:
 ```
 [{
@@ -68,7 +68,7 @@ For vim-specific shortcuts, you may find the following template a good place to 
 
 You can see the bindings that are enabled by default in vim mode [here](https://zed.dev/ref/vim.json).
 
-The details of the context are a little out of scope for this doc, but suffice to say that `menu` is true when a menu is open (e.g. the completions menu), `VimWaiting` is true after you type `f` or `t` when we’re waiting for a new key (and you probably don’t want bindings to happen). Please reach out on [Github](https://github.com/zed-industries/community) if you want help making a keybinding work.
+The details of the context are a little out of scope for this doc, but suffice to say that `menu` is true when a menu is open (e.g. the completions menu), `VimWaiting` is true after you type `f` or `t` when we’re waiting for a new key (and you probably don’t want bindings to happen). Please reach out on [Github](https://github.com/zed-industries/community) if you want help making a key bindings work.
 
 ### Command palette
 
