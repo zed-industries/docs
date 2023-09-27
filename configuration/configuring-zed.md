@@ -550,6 +550,16 @@ These values take in the same options as the root-level settings with the same n
 
 `boolean` values
 
+## Semantic Index
+
+- Description: Whether or not to use the semantic index for completions and diagnostics.
+- Setting: `semantic_index`
+- Default: `false`
+
+**Options**
+
+`boolean` values
+
 ## Show Call Status Icon
 
 - Description: Whether or not to show the call status icon in the status bar.
