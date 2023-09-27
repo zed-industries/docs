@@ -7,6 +7,7 @@
 * [How to collaborate](general/collaboration.md)
 * [Telemetry in Zed](general/telemetry.md)
 * [The Assistant Panel](general/assistant-panel.md)
+* [Vim](general/vim.md)
 
 ## 🟡 Configuration
 
