@@ -552,9 +552,25 @@ These values take in the same options as the root-level settings with the same n
 
 ## Semantic Index
 
-- Description: Whether or not to use the semantic index for completions and diagnostics.
+- Description: Settings related to semantic index.
 - Setting: `semantic_index`
-- Default: `false`
+- Default:
+
+```json
+"semantic_index": {
+  "enabled": false
+},
+```
+
+### Enabled
+
+- Description: Whether or not to display the `Semantic` mode in project search.
+- Setting: `enabled`
+- Default: `true`
+
+**Options**
+
+`boolean` values
 
 **Options**
 
@@ -931,6 +947,7 @@ Run the `theme selector: toggle` action in the command palette to see a current 
 ```
 
 ### Git Status
+
 - Description: Indicates newly created and updated files
 - Setting: `git_status`
 - Default: `true`
