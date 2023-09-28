@@ -141,6 +141,6 @@ There are a few Zed settings that you may also enjoy if you use vim mode:
   // use relative line numbers
   "relative_line_numbers": true,
   // hide the scroll bar
-  "scroll": {"show": "never"},
+  "scrollbar": {"show": "never"},
 }
 ```
