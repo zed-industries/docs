@@ -186,6 +186,7 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Rename                           | Editor       | `F2`                                 |
 | Reveal in finder                 | Editor       | `Alt + Command + R`                  |
 | Select all                       | Editor       | `Command + A`                        |
+| Select all matches               | Editor       | `Command + Shift + L`                |
 | Select down                      | Editor       | `Control + Shift + N`                |
 | Select down                      | Editor       | `Shift + Down`                       |
 | Select larger syntax node        | Editor       | `Alt + Up`                           |
@@ -352,6 +353,9 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Toggle focus           | Project Search | `Escape`               |
 | Next history query     | Search         | `Down`                 |
 | Previous history query | Search         | `Up`                   |
+| Toggle Semantic Search Mode | Project Search | `Alt + Command + S` |
+| Toggle Regex Search Mode | Project Search | `Alt + Command + R` |
+| Toggle Text Search Mode | Project Search | `Alt + Command + X` |
 
 #### Terminal
 
