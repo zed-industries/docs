@@ -23,4 +23,4 @@ Note: Don't modify `configuration/key-bindings.md` directly - only files within 
 1. Running the `zed: open default keymap` command in Zed
 2. Copying and pasting the contents into `script/key-bindings/source/default.json` (**use Zed stable for this step**)
 
-Once the updates are in place, run the script via `python main.py`.
+Once the updates are in place, run the script via `python main.py` and ensure that the output looks correct.
