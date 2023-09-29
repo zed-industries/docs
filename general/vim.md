@@ -33,9 +33,7 @@ Vim mode uses Zed to define concepts like "brackets" (for the `%` key) and "word
 
 Vim mode emulates visual block mode using Zed's multiple cursor support. This again leads to some differences, but is much more powerful.
 
-Finally, vim mode's search and replace functionality is backed by Zed's. This causes a few differences:
-* Most importantly, regular expressions use the [rust regex crate](https://docs.rs/regex/latest/regex/#syntax) not vim's custom engine, so the syntax differs slightly.
-* Additionally, some options must be toggled differently: In vim, `/a/i` will look for `a` or `A`; in Zed you can either search for `(?i)a`, or search for `a` and toggle case-sensitivity with `cmd-option-c`.
+Finally, Vim mode's search and replace functionality is backed by Zed's. This means that the pattern syntax is slightly different, see the section on [Regex differences](#regex-differences) for details.
 
 ### Custom key bindings
 Zed does not yet have an equivalent to vim’s `map` command to convert one set of keystrokes into another, however you can bind any sequence of keys to fire any Action documented in the  [Key bindings documentation](https://docs.zed.dev/configuration/key-bindings).
@@ -144,3 +142,19 @@ There are a few Zed settings that you may also enjoy if you use vim mode:
   "scrollbar": {"show": "never"},
 }
 ```
+
+### Regex differences
+
+Zed uses a different regular expression engine from Vim. This means that you will have to use a different syntax for some things.
+
+Notably:
+* Vim uses `\(` and `\)` to represent capture groups, in Zed these are `(` and `)`.
+* On the flip side, `(` and `)` represent literal parentheses, but in Zed these must be escaped to `\(` and `\)`.
+* When replacing, Vim uses `\0` to represent the entire match, in Zed this is `$0`, same for numbered capture groups `\1` -> `$1`.
+* Vim uses `\<` and `\>` to represent word boundaries, in Zed these are both handled by `\b`
+* Vim uses `/g` to indicate "all matches on one line", in Zed this is implied
+* Vim uses `/i` to indicate "case-insensitive", in Zed you can either use `(?i)` at the start of the pattern or toggle case-sensitivity with `cmd-option-c`.
+
+To help with the transition, the command palette will fix parentheses and replace groups for you when you run `:%s//`. So `%s:/\(a\)(b)/\1/` will be converted into a search for "(a)\(b\)" and a replacement of "$1".
+
+For the full syntax supported by Zed's regex engine see the [regex crate documentation](https://docs.rs/regex/latest/regex/#syntax).
