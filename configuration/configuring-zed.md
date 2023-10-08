@@ -434,6 +434,30 @@ Use `lsp` section for the server configuration, below are some examples for well
 }
 ```
 
+### Svelte
+
+```json
+{
+  "lsp": {
+    "typescript-language-server": {
+      "initialization_options": {
+        "preferences": {
+          "includeInlayParameterNameHints": "all",
+          "includeInlayParameterNameHintsWhenArgumentMatchesName": true,
+          "includeInlayFunctionParameterTypeHints": true,
+          "includeInlayVariableTypeHints": true,
+          "includeInlayVariableTypeHintsWhenTypeMatchesName": false,
+          "includeInlayPropertyDeclarationTypeHints": true,
+          "includeInlayFunctionLikeReturnTypeHints": true,
+          "includeInlayEnumMemberValueHints": true,
+          "includeInlayEnumMemberDeclarationTypes": true
+        }
+      }
+    }
+  }
+}
+```
+
 ## Journal
 
 - Description: Configuration for the journal.
