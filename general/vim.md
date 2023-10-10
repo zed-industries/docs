@@ -5,17 +5,20 @@ Zed includes a vim emulation layer known as “vim mode”. This document aims t
 ### Philosophy
 Vim mode in Zed is supposed to primarily "do what you expect": it mostly tries to copy vim exactly, but will use Zed-specific functionality when available to make things smoother.
 
-This means Zed will never be 100% vim compatible, but should be 100% vim familiar! We expect that our vim mode already copes with 90% of your workflow, and we'd like to keep improving it. If you find things that you can’t yet do in vim mode, but which you rely on in your current workflow, please leave feedback in the editor itself (`cmd-shift-p Feedback`), or [file an issue](https://github.com/zed-industries/community).
+This means Zed will never be 100% vim compatible, but should be 100% vim familiar! We expect that our vim mode already copes with 90% of your workflow, and we'd like to keep improving it. If you find things that you can’t yet do in vim mode, but which you rely on in your current workflow, please leave feedback in the editor itself (`:feedback`), or [file an issue](https://github.com/zed-industries/community).
 
 ### Zed-specific features
 Zed is built on a modern foundation that (among other things) uses tree-sitter to understand the content of the file you're editing, and supports multiple cursors out of the box.
 
 Vim mode has several "core Zed" key bindings, that will help you make the most of Zed's specific feature set.
 ```
+# Normal mode
 g d   Go to definition
 g D   Go to type definition
 c d   Rename (change definition)
 g A   Go to All references to the current word
+
+g <space>  Open the current search excerpt in its own tab
 
 g s   Find symbol in current file
 g S   Find symbol in entire project
@@ -27,6 +30,13 @@ g <   The same, but backwards
 g a   Add a visual selection for every copy of the current word
 
 g h   Show inline error (hover)
+
+# Insert mode
+ctrl-x ctrl-o  Open the completion menu
+ctrl-x ctrl-c  Request Github Copilot suggestion (if configured)
+ctrl-x ctrl-a  Open the inline AI assistant (if configured)
+ctrl-x ctrl-l  Open the LSP code actions
+ctrl-x ctrl-z  Hides all suggestions
 ```
 
 Vim mode uses Zed to define concepts like "brackets" (for the `%` key) and "words" (for motions like `w` and `e`). This does lead to some differences, but they are mostly positive. For example `%` considers `|` to be a bracket in languages like Rust; and `w` considers `$` to be a word-character in languages like Javascript.
