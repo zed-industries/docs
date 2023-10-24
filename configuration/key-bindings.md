@@ -45,6 +45,7 @@ There are some key bindings that can't be overridden; we are working on an issue
 |-------------------------------|----------------|--------------------------------|
 | Open recent                   | Branches       | `Alt + Command + B`            |
 | Toggle focus                  | Collab Panel   | `Command + Shift + C`          |
+| Toggle inlay hints            | Editor         | `Control + :`                  |
 | Cancel                        | Menu           | `Control + C`                  |
 | Cancel                        | Menu           | `Escape`                       |
 | Confirm                       | Menu           | `Enter`                        |
@@ -83,11 +84,16 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Open                          | Workspace      | `Command + O`                  |
 | Save                          | Workspace      | `Command + S`                  |
 | Save as                       | Workspace      | `Command + Shift + S`          |
+| Swap pane in direction        | Workspace      | `Command + K, Shift + Down`    |
+| Swap pane in direction        | Workspace      | `Command + K, Shift + Left`    |
+| Swap pane in direction        | Workspace      | `Command + K, Shift + Right`   |
+| Swap pane in direction        | Workspace      | `Command + K, Shift + Up`      |
 | Toggle zoom                   | Workspace      | `Shift + Escape`               |
 | Debug elements                | Zed            | `Command + Alt + I`            |
 | Decrease buffer font size     | Zed            | `Command + `                   |
 | Hide                          | Zed            | `Command + H`                  |
 | Hide others                   | Zed            | `Alt + Command + H`            |
+| Increase buffer font size     | Zed            | `Command + +`                  |
 | Increase buffer font size     | Zed            | `Command + =`                  |
 | Minimize                      | Zed            | `Command + M`                  |
 | Open settings                 | Zed            | `Command + ,`                  |
@@ -99,6 +105,7 @@ There are some key bindings that can't be overridden; we are working on an issue
 
 | **Command**                      | **Target**   | **Default Shortcut**                 |
 |----------------------------------|--------------|--------------------------------------|
+| Inline assist                    | Assistant    | `Control + Enter`                    |
 | Add selection above              | Editor       | `Command + Alt + Up`                 |
 | Add selection above              | Editor       | `Command + Control + P`              |
 | Add selection below              | Editor       | `Command + Alt + Down`               |
@@ -111,6 +118,12 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Confirm completion               | Editor       | `Enter`                              |
 | Confirm completion               | Editor       | `Tab`                                |
 | Confirm rename                   | Editor       | `Enter`                              |
+| Context menu first               | Editor       | `Page Up`                            |
+| Context menu last                | Editor       | `Page Down`                          |
+| Context menu next                | Editor       | `Control + N`                        |
+| Context menu next                | Editor       | `Down`                               |
+| Context menu prev                | Editor       | `Control + P`                        |
+| Context menu prev                | Editor       | `Up`                                 |
 | Copy                             | Editor       | `Command + C`                        |
 | Cut                              | Editor       | `Command + X`                        |
 | Cut to end of line               | Editor       | `Control + K`                        |
@@ -186,6 +199,7 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Rename                           | Editor       | `F2`                                 |
 | Reveal in finder                 | Editor       | `Alt + Command + R`                  |
 | Select all                       | Editor       | `Command + A`                        |
+| Select all matches               | Editor       | `Command + Shift + L`                |
 | Select down                      | Editor       | `Control + Shift + N`                |
 | Select down                      | Editor       | `Shift + Down`                       |
 | Select larger syntax node        | Editor       | `Alt + Up`                           |
@@ -221,7 +235,6 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Select up                        | Editor       | `Shift + Up`                         |
 | Show character palette           | Editor       | `Control + Command + Space`          |
 | Show completions                 | Editor       | `Control + Space`                    |
-| Split selection into lines       | Editor       | `Command + Shift + L`                |
 | Tab                              | Editor       | `Tab`                                |
 | Tab prev                         | Editor       | `Shift + Tab`                        |
 | Toggle code actions              | Editor       | `Command + .`                        |
@@ -242,6 +255,7 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Previous suggestion | Copilot       | `Alt + [`                 |
 | Suggest             | Copilot       | `Alt + \`                 |
 | Newline             | Editor        | `Enter`                   |
+| Newline             | Editor        | `Shift + Enter`           |
 | Newline above       | Editor        | `Command + Shift + Enter` |
 | Newline below       | Editor        | `Command + Enter`         |
 | Toggle soft wrap    | Editor        | `Alt + Z`                 |
@@ -257,33 +271,38 @@ There are some key bindings that can't be overridden; we are working on an issue
 
 #### Pane
 
-| **Command**           | **Target**     | **Default Shortcut**   |
-|-----------------------|----------------|------------------------|
-| Activate item 1       | Pane           | `Control + 1`          |
-| Activate item 2       | Pane           | `Control + 2`          |
-| Activate item 3       | Pane           | `Control + 3`          |
-| Activate item 4       | Pane           | `Control + 4`          |
-| Activate item 5       | Pane           | `Control + 5`          |
-| Activate item 6       | Pane           | `Control + 6`          |
-| Activate item 7       | Pane           | `Control + 7`          |
-| Activate item 8       | Pane           | `Control + 8`          |
-| Activate item 9       | Pane           | `Control + 9`          |
-| Activate last item    | Pane           | `Control + 0`          |
-| Go back               | Pane           | `Control + `           |
-| Go forward            | Pane           | `Control + _`          |
-| Reopen closed item    | Pane           | `Command + Shift + T`  |
-| Split down            | Pane           | `Command + K, Down`    |
-| Split left            | Pane           | `Command + K, Left`    |
-| Split right           | Pane           | `Command + K, Right`   |
-| Split up              | Pane           | `Command + K, Up`      |
-| Toggle focus          | Project Search | `Command + F`          |
-| Toggle focus          | Project Search | `Command + Shift + F`  |
-| Select all matches    | Search         | `Alt + Enter`          |
-| Select next match     | Search         | `Command + G`          |
-| Select prev match     | Search         | `Command + Shift + G`  |
-| Toggle case sensitive | Search         | `Alt + Command + C`    |
-| Toggle regex          | Search         | `Alt + Command + R`    |
-| Toggle whole word     | Search         | `Alt + Command + W`    |
+| **Command**            | **Target**     | **Default Shortcut**   |
+|------------------------|----------------|------------------------|
+| Activate item 1        | Pane           | `Control + 1`          |
+| Activate item 2        | Pane           | `Control + 2`          |
+| Activate item 3        | Pane           | `Control + 3`          |
+| Activate item 4        | Pane           | `Control + 4`          |
+| Activate item 5        | Pane           | `Control + 5`          |
+| Activate item 6        | Pane           | `Control + 6`          |
+| Activate item 7        | Pane           | `Control + 7`          |
+| Activate item 8        | Pane           | `Control + 8`          |
+| Activate item 9        | Pane           | `Control + 9`          |
+| Activate last item     | Pane           | `Control + 0`          |
+| Go back                | Pane           | `Control + `           |
+| Go forward             | Pane           | `Control + _`          |
+| Reopen closed item     | Pane           | `Command + Shift + T`  |
+| Split down             | Pane           | `Command + K, Down`    |
+| Split left             | Pane           | `Command + K, Left`    |
+| Split right            | Pane           | `Command + K, Right`   |
+| Split up               | Pane           | `Command + K, Up`      |
+| Toggle filters         | Project Search | `Alt + Command + F`    |
+| Toggle focus           | Project Search | `Command + F`          |
+| Toggle focus           | Project Search | `Command + Shift + F`  |
+| Activate regex mode    | Search         | `Alt + Command + G`    |
+| Activate semantic mode | Search         | `Alt + Command + S`    |
+| Activate text mode     | Search         | `Alt + Command + X`    |
+| Cycle mode             | Search         | `Alt + Tab`            |
+| Select all matches     | Search         | `Alt + Enter`          |
+| Select next match      | Search         | `Command + G`          |
+| Select prev match      | Search         | `Command + Shift + G`  |
+| Toggle case sensitive  | Search         | `Alt + Command + C`    |
+| Toggle replace         | Search         | `Command + Shift + H`  |
+| Toggle whole word      | Search         | `Alt + Command + W`    |
 
 #### Buffer Search Bar
 
@@ -291,8 +310,11 @@ There are some key bindings that can't be overridden; we are working on an issue
 |------------------------|---------------|------------------------|
 | Dismiss                | Buffer Search | `Escape`               |
 | Focus editor           | Buffer Search | `Tab`                  |
+| Cycle mode             | Search        | `Alt + Tab`            |
 | Next history query     | Search        | `Down`                 |
 | Previous history query | Search        | `Up`                   |
+| Replace all            | Search        | `Command + Enter`      |
+| Replace next           | Search        | `Enter`                |
 | Select all matches     | Search        | `Alt + Enter`          |
 | Select next match      | Search        | `Enter`                |
 | Select prev match      | Search        | `Shift + Enter`        |
@@ -337,6 +359,8 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Cut                     | Project Panel | `Command + X`               |
 | Delete                  | Project Panel | `Backspace`                 |
 | Expand selected entry   | Project Panel | `Right`                     |
+| New directory           | Project Panel | `Alt + Command + N`         |
+| New file                | Project Panel | `Command + N`               |
 | New search in directory | Project Panel | `Alt + Shift + F`           |
 | Open                    | Project Panel | `Space`                     |
 | Paste                   | Project Panel | `Command + V`               |
@@ -350,8 +374,15 @@ There are some key bindings that can't be overridden; we are working on an issue
 |------------------------|----------------|------------------------|
 | Search in new          | Project Search | `Command + Enter`      |
 | Toggle focus           | Project Search | `Escape`               |
+| Activate regex mode    | Search         | `Alt + Command + G`    |
+| Activate semantic mode | Search         | `Alt + Command + S`    |
+| Activate text mode     | Search         | `Alt + Command + X`    |
+| Cycle mode             | Search         | `Alt + Tab`            |
 | Next history query     | Search         | `Down`                 |
 | Previous history query | Search         | `Up`                   |
+| Replace all            | Search         | `Command + Enter`      |
+| Replace next           | Search         | `Enter`                |
+| Toggle replace         | Search         | `Command + Shift + H`  |
 
 #### Terminal
 
