@@ -41,65 +41,65 @@ There are some key bindings that can't be overridden; we are working on an issue
 
 #### Global
 
-| **Command**                   | **Target**     | **Default Shortcut**           |
-|-------------------------------|----------------|--------------------------------|
-| Open recent                   | Branches       | `Alt + Command + B`            |
-| Toggle focus                  | Collab Panel   | `Command + Shift + C`          |
-| Toggle inlay hints            | Editor         | `Control + :`                  |
-| Cancel                        | Menu           | `Control + C`                  |
-| Cancel                        | Menu           | `Escape`                       |
-| Confirm                       | Menu           | `Enter`                        |
-| Secondary confirm             | Menu           | `Command + Enter`              |
-| Select first                  | Menu           | `Command + Up`                 |
-| Select first                  | Menu           | `Page Up`                      |
-| Select first                  | Menu           | `Shift + Page Down`            |
-| Select first                  | Menu           | `Shift + Page Up`              |
-| Select last                   | Menu           | `Command + Down`               |
-| Select last                   | Menu           | `Page Down`                    |
-| Select next                   | Menu           | `Control + N`                  |
-| Select next                   | Menu           | `Down`                         |
-| Select prev                   | Menu           | `Control + P`                  |
-| Select prev                   | Menu           | `Up`                           |
-| Show context menu             | Menu           | `Control + Enter`              |
-| Activate next item            | Pane           | `Alt + Command + Right`        |
-| Activate next item            | Pane           | `Command + }`                  |
-| Activate prev item            | Pane           | `Alt + Command + Left`         |
-| Activate prev item            | Pane           | `Command + {`                  |
-| Close active item             | Pane           | `Command + W`                  |
-| Close all items               | Pane           | `Command + K, Command + W`     |
-| Close clean items             | Pane           | `Command + K, U`               |
-| Close inactive items          | Pane           | `Alt + Command + T`            |
-| Open recent                   | Projects       | `Alt + Command + O`            |
-| Toggle focus                  | Terminal Panel | ``Control + ` ``               |
-| Activate pane in direction    | Workspace      | `Command + K, Command + Down`  |
-| Activate pane in direction    | Workspace      | `Command + K, Command + Left`  |
-| Activate pane in direction    | Workspace      | `Command + K, Command + Right` |
-| Activate pane in direction    | Workspace      | `Command + K, Command + Up`    |
-| Close inactive tabs and panes | Workspace      | `Control + Alt + Command + W`  |
-| Close window                  | Workspace      | `Command + Shift + W`          |
-| Follow next collaborator      | Workspace      | `Control + Alt + Command + F`  |
-| New file                      | Workspace      | `Command + N`                  |
-| New terminal                  | Workspace      | `Control + ~`                  |
-| New window                    | Workspace      | `Command + Shift + N`          |
-| Open                          | Workspace      | `Command + O`                  |
-| Save                          | Workspace      | `Command + S`                  |
-| Save as                       | Workspace      | `Command + Shift + S`          |
-| Swap pane in direction        | Workspace      | `Command + K, Shift + Down`    |
-| Swap pane in direction        | Workspace      | `Command + K, Shift + Left`    |
-| Swap pane in direction        | Workspace      | `Command + K, Shift + Right`   |
-| Swap pane in direction        | Workspace      | `Command + K, Shift + Up`      |
-| Toggle zoom                   | Workspace      | `Shift + Escape`               |
-| Debug elements                | Zed            | `Command + Alt + I`            |
-| Decrease buffer font size     | Zed            | `Command + `                   |
-| Hide                          | Zed            | `Command + H`                  |
-| Hide others                   | Zed            | `Alt + Command + H`            |
-| Increase buffer font size     | Zed            | `Command + +`                  |
-| Increase buffer font size     | Zed            | `Command + =`                  |
-| Minimize                      | Zed            | `Command + M`                  |
-| Open settings                 | Zed            | `Command + ,`                  |
-| Quit                          | Zed            | `Command + Q`                  |
-| Reset buffer font size        | Zed            | `Command + 0`                  |
-| Toggle full screen            | Zed            | `Control + Command + F`        |
+| **Command**                      | **Target**     | **Default Shortcut**           |
+|----------------------------------|----------------|--------------------------------|
+| Open recent                      | Branches       | `Alt + Command + B`            |
+| Toggle focus                     | Collab Panel   | `Command + Shift + C`          |
+| Toggle inlay hints               | Editor         | `Control + :`                  |
+| Cancel                           | Menu           | `Control + C`                  |
+| Cancel                           | Menu           | `Escape`                       |
+| Confirm                          | Menu           | `Enter`                        |
+| Secondary confirm                | Menu           | `Command + Enter`              |
+| Select first                     | Menu           | `Command + Up`                 |
+| Select first                     | Menu           | `Page Up`                      |
+| Select first                     | Menu           | `Shift + Page Down`            |
+| Select first                     | Menu           | `Shift + Page Up`              |
+| Select last                      | Menu           | `Command + Down`               |
+| Select last                      | Menu           | `Page Down`                    |
+| Select next                      | Menu           | `Control + N`                  |
+| Select next                      | Menu           | `Down`                         |
+| Select prev                      | Menu           | `Control + P`                  |
+| Select prev                      | Menu           | `Up`                           |
+| Show context menu                | Menu           | `Control + Enter`              |
+| Activate next item               | Pane           | `Alt + Command + Right`        |
+| Activate next item               | Pane           | `Command + }`                  |
+| Activate prev item               | Pane           | `Alt + Command + Left`         |
+| Activate prev item               | Pane           | `Command + {`                  |
+| Close active item                | Pane           | `Command + W`                  |
+| Close all items                  | Pane           | `Command + K, Command + W`     |
+| Close clean items                | Pane           | `Command + K, U`               |
+| Close inactive items             | Pane           | `Alt + Command + T`            |
+| Open recent                      | Projects       | `Alt + Command + O`            |
+| Toggle focus                     | Terminal Panel | ``Control + ` ``               |
+| Activate pane in direction Down  | Workspace      | `Command + K, Command + Down`  |
+| Activate pane in direction Left  | Workspace      | `Command + K, Command + Left`  |
+| Activate pane in direction Right | Workspace      | `Command + K, Command + Right` |
+| Activate pane in direction Up    | Workspace      | `Command + K, Command + Up`    |
+| Close inactive tabs and panes    | Workspace      | `Control + Alt + Command + W`  |
+| Close window                     | Workspace      | `Command + Shift + W`          |
+| Follow next collaborator         | Workspace      | `Control + Alt + Command + F`  |
+| New file                         | Workspace      | `Command + N`                  |
+| New terminal                     | Workspace      | `Control + ~`                  |
+| New window                       | Workspace      | `Command + Shift + N`          |
+| Open                             | Workspace      | `Command + O`                  |
+| Save                             | Workspace      | `Command + S`                  |
+| Save as                          | Workspace      | `Command + Shift + S`          |
+| Swap pane in direction           | Workspace      | `Command + K, Shift + Down`    |
+| Swap pane in direction           | Workspace      | `Command + K, Shift + Left`    |
+| Swap pane in direction           | Workspace      | `Command + K, Shift + Right`   |
+| Swap pane in direction           | Workspace      | `Command + K, Shift + Up`      |
+| Toggle zoom                      | Workspace      | `Shift + Escape`               |
+| Debug elements                   | Zed            | `Command + Alt + I`            |
+| Decrease buffer font size        | Zed            | `Command + `                   |
+| Hide                             | Zed            | `Command + H`                  |
+| Hide others                      | Zed            | `Alt + Command + H`            |
+| Increase buffer font size        | Zed            | `Command + +`                  |
+| Increase buffer font size        | Zed            | `Command + =`                  |
+| Minimize                         | Zed            | `Command + M`                  |
+| Open settings                    | Zed            | `Command + ,`                  |
+| Quit                             | Zed            | `Command + Q`                  |
+| Reset buffer font size           | Zed            | `Command + 0`                  |
+| Toggle full screen               | Zed            | `Control + Command + F`        |
 
 #### Editor
 

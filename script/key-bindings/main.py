@@ -15,7 +15,7 @@ SOURCE_DIRECTORY = KEY_BINDINGS_SCRIPT_DIRECTORY / "source"
 KEY_BINDINGS_TEMPLATE = SOURCE_DIRECTORY / "key-bindings-template.md"
 DEFAULT_KEY_BINDINGS = SOURCE_DIRECTORY / "default.json"
 
-KEY_NAME_MAP = {
+KEY_NAME_MAP: dict[str, str] = {
     "cmd": "command",
     "ctrl": "control",
     "pageup": "page up",
@@ -179,6 +179,10 @@ def get_readable_command_and_target(command, context):
     if isinstance(original_command, list):
         command, misc_text = original_command
 
+        # Text append
+        if command in ["workspace::ActivatePaneInDirection"]:
+            readable_command = f"{readable_command} {misc_text.lower()}"
+        # Numerical append
         if command in ["pane::ActivateItem", "workspace::ActivatePane"]:
             readable_command = f"{readable_command} {misc_text + 1}"
 

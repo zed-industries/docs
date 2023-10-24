@@ -85,6 +85,11 @@ def _():
         ["workspace::ActivatePane", 0], "workspace"
     ) == ("Activate pane 1", "Workspace")
 
+    assert get_readable_command_and_target(["workspace::ActivatePaneInDirection", "Left"], "pane") == (
+        "Activate pane in direction left",
+        "Workspace",
+    )
+
 
 @test("test get_markdown_column_data")
 def _():
