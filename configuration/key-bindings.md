@@ -71,10 +71,10 @@ There are some key bindings that can't be overridden; we are working on an issue
 | Close inactive items             | Pane           | `Alt + Command + T`            |
 | Open recent                      | Projects       | `Alt + Command + O`            |
 | Toggle focus                     | Terminal Panel | ``Control + ` ``               |
-| Activate pane in direction Down  | Workspace      | `Command + K, Command + Down`  |
-| Activate pane in direction Left  | Workspace      | `Command + K, Command + Left`  |
-| Activate pane in direction Right | Workspace      | `Command + K, Command + Right` |
-| Activate pane in direction Up    | Workspace      | `Command + K, Command + Up`    |
+| Activate pane in direction down  | Workspace      | `Command + K, Command + Down`  |
+| Activate pane in direction left  | Workspace      | `Command + K, Command + Left`  |
+| Activate pane in direction right | Workspace      | `Command + K, Command + Right` |
+| Activate pane in direction up    | Workspace      | `Command + K, Command + Up`    |
 | Close inactive tabs and panes    | Workspace      | `Control + Alt + Command + W`  |
 | Close window                     | Workspace      | `Command + Shift + W`          |
 | Follow next collaborator         | Workspace      | `Control + Alt + Command + F`  |
