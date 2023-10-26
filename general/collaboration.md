@@ -2,14 +2,9 @@
 description: >-
   Collaborate with other Zed users on your projects. Share your screen, follow users, and more.
 ---
-
 # Collaboration
 
-{% hint style="warning" %}
-Only collaborate with people that you trust. Since sharing a project gives them access to your local file system, you should not share projects with people you do not trust; they could potentially do some nasty things.
-
-In the future, we will do more to prevent this type of access beyond the shared project and add more control over what collaborators can do, but for now, only collaborate with people you trust.
-{% endhint %}
+Zed is based on the premise that software engineering in the modern world is (more often than not) a group activity. To help teams be more productive, Zed includes several collaboration features.
 
 ## Adding a collaborator to a call
 
