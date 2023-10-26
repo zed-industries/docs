@@ -616,6 +616,16 @@ These values take in the same options as the root-level settings with the same n
 
 `boolean` values
 
+## Show Completion Documentation
+
+- Description: Whether to display inline and alongside documentation for items in the completions menu.
+- Setting: `show_completion_documentation`
+- Default: `true`
+
+**Options**
+
+`boolean` values
+
 ## Show Copilot Suggestions
 
 - Description: Whether or not to show Copilot suggestions as you type or wait for a `copilot::Toggle`.
