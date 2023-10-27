@@ -6,7 +6,7 @@ description: >-
 
 At Zed we believe that great things are built by great people working together. We have designed Zed to help every individual work faster and to help teams of people work together more effectively.
 
-Channels are currently in private beta, please contact us to be added!
+Channels are currently in private beta, please contact us to be added! Otherwise you can get some of the same benefits from [Calls](../general/collaboration/) in the meantime.
 
 ### Overview
 

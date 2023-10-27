@@ -4,7 +4,8 @@
 
 * [Getting started](README.md)
 * [System requirements](general/system-requirements.md)
-* [Collaboration & Channels](general/collaboration.md)
+* [Channels](general/channels.md)
+* [Collaboration](general/collaboration.md)
 * [Telemetry in Zed](general/telemetry.md)
 * [The Assistant Panel](general/assistant-panel.md)
 * [Vim](general/vim.md)
