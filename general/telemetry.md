@@ -12,7 +12,7 @@ Diagnostic events include debug information (stack traces) from crash reports.  
 
 ### Metrics
 
-Zed also collects metric information based on user actions.  Metric events are reported over HTTPS, and requests are rate-limited to avoid using significant network bandwidth. Telemetry data is proxied through our servers simply to enable us to easily switch analytics services; we never store this data.  Currently, we are using [Clickhouse](https://clickhouse.com) to injest the events.  All data remains anonymous, and can't be related to specific Zed users.
+Zed also collects metric information based on user actions.  Metric events are reported over HTTPS, and requests are rate-limited to avoid using significant network bandwidth. Telemetry data is proxied through our servers simply to enable us to easily switch analytics services; we never store this data.  Currently, we are using [Clickhouse](https://clickhouse.com) to ingest the events.  All data remains anonymous, and can't be related to specific Zed users.
 
 The following data is sent:
 
