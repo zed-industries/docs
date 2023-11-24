@@ -82,10 +82,12 @@ The following data is sent:
     - `vim_mode`: A boolean that indicates whether the user is in vim mode or not
     - `copilot_enabled`: A boolean that indicates whether the user has copilot enabled or not
     - `copilot_enabled_for_language`: A boolean that indicates whether the user has copilot enabled for the language of the file that was opened or saved
+    - `milliseconds_since_first_event`: Duration of time between this event's timestamp and the timestamp of the first event in the current batch
 - `copilot`
     - `suggestion_id`: The ID of the suggestion
     - `suggestion_accepted`: A boolean that indicates whether the suggestion was accepted or not
     - `file_extension`: The file extension of the file that was opened or saved
+    - `milliseconds_since_first_event`: Same as above
 - `call`
     - `operation`: The call operation that was performed
         - `accept incoming`
@@ -102,18 +104,28 @@ The following data is sent:
         - `unshare project`
     - `room_id`: The ID of the room
     - `channel_id`: The ID of the channel
+    - `milliseconds_since_first_event`: Same as above
 - `assistant`
     - `conversation_id`: The ID of the conversation (for panel events only)
     - `kind`: An enum with the following variants:
         - `panel`
         - `inline`
     - `model`: The model that was used
+    - `milliseconds_since_first_event`: Same as above
 - `cpu`
     - `usage_as_percentage`: The CPU usage
     - `core_count`: The number of cores on the CPU
+    - `milliseconds_since_first_event`: Same as above
 - `memory`
     - `memory_in_bytes`: The amount of memory used in bytes
     - `virtual_memory_in_bytes`: The amount of virtual memory used in bytes
+    - `milliseconds_since_first_event`: Same as above
+- `app`
+    - `operation`: The app operation that was performed
+        - `first open`
+        - `open`
+        - `close (only in GPUI2-powered Zed)`
+    - `milliseconds_since_first_event`: Same as above
 
 You can audit the metrics data that Zed has reported by running the command `zed: open telemetry log` from the command palette, or clicking `Help > View Telemetry Log` in the application menu.
 
