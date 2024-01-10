@@ -11,6 +11,8 @@ Only collaborate with people that you trust. Since sharing a project gives them 
 In the future, we will do more to prevent this type of access beyond the shared project and add more control over what collaborators can do, but for now, only collaborate with people you trust.
 {% endhint %}
 
+Note: we are working on a new version of this feature called [Channels](../general/channels). If you'd like to be part of the private beta, please contact us!
+
 ## Adding a collaborator to a call
 
 Before you can collaborate, you'll need to add a collaborator to your contacts. To do this:
