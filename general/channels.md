@@ -62,3 +62,11 @@ By default, channels you create can only be accessed by you. You can invite coll
 When you have channels nested under each other, permissions are inherited. For instance, in the example above, we only need to add people to the `#zed` channel, and they will automatically gain access to `#core-editor`, `#new-languages`, and `#stability`.
 
 Once you have added someone, they can either join your channel by clicking on it in their Zed sidebar, or you can share the link to the channel so that they can join directly.
+
+### Livestreaming & Guests
+
+A Channel can also be made Public. This allows anyone to join the channel by clicking on the link.
+
+Guest users in channels can hear and see everything that is happening, and have read only access to projects and channel notes. They can use the Chat as normal.
+
+If you'd like to invite a guest to participate in a channel for the duration of a call you can do so by right clicking on them in the Collaboration Panel. "Allowing Write Access" will allow them to edit any projects shared into the call, and to use their microphone and share their screen if they wish.
