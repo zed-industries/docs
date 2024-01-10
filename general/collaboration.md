@@ -1,6 +1,7 @@
 ---
 description: >-
-  Collaborate with other Zed users on your projects. Share your screen, follow users, and more.
+  Collaborate with other Zed users on your projects. Share your screen, follow
+  users, and more.
 ---
 
 # Collaboration
@@ -11,7 +12,7 @@ Only collaborate with people that you trust. Since sharing a project gives them 
 In the future, we will do more to prevent this type of access beyond the shared project and add more control over what collaborators can do, but for now, only collaborate with people you trust.
 {% endhint %}
 
-Note: we are working on a new version of this feature called [Channels](../general/channels). If you'd like to be part of the private beta, please contact us!
+Note: we are working on a new version of this feature called [Channels](channels/). If you'd like to be part of the private beta, please contact us!
 
 ## Adding a collaborator to a call
 
@@ -19,13 +20,13 @@ Before you can collaborate, you'll need to add a collaborator to your contacts. 
 
 1. Open the contacts menu by clicking on the `Show contacts menu` button in the upper right-hand corner of the window or by running `collab: toggle contacts menu` (`cmd-shift-c`).
 2. Click the add button to the right of the search box.
-3. Search for the contact you want to add using their GitHub handle.  Note: the person you are trying to add as a contact must be an existing Zed user.
+3. Search for the contact you want to add using their GitHub handle. Note: the person you are trying to add as a contact must be an existing Zed user.
 
 ### Inviting a collaborator
 
 You can add an existing Zed user as a contact from the contacts menu, deployed from the `Show contacts menu` button in the upper right-hand corner of the window or by `collab: toggle contacts menu` (`cmd-shift-c`) and then clicking the `Search for new contact` button to the right of the search box.
 
-![Inviting a collaborator to the current project](../.gitbook/assets/collaboration/add-a-collaborator.png)
+![Inviting a collaborator to the current project](<../.gitbook/assets/collaboration/add-a-collaborator (2).png>)
 
 When you invite a collaborator to a project not in a call they will receive a notification to join, and a new call is created.
 
@@ -62,9 +63,10 @@ When you join a project, you'll immediately start following the collaborator tha
 ![Automatically following the person inviting us to a project](../.gitbook/assets/collaboration/joining-a-call.png)
 
 When you are in a pane that is following a collaborator, you will:
-- follow their cursor and scroll position
-- follow them to other files in the same project
-- instantly swap to viewing their screen in that pane, if they are sharing their screen and leave the project
+
+* follow their cursor and scroll position
+* follow them to other files in the same project
+* instantly swap to viewing their screen in that pane, if they are sharing their screen and leave the project
 
 If you move your cursor or make an edit in that pane, you will stop following.
 
@@ -74,7 +76,7 @@ To start following again, you can click on a collaborator's avatar or cycle thro
 
 Following is confined to a particular pane. When a pane is following a collaborator, it is outlined in their cursor color.
 
-This pane-specific behavior allows you to follow someone in one pane while navigating independently in another and can be an effective layout for some  collaboration styles.
+This pane-specific behavior allows you to follow someone in one pane while navigating independently in another and can be an effective layout for some collaboration styles.
 
 ### Sharing your screen
 
