@@ -1,12 +1,12 @@
 ---
-description: >-
-  Work together with your friends and colleagues in real-time.
+description: Work together with your friends and colleagues in real-time.
 ---
-# Channels (private beta)
+
+# Channels
 
 At Zed we believe that great things are built by great people working together. We have designed Zed to help every individual work faster and to help teams of people work together more effectively.
 
-Channels are currently in private beta, please contact us to be added! Otherwise you can get some of the same benefits from [Calls](../general/collaboration/) in the meantime.
+Channels are currently in private beta, please contact us to be added! Otherwise you can get some of the same benefits from [Calls](collaboration/) in the meantime.
 
 ### Overview
 
@@ -21,7 +21,7 @@ Channels provide a way to streamline collaborating for software engineers in man
 
 To open the collaboration panel hit `cmd-shift-c` (or `cmd-shift-p “collab panel: toggle focus”`).
 
-![](../.gitbook/assets/collaboration/channels-1.png)
+<figure><img src="../.gitbook/assets/channels-1.png" alt=""><figcaption></figcaption></figure>
 
 Each channel corresponds to an ongoing project or work-stream. You can see who’s in a channel as their avatars will show up in the sidebar. This makes it easy to see what everyone is doing and where to find them if needed.
 
@@ -33,7 +33,7 @@ Joining a channel adds you to a shared room where you can work on projects toget
 
 After joining a channel, you can `Share` a project with the other people there. This will enable them to edit the code hosted on your machine as though they had it checked out locally.
 
-![](../.gitbook/assets/collaboration/channels-2.png)
+<figure><img src="../.gitbook/assets/channels-2.png" alt=""><figcaption></figcaption></figure>
 
 When you are editing someone else’s project, you still have the full power of the editor at your fingertips, you can jump to definitions, use the AI assistant, and see any diagnostic errors. This is extremely powerful for pairing, as one of you can be implementing the current method while the other is reading and researching the correct solution to the next problem. And, because you have your own config running, it feels like you’re using your own machine.
 
@@ -49,7 +49,7 @@ As a bonus, if the other person is sharing their screen, you can follow them out
 
 Each channel has a notes file associated with it to keep track of current status, new ideas, or to collaborate on building out the design for the feature that you’re working on before diving into code.
 
-![](../.gitbook/assets/collaboration/channels-2.png)
+<figure><img src="../.gitbook/assets/channels-3.png" alt=""><figcaption></figcaption></figure>
 
 The chat is also there for quickly sharing context, or getting questions answered, that are more ephemeral in nature.
 
