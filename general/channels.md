@@ -6,7 +6,7 @@ description: Work together with your friends and colleagues in real-time.
 
 At Zed we believe that great things are built by great people working together. We have designed Zed to help every individual work faster and to help teams of people work together more effectively.
 
-Channels are currently in private beta, please contact us to be added! Otherwise you can get some of the same benefits from [Calls](collaboration/) in the meantime.
+Channels are currently in public beta, please try them out and let us know what you think!
 
 ### Overview
 
