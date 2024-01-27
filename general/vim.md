@@ -145,11 +145,11 @@ There are a few Zed settings that you may also enjoy if you use vim mode:
 ```
 {
   // disable cursor blink
-  "cursor_blink": false
+  "cursor_blink": false,
   // use relative line numbers
   "relative_line_numbers": true,
   // hide the scroll bar
-  "scrollbar": {"show": "never"},
+  "scrollbar": {"show": "never"}
 }
 ```
 
